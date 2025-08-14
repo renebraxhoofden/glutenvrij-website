@@ -1,0 +1,14 @@
+{
+  "environment": {
+    "executable": "/home/renebraxhoofden/venv/bin/python",
+    "prefix": "/home/renebraxhoofden/venv",
+    "version": "3.11.2.final.0",
+    "is64Bit": true,
+    "symlinks": [
+      "/home/renebraxhoofden/venv/bin/python",
+      "/home/renebraxhoofden/venv/bin/python3",
+      "/home/renebraxhoofden/venv/bin/python3.11"
+    ]
+  },
+  "symlinks": []
+}

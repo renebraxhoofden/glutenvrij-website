@@ -1,0 +1,21 @@
+2025-08-14 22:11:29.564 [info] Native locator: Refresh started
+2025-08-14 22:11:29.564 [info] Native locator: Refresh started
+2025-08-14 22:11:29.564 [info] Native locator: Refresh started
+2025-08-14 22:11:29.564 [info] VS Code was launched from an activated environment: 'venv', selecting it as the interpreter for workspace.
+2025-08-14 22:11:30.416 [info] Active interpreter [/home/renebraxhoofden/glutenvrij-website]:  /home/renebraxhoofden/venv/bin/python
+2025-08-14 22:11:31.099 [info] Native locator: Refresh finished in 2770 ms
+2025-08-14 22:11:31.296 [info] > pyenv which python
+2025-08-14 22:11:31.296 [info] cwd: .
+2025-08-14 22:11:31.461 [info] Python interpreter path: ~/venv/bin/python
+2025-08-14 22:11:36.034 [info] Starting Pylance language server.
+2025-08-14 22:11:55.903 [info] Discover tests for workspace name: glutenvrij-website - uri: /home/renebraxhoofden/glutenvrij-website/scraper.py
+2025-08-14 22:16:52.894 [info] Native locator: Refresh started
+2025-08-14 22:16:52.895 [info] Native locator: Refresh started
+2025-08-14 22:16:52.895 [info] VS Code was launched from an activated environment: 'venv', selecting it as the interpreter for workspace.
+2025-08-14 22:16:53.113 [info] Active interpreter [/home/renebraxhoofden]:  /home/renebraxhoofden/venv/bin/python
+2025-08-14 22:16:53.453 [info] > pyenv which python
+2025-08-14 22:16:53.453 [info] cwd: .
+2025-08-14 22:16:57.098 [info] Native locator: Refresh finished in 6759 ms
+2025-08-14 22:16:57.113 [info] Python interpreter path: ./venv/bin/python
+2025-08-14 22:17:04.766 [info] Starting Pylance language server.
+2025-08-14 22:17:48.391 [info] Discover tests for workspace name: renebraxhoofden - uri: /home/renebraxhoofden/scraper.py

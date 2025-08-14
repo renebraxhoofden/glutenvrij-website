@@ -1,0 +1,37 @@
+2025-08-14 22:11:02.736 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vsliveshare.vsliveshare' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-14 22:11:02.756 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.gather' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-14 22:11:02.757 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-pylance' wants API proposal 'mcpConfigurationProvider' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-14 22:11:04.774 [info] Started local extension host with pid 7042.
+2025-08-14 22:11:20.249 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-08-14 22:11:21.528 [info] [perf] Render performance baseline is 101ms
+2025-08-14 22:16:40.476 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vsliveshare.vsliveshare' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-14 22:16:40.477 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.gather' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-14 22:16:40.477 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-pylance' wants API proposal 'mcpConfigurationProvider' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-14 22:16:42.023 [info] Started local extension host with pid 7346.
+2025-08-14 22:16:50.122 [info] Extension host (LocalProcess pid: 7346) is unresponsive.
+2025-08-14 22:16:50.203 [info] Extension host (LocalProcess pid: 7346) is responsive.
+2025-08-14 22:16:54.896 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-08-14 22:16:58.456 [error] [UriError]: Scheme contains illegal characters.: Error: [UriError]: Scheme contains illegal characters.
+    at R7 (file:///usr/share/code/resources/app/out/main.js:30:63994)
+    at new sd (file:///usr/share/code/resources/app/out/main.js:30:67374)
+    at new Ur (file:///usr/share/code/resources/app/out/main.js:30:68812)
+    at sd.revive (file:///usr/share/code/resources/app/out/main.js:30:68589)
+    at G4.call (file:///usr/share/code/resources/app/out/main.js:85:104940)
+    at If.s (file:///usr/share/code/resources/app/out/main.js:31:14859)
+    at If.q (file:///usr/share/code/resources/app/out/main.js:31:14382)
+    at Yo.value (file:///usr/share/code/resources/app/out/main.js:31:13784)
+    at D.C (file:///usr/share/code/resources/app/out/main.js:30:2373)
+    at D (file:///usr/share/code/resources/app/out/main.js:30:2443)
+    at D.fire (file:///usr/share/code/resources/app/out/main.js:30:2660)
+    at Yo.value (file:///usr/share/code/resources/app/out/main.js:28:4852)
+    at D.C (file:///usr/share/code/resources/app/out/main.js:30:2373)
+    at D.fire (file:///usr/share/code/resources/app/out/main.js:30:2591)
+    at Yo.value (file:///usr/share/code/resources/app/out/main.js:28:5040)
+    at D.C (file:///usr/share/code/resources/app/out/main.js:30:2373)
+    at D.fire (file:///usr/share/code/resources/app/out/main.js:30:2591)
+    at z (file:///usr/share/code/resources/app/out/main.js:28:7334)
+    at IpcMainImpl.i (file:///usr/share/code/resources/app/out/main.js:33:21024)
+    at IpcMainImpl.emit (node:events:518:28)
+    at Session.<anonymous> (node:electron/js2c/browser_init:2:106370)
+    at Session.emit (node:events:518:28)
+2025-08-14 22:16:59.453 [info] [perf] Render performance baseline is 159ms

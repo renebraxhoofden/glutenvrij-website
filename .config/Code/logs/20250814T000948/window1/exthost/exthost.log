@@ -55,3 +55,5 @@
 2025-08-14 15:49:11.947 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
 2025-08-14 15:51:50.857 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
 2025-08-14 15:55:12.872 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+2025-08-14 22:10:49.438 [info] Extension host terminating: renderer closed the MessagePort
+2025-08-14 22:10:49.810 [info] Extension host with pid 5463 exiting with code 0

@@ -1,0 +1,46 @@
+2025-08-14 22:11:29.565 [info] Starting Python Locator /home/renebraxhoofden/.vscode/extensions/ms-python.python-2025.12.0-linux-x64/python-env-tools/bin/pet server
+2025-08-14 22:11:31.065 [info] Discovered env: /home/renebraxhoofden/venv/bin/python
+2025-08-14 22:11:31.076 [info] Discovered env: /bin/python3
+2025-08-14 22:11:31.078 [info] Discovered env: /usr/bin/python3
+2025-08-14 22:11:31.091 [info] Locator Conda took 460.771485ms
+2025-08-14 22:11:31.091 [info] Locator Homebrew took 221.592µs
+2025-08-14 22:11:31.091 [info] Locator LinuxGlobal took 534.692838ms
+2025-08-14 22:11:31.092 [info] Locator PipEnv took 36.576µs
+2025-08-14 22:11:31.092 [info] Locator Pixi took 27.61µs
+2025-08-14 22:11:31.092 [info] Locator Poetry took 4.603036ms
+2025-08-14 22:11:31.094 [info] Locator PyEnv took 14.399954ms
+2025-08-14 22:11:31.094 [info] Locator Venv took 30.308µs
+2025-08-14 22:11:31.094 [info] Locator VirtualEnv took 64.431µs
+2025-08-14 22:11:31.095 [info] Locator VirtualEnvWrapper took 23.421µs
+2025-08-14 22:11:31.095 [info] Locator GlobalVirtualEnvs took 460.592283ms
+2025-08-14 22:11:31.095 [info] Locator Locators took 539.820672ms
+2025-08-14 22:11:31.095 [info] Locator Path took 576.395808ms
+2025-08-14 22:11:31.095 [info] Locator Workspaces took 218.099055ms
+2025-08-14 22:11:31.096 [info] Refresh completed in 579ms
+2025-08-14 22:11:31.453 [info] Resolved Python Environment /home/renebraxhoofden/venv/bin/python
+2025-08-14 22:11:31.466 [info] Resolved Python Environment /home/renebraxhoofden/venv/bin/python
+2025-08-14 22:13:42.503 [info] Resolved Python Environment /home/renebraxhoofden/venv/bin/python
+2025-08-14 22:16:52.894 [info] Starting Python Locator /home/renebraxhoofden/.vscode/extensions/ms-python.python-2025.12.0-linux-x64/python-env-tools/bin/pet server
+2025-08-14 22:16:57.053 [info] Discovered env: /home/renebraxhoofden/venv/bin/python
+2025-08-14 22:16:57.081 [info] Discovered env: /usr/bin/python3
+2025-08-14 22:16:57.084 [info] Discovered env: /bin/python3
+2025-08-14 22:16:57.089 [info] Locator Conda took 563.120409ms
+2025-08-14 22:16:57.089 [info] Locator Homebrew took 135.034µs
+2025-08-14 22:16:57.089 [info] Locator LinuxGlobal took 638.798946ms
+2025-08-14 22:16:57.089 [info] Locator PipEnv took 38.759µs
+2025-08-14 22:16:57.089 [info] Locator Pixi took 38.125µs
+2025-08-14 22:16:57.089 [info] Locator Poetry took 1.174473ms
+2025-08-14 22:16:57.090 [info] Locator PyEnv took 257.766µs
+2025-08-14 22:16:57.092 [info] Locator Venv took 17.580125ms
+2025-08-14 22:16:57.092 [info] Locator VirtualEnv took 33.655µs
+2025-08-14 22:16:57.094 [info] Locator VirtualEnvWrapper took 14.009945ms
+2025-08-14 22:16:57.094 [info] Locator GlobalVirtualEnvs took 510.39915ms
+2025-08-14 22:16:57.094 [info] Locator Locators took 652.585419ms
+2025-08-14 22:16:57.094 [info] Locator Path took 707.495792ms
+2025-08-14 22:16:57.094 [info] Locator Workspaces took 608.191393ms
+2025-08-14 22:16:57.095 [info] Refresh completed in 707ms
+2025-08-14 22:16:57.106 [info] Resolved Python Environment /home/renebraxhoofden/venv/bin/python
+2025-08-14 22:16:57.119 [info] Resolved Python Environment /home/renebraxhoofden/venv/bin/python
+2025-08-14 22:20:36.635 [info] Resolved Python Environment /home/renebraxhoofden/venv/bin/python
+2025-08-14 22:22:57.403 [info] Resolved Python Environment /home/renebraxhoofden/venv/bin/python
+2025-08-14 22:23:40.753 [info] Resolved Python Environment /home/renebraxhoofden/venv/bin/python
