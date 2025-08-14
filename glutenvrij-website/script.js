@@ -1,3 +1,22 @@
+fetch('prijzen.json')
+  .then(r => r.json())
+  .then(data => {
+    // Begin met de datum tonen
+    let html = `<p>Laatste update: ${data.datum}</p>`;
+    
+    // Loop door alle producten
+    for (let product in data.prijzen) {
+      html += `<p>${product}: €${data.prijzen[product].toFixed(2)}</p>`;
+    }
+    
+    // Zet het in de <div id="prijzen">
+    document.getElementById('prijzen').innerHTML = html;
+  })
+  .catch(err => {
+    document.getElementById('prijzen').innerHTML = 
+      `<p>Fout bij laden prijzen: ${err}</p>`;
+  });
+
 // Alle producten database
 const producten = [
     {
