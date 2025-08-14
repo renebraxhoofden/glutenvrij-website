@@ -1,0 +1,14 @@
+2025-08-14 10:12:18.776 [error] #12: https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery - error POST Canceled
+2025-08-14 10:12:18.895 [error] #13: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-python/python/latest - error GET Canceled
+2025-08-14 10:12:18.895 [error] #14: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/github/copilot/latest - error GET Canceled
+2025-08-14 10:12:18.896 [error] #15: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-azuretools/vscode-containers/latest - error GET Canceled
+2025-08-14 10:12:18.910 [error] #16: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-edgedevtools/vscode-edge-devtools/latest - error GET Canceled
+2025-08-14 10:12:18.910 [error] #17: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/vscodevim/vim/latest - error GET Canceled
+2025-08-14 10:12:18.910 [error] #18: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/eamodio/gitlens/latest - error GET Canceled
+2025-08-14 10:12:18.940 [error] #19: https://www.vscode-unpkg.net/_gallery/ms-python/python/latest - error GET Canceled
+2025-08-14 10:12:18.942 [error] #20: https://www.vscode-unpkg.net/_gallery/github/copilot/latest - error GET Canceled
+2025-08-14 10:12:18.942 [error] #21: https://www.vscode-unpkg.net/_gallery/ms-azuretools/vscode-containers/latest - error GET Canceled
+2025-08-14 10:12:18.942 [error] #22: https://www.vscode-unpkg.net/_gallery/ms-edgedevtools/vscode-edge-devtools/latest - error GET Canceled
+2025-08-14 10:12:18.943 [error] #23: https://www.vscode-unpkg.net/_gallery/vscodevim/vim/latest - error GET Canceled
+2025-08-14 10:12:18.943 [error] #24: https://www.vscode-unpkg.net/_gallery/eamodio/gitlens/latest - error GET Canceled
+2025-08-14 10:12:18.970 [error] #25: https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery - error POST Canceled
