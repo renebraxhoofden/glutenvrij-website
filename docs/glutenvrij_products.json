@@ -1,0 +1,454 @@
+{
+  "meta": {
+    "last_updated": "2025-08-15T14:43:15.803223",
+    "total_products": 10,
+    "total_stores": 5,
+    "version": "1.0",
+    "update_count": 1
+  },
+  "stores": [
+    {
+      "id": "albert_heijn",
+      "naam": "Albert Heijn",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
+      "url": "https://www.ah.nl"
+    },
+    {
+      "id": "jumbo",
+      "naam": "Jumbo",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
+      "url": "https://www.jumbo.com"
+    },
+    {
+      "id": "plus",
+      "naam": "Plus",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
+      "url": "https://www.plus.nl"
+    },
+    {
+      "id": "glutenvrijemarkt",
+      "naam": "Glutenvrijemarkt",
+      "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
+      "url": "https://www.glutenvrijemarkt.com"
+    },
+    {
+      "id": "schaer_official",
+      "naam": "Schär",
+      "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
+      "url": "https://www.schaer.com/nl-nl"
+    }
+  ],
+  "categories": [
+    {
+      "slug": "brood",
+      "naam": "Brood & Bakkerij",
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300&h=200&fit=crop"
+    },
+    {
+      "slug": "pasta",
+      "naam": "Pasta & Noodles",
+      "image": "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=300&h=200&fit=crop"
+    },
+    {
+      "slug": "koekjes",
+      "naam": "Koekjes & Crackers",
+      "image": "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=300&h=200&fit=crop"
+    },
+    {
+      "slug": "ontbijt",
+      "naam": "Ontbijt & Cereal",
+      "image": "https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?w=300&h=200&fit=crop"
+    },
+    {
+      "slug": "snacks",
+      "naam": "Snacks & Bars",
+      "image": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=300&h=200&fit=crop"
+    },
+    {
+      "slug": "pizza",
+      "naam": "Pizza & Frozen",
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop"
+    },
+    {
+      "slug": "mixen",
+      "naam": "Baking Mixes",
+      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop"
+    },
+    {
+      "slug": "pantry",
+      "naam": "Pantry & Condiments",
+      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&h=200&fit=crop"
+    },
+    {
+      "slug": "dranken",
+      "naam": "Beverages",
+      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=300&h=200&fit=crop"
+    },
+    {
+      "slug": "desserts",
+      "naam": "Desserts & Sweets",
+      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300&h=200&fit=crop"
+    },
+    {
+      "slug": "supplements",
+      "naam": "Supplements",
+      "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "naam": "AH Glutenvrij Brood donker meerzaden half",
+      "merk": "Albert Heijn",
+      "beschrijving": "Glutenvrij donker brood met meerzaden, perfect voor dagelijks gebruik",
+      "categorie": "brood",
+      "afbeelding": "https://images.unsplash.com/photo-1556908114-f6e7ad7d3136?w=400&h=300&fit=crop&q=80",
+      "grootte": "480g",
+      "laatste_update": "2025-08-15T14:43:15.802864",
+      "prijzen": [
+        {
+          "winkel": "Albert Heijn",
+          "prijs": 3.53,
+          "url": "https://www.ah.nl/producten/ah-glutenvrij-brood-donker-meerzaden-half",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
+          "in_stock": true,
+          "beste": true
+        },
+        {
+          "winkel": "Jumbo",
+          "prijs": 3.84,
+          "url": "https://www.jumbo.com/product/ah-glutenvrij-brood-donker-meerzaden-half",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "naam": "Jumbo Lekker Vrij van Gluten Broodmix",
+      "merk": "Jumbo",
+      "beschrijving": "Glutenvrije broodmix voor het zelf bakken van heerlijk brood",
+      "categorie": "mixen",
+      "afbeelding": "https://images.unsplash.com/photo-1556908114-f6e7ad7d3136?w=400&h=300&fit=crop&q=80",
+      "grootte": "450g",
+      "laatste_update": "2025-08-15T14:43:15.802881",
+      "prijzen": [
+        {
+          "winkel": "Schär",
+          "prijs": 2.94,
+          "url": "https://www.schaer.com/nl-nl/product/jumbo-lekker-vrij-van-gluten-broodmix",
+          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
+          "in_stock": false,
+          "beste": true
+        },
+        {
+          "winkel": "Jumbo",
+          "prijs": 3.03,
+          "url": "https://www.jumbo.com/producten/jumbo-lekker-vrij-van-gluten-broodmix-450-g",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "naam": "AH Glutenvrij Fusilli",
+      "merk": "Albert Heijn",
+      "beschrijving": "Glutenvrije fusilli pasta van mais en rijst",
+      "categorie": "pasta",
+      "afbeelding": "https://images.unsplash.com/photo-1556908114-f6e7ad7d3136?w=400&h=300&fit=crop&q=80",
+      "grootte": "500g",
+      "laatste_update": "2025-08-15T14:43:15.802893",
+      "prijzen": [
+        {
+          "winkel": "Jumbo",
+          "prijs": 1.36,
+          "url": "https://www.jumbo.com/product/ah-glutenvrij-fusilli",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
+          "in_stock": true,
+          "beste": true
+        },
+        {
+          "winkel": "Albert Heijn",
+          "prijs": 1.38,
+          "url": "https://www.ah.nl/producten/ah-glutenvrij-fusilli",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
+          "in_stock": true
+        },
+        {
+          "winkel": "Schär",
+          "prijs": 1.66,
+          "url": "https://www.schaer.com/nl-nl/product/ah-glutenvrij-fusilli",
+          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
+          "in_stock": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "naam": "Schär Meesterbakker Classic",
+      "merk": "Schär",
+      "beschrijving": "Premium glutenvrij witbrood van topkwaliteit",
+      "categorie": "brood",
+      "afbeelding": "https://images.unsplash.com/photo-1556908114-f6e7ad7d3136?w=400&h=300&fit=crop&q=80",
+      "grootte": "300g",
+      "laatste_update": "2025-08-15T14:43:15.802912",
+      "prijzen": [
+        {
+          "winkel": "Schär",
+          "prijs": 3.0,
+          "url": "https://www.schaer.com/nl-nl/product/schär-meesterbakker-classic",
+          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
+          "in_stock": true,
+          "beste": true
+        },
+        {
+          "winkel": "Glutenvrijemarkt",
+          "prijs": 3.31,
+          "url": "https://www.glutenvrijemarkt.com/schar-meesterbakker-classic.html",
+          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
+          "in_stock": true
+        },
+        {
+          "winkel": "Jumbo",
+          "prijs": 3.69,
+          "url": "https://www.jumbo.com/product/schär-meesterbakker-classic",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
+          "in_stock": true
+        },
+        {
+          "winkel": "Plus",
+          "prijs": 4.11,
+          "url": "https://www.plus.nl/product/schär-meesterbakker-classic",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
+          "in_stock": true
+        },
+        {
+          "winkel": "Albert Heijn",
+          "prijs": 4.17,
+          "url": "https://www.ah.nl/product/schär-meesterbakker-classic",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "naam": "Jumbo Lekker Vrij van Gluten Havermout",
+      "merk": "Jumbo",
+      "beschrijving": "Glutenvrije havermout, vezelrijk en bron van eiwit",
+      "categorie": "ontbijt",
+      "afbeelding": "https://images.unsplash.com/photo-1556908114-f6e7ad7d3136?w=400&h=300&fit=crop&q=80",
+      "grootte": "450g",
+      "laatste_update": "2025-08-15T14:43:15.802942",
+      "prijzen": [
+        {
+          "winkel": "Glutenvrijemarkt",
+          "prijs": 2.22,
+          "url": "https://www.glutenvrijemarkt.com/product/jumbo-lekker-vrij-van-gluten-havermout",
+          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
+          "in_stock": true,
+          "beste": true
+        },
+        {
+          "winkel": "Jumbo",
+          "prijs": 2.48,
+          "url": "https://www.jumbo.com/producten/jumbo-lekker-vrij-van-gluten-havermout-450-g",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
+          "in_stock": true
+        },
+        {
+          "winkel": "Plus",
+          "prijs": 2.83,
+          "url": "https://www.plus.nl/product/jumbo-lekker-vrij-van-gluten-havermout",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
+          "in_stock": false
+        },
+        {
+          "winkel": "Schär",
+          "prijs": 2.96,
+          "url": "https://www.schaer.com/nl-nl/product/jumbo-lekker-vrij-van-gluten-havermout",
+          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
+          "in_stock": true
+        },
+        {
+          "winkel": "Albert Heijn",
+          "prijs": 3.16,
+          "url": "https://www.ah.nl/product/jumbo-lekker-vrij-van-gluten-havermout",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "naam": "Plus Glutenvrije Mueslirepen Berry Mix",
+      "merk": "Plus",
+      "beschrijving": "Glutenvrije mueslirepen met verse berry mix",
+      "categorie": "snacks",
+      "afbeelding": "https://images.unsplash.com/photo-1556908114-f6e7ad7d3136?w=400&h=300&fit=crop&q=80",
+      "grootte": "5 stuks",
+      "laatste_update": "2025-08-15T14:43:15.802972",
+      "prijzen": [
+        {
+          "winkel": "Plus",
+          "prijs": 2.85,
+          "url": "https://www.plus.nl/product/plus-glutenvrije-mueslirepen-berry-mix",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
+          "in_stock": true,
+          "beste": true
+        },
+        {
+          "winkel": "Jumbo",
+          "prijs": 3.13,
+          "url": "https://www.jumbo.com/product/plus-glutenvrije-mueslirepen-berry-mix",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
+          "in_stock": true
+        },
+        {
+          "winkel": "Schär",
+          "prijs": 3.3,
+          "url": "https://www.schaer.com/nl-nl/product/plus-glutenvrije-mueslirepen-berry-mix",
+          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
+          "in_stock": true
+        },
+        {
+          "winkel": "Albert Heijn",
+          "prijs": 3.4,
+          "url": "https://www.ah.nl/product/plus-glutenvrije-mueslirepen-berry-mix",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "naam": "AH Glutenvrij Volkoren havermout",
+      "merk": "Albert Heijn",
+      "beschrijving": "Biologische glutenvrije havermout, rijk aan vezels",
+      "categorie": "ontbijt",
+      "afbeelding": "https://images.unsplash.com/photo-1556908114-f6e7ad7d3136?w=400&h=300&fit=crop&q=80",
+      "grootte": "450g",
+      "laatste_update": "2025-08-15T14:43:15.802996",
+      "prijzen": [
+        {
+          "winkel": "Albert Heijn",
+          "prijs": 2.79,
+          "url": "https://www.ah.nl/producten/ah-glutenvrij-volkoren-havermout",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
+          "in_stock": true,
+          "beste": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "naam": "Schär Pasta Spaghetti",
+      "merk": "Schär",
+      "beschrijving": "Glutenvrije spaghetti van mais en rijst",
+      "categorie": "pasta",
+      "afbeelding": "https://images.unsplash.com/photo-1556908114-f6e7ad7d3136?w=400&h=300&fit=crop&q=80",
+      "grootte": "400g",
+      "laatste_update": "2025-08-15T14:43:15.803002",
+      "prijzen": [
+        {
+          "winkel": "Jumbo",
+          "prijs": 2.35,
+          "url": "https://www.jumbo.com/product/schär-pasta-spaghetti",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
+          "in_stock": true,
+          "beste": true
+        },
+        {
+          "winkel": "Glutenvrijemarkt",
+          "prijs": 2.6,
+          "url": "https://www.glutenvrijemarkt.com/schar-pasta-spaghetti.html",
+          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "naam": "AH Glutenvrij Crackers",
+      "merk": "Albert Heijn",
+      "beschrijving": "Krokante glutenvrije crackers",
+      "categorie": "koekjes",
+      "afbeelding": "https://images.unsplash.com/photo-1556908114-f6e7ad7d3136?w=400&h=300&fit=crop&q=80",
+      "grootte": "130g",
+      "laatste_update": "2025-08-15T14:43:15.803014",
+      "prijzen": [
+        {
+          "winkel": "Jumbo",
+          "prijs": 1.5,
+          "url": "https://www.jumbo.com/product/ah-glutenvrij-crackers",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
+          "in_stock": true,
+          "beste": true
+        },
+        {
+          "winkel": "Albert Heijn",
+          "prijs": 1.53,
+          "url": "https://www.ah.nl/producten/ah-glutenvrij-crackers",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
+          "in_stock": true
+        },
+        {
+          "winkel": "Plus",
+          "prijs": 1.69,
+          "url": "https://www.plus.nl/product/ah-glutenvrij-crackers",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
+          "in_stock": true
+        },
+        {
+          "winkel": "Glutenvrijemarkt",
+          "prijs": 1.87,
+          "url": "https://www.glutenvrijemarkt.com/product/ah-glutenvrij-crackers",
+          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "naam": "Schär Pizza Base",
+      "merk": "Schär",
+      "beschrijving": "Glutenvrije pizzabodems, klaar om te beleggen",
+      "categorie": "pizza",
+      "afbeelding": "https://images.unsplash.com/photo-1556908114-f6e7ad7d3136?w=400&h=300&fit=crop&q=80",
+      "grootte": "2 stuks",
+      "laatste_update": "2025-08-15T14:43:15.803038",
+      "prijzen": [
+        {
+          "winkel": "Schär",
+          "prijs": 4.63,
+          "url": "https://www.schaer.com/nl-nl/product/schär-pizza-base",
+          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
+          "in_stock": true,
+          "beste": true
+        },
+        {
+          "winkel": "Plus",
+          "prijs": 4.71,
+          "url": "https://www.plus.nl/product/schär-pizza-base",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
+          "in_stock": false
+        },
+        {
+          "winkel": "Glutenvrijemarkt",
+          "prijs": 4.99,
+          "url": "https://www.glutenvrijemarkt.com/schar-pizzabodem.html",
+          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
+          "in_stock": true
+        },
+        {
+          "winkel": "Albert Heijn",
+          "prijs": 5.68,
+          "url": "https://www.ah.nl/product/schär-pizza-base",
+          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
+          "in_stock": true
+        }
+      ]
+    }
+  ]
+}
