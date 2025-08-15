@@ -51,3 +51,96 @@ error: failed to push some refs to 'https://github.com/renebraxhoofden/glutenvri
 
 
 renebraxhoofden@penguin:~$ git --version
+cd ~/Downloads/glutenvrij-website   # map van je website
+git init
+git remote add origin https://github.com/renebraxhoofden/glutenvrij-website.git
+git add .
+git commit -m "Eerste versie"
+git push -u origin master
+cd ~/Downloads/glutenvrij-website   # map van je website
+git init
+git remote add origin https://github.com/renebraxhoofden/glutenvrij-website.git
+git add .
+git commit -m "Eerste versie"
+git push -u origin master
+cd ~/Downloads/glutenvrij-website   # map van je website
+git init
+git remote add origin https://github.com/renebraxhoofden/glutenvrij-website.git
+git add .
+git commit -m "Eerste versie"
+git push -u origin master
+cd ~/Downloads/glutenvrij-website   # map van je website
+git init
+git remote add origin https://github.com/renebraxhoofden/glutenvrij-website.git
+git add .
+git commit -m "Eerste versie"
+git push -u origin master
+cd ~/Downloads/glutenvrij-website   # map van je website
+git init
+git remote add origin https://github.com/renebraxhoofden/glutenvrij-website.git
+git add .
+git commit -m "Eerste versie"
+git push -u origin master
+cd ~/Downloads/glutenvrij-website   # map van je website
+git init
+git remote add origin https://github.com/renebraxhoofden/glutenvrij-website.git
+git add .
+git commit -m "Eerste versie"
+git push -u origin master
+pip install requests beautifulsoup4
+python3 -m venv venv
+sudo apt update
+sudo apt install python3.11-venv
+python3 -m venv venv
+source venv/bin/activate
+pip install requests beautifulsoup4
+code
+python scraper.py
+source venv/bin/activate
+pip install requests beautifulsoup4
+python scraper.py
+source venv/bin/activate
+pip install requests beautifulsoup4
+python scraper.py
+git add .
+git commit -m "Scraper + workflow"
+git push
+rm -rf venv
+echo "venv/" >> .gitignore
+git add .gitignore
+git rm -rf venv
+git commit -m "Verwijderd lokale venv uit repo"
+git push
+git add .github/workflows/update.yml
+git commit -m "Workflow aangepast voor GitHub Actions"
+git push
+git add .github/workflows/update.yml
+git commit -m "Cron syntax fix"
+git push
+git add .github/workflows/update.yml
+git commit -m "Voeg GitHub Actions workflow toe"
+git push
+git add .github/workflows/update.yml
+git commit -m "Voeg GitHub Actions workflow toe"
+git push
+git add .github/workflows/update.yml
+git commit -m "Voeg GitHub Actions workflow toe"
+git push
+git add .github/workflows/update.yml
+git commit -m "Voeg GitHub Actions workflow toe"
+git push
+git add .github/workflows/update.yml
+git commit -m "Commit alleen bij veranderingen in prijzen.json"
+git push
+git add .github/workflows/update.yml
+git commit -m "Commit alleen bij veranderingen in prijzen.json"
+git push
+git add .github/workflows/update.yml
+git commit -m "Commit alleen bij veranderingen in prijzen.json"
+git push
+git add .github/workflows/update.yml
+git commit -m "Commit alleen bij veranderingen in prijzen.json"
+git push
+git add index.html script.js
+git commit -m "Prijzen live tonen op site"
+git push

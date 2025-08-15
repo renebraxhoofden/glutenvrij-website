@@ -2,3 +2,15 @@
 2025-08-14 22:11:30.977 [info] update#setState checking for updates
 2025-08-14 22:11:31.023 [info] update#setState idle
 2025-08-14 22:16:38.656 [info] Extension host with pid 7042 exited with code: 0, signal: unknown.
+2025-08-14 23:11:30.985 [info] update#setState checking for updates
+2025-08-14 23:11:31.227 [info] update#setState idle
+2025-08-14 23:23:05.789 [info] Extension host with pid 7346 exited with code: 0, signal: unknown.
+2025-08-15 15:40:50.877 [warning] No ptyHost heartbeat after 6 seconds
+2025-08-15 15:40:50.924 [info] update#setState checking for updates
+2025-08-15 15:40:55.966 [error] #7: https://update.code.visualstudio.com/api/update/linux-x64/stable/360a4e4fd251bfce169a4ddf857c7d25d1ad40da?bg=true - error undefined net::ERR_CONNECTION_RESET
+2025-08-15 15:40:56.005 [error] Error: net::ERR_CONNECTION_RESET
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123921)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-08-15 15:40:56.039 [info] update#setState idle
+2025-08-15 15:45:29.348 [info] Extension host with pid 11338 exited with code: 0, signal: unknown.
+2025-08-15 15:46:43.181 [info] Extension host with pid 12327 exited with code: 0, signal: unknown.

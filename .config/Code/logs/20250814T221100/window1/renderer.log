@@ -35,3 +35,30 @@
     at Session.<anonymous> (node:electron/js2c/browser_init:2:106370)
     at Session.emit (node:events:518:28)
 2025-08-14 22:16:59.453 [info] [perf] Render performance baseline is 159ms
+2025-08-14 23:23:07.856 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vsliveshare.vsliveshare' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-14 23:23:07.859 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.gather' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-14 23:23:07.860 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-pylance' wants API proposal 'mcpConfigurationProvider' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-14 23:23:09.734 [info] Started local extension host with pid 11338.
+2025-08-14 23:23:19.363 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-08-14 23:23:20.779 [info] [perf] Render performance baseline is 139ms
+2025-08-15 15:40:55.822 [warning] Failed to fetch chat participant registry Failed to fetch
+2025-08-15 15:40:56.053 [error] Error while getting the latest version for the extension ms-python.debugpy from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed to fetch
+2025-08-15 15:40:56.065 [error] Error while getting the latest version for the extension ms-python.vscode-python-envs from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed to fetch
+2025-08-15 15:40:56.076 [error] Error while getting the latest version for the extension ms-python.vscode-pylance from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed to fetch
+2025-08-15 15:40:56.088 [error] Error while getting the latest version for the extension ms-python.python from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed to fetch
+2025-08-15 15:45:32.176 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vsliveshare.vsliveshare' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-15 15:45:32.178 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.gather' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-15 15:45:32.179 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-pylance' wants API proposal 'mcpConfigurationProvider' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-15 15:45:33.772 [info] Started local extension host with pid 12327.
+2025-08-15 15:45:47.511 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-08-15 15:45:49.029 [info] [perf] Render performance baseline is 144ms
+2025-08-15 15:46:44.962 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vsliveshare.vsliveshare' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-15 15:46:44.965 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.gather' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-15 15:46:44.969 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-pylance' wants API proposal 'mcpConfigurationProvider' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-15 15:46:46.218 [info] Started local extension host with pid 12674.
+2025-08-15 15:47:02.655 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-08-15 15:47:04.307 [info] [perf] Render performance baseline is 114ms
+2025-08-15 16:14:59.090 [warning] [File Watcher ('parcel')] Watcher shutdown because watched path got deleted (path: /home/renebraxhoofden/glutenvrij-website)
+2025-08-15 16:14:59.102 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2025-08-15 16:32:15.629 [warning] [File Watcher ('parcel')] Watcher shutdown because watched path got deleted (path: /home/renebraxhoofden/glutenvrij-website)
+2025-08-15 16:32:15.638 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
