@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Glutenvergelijker - De slimste keuze voor glutenvrije boodschappen</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <!-- Header -->
@@ -12,7 +12,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/1add3526-2b20-4f00-adfc-95534464e9ce.png" alt="Glutenvergelijker" class="logo-img">
+                    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/1add3526-2b20-4f00-adfc-95534464e9ce.png" alt="Glutenvergelijker" class="logo-img" />
                     <span class="logo-text">glutenvergelijker</span>
                 </div>
                 <nav class="nav">
@@ -23,16 +23,16 @@
         </div>
     </header>
 
-    <!-- Hero sectie -->
+    <!-- Hero -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">De slimste keuze voor glutenvrije boodschappen</h1>
                 <p class="hero-subtitle">Vergelijk prijzen van glutenvrije producten bij alle grote Nederlandse winkels</p>
-                
+
                 <!-- Search bar -->
                 <div class="search-container">
-                    <input type="text" id="searchInput" class="form-control search-input" placeholder="Zoek glutenvrije producten...">
+                    <input type="text" id="searchInput" class="form-control search-input" placeholder="Zoek glutenvrije producten..." />
                     <button class="btn btn--primary search-btn" id="searchBtn">Zoeken</button>
                 </div>
 
@@ -58,17 +58,17 @@
         </div>
     </section>
 
-    <!-- Categories -->
+    <!-- Categories Section -->
     <section class="categories-section">
         <div class="container">
             <h2 class="section-title">Categorieën</h2>
-            <div class="categories-grid" id="categoriesGrid">
-                <!-- Categories will be populated by JavaScript -->
+            <div id="categories-container" class="categories-grid">
+                <!-- Categorieën worden via JavaScript geladen -->
             </div>
         </div>
     </section>
 
-    <!-- Products -->
+    <!-- Products Section -->
     <section class="products-section">
         <div class="container">
             <div class="products-header">
@@ -79,14 +79,21 @@
                     </select>
                     <select class="form-control filter-select" id="priceSort">
                         <option value="default">Standaard</option>
-                        <option value="low-to-high">Prijs: Laag naar Hoog</option>
-                        <option value="high-to-low">Prijs: Hoog naar Laag</option>
+                        <option value="price-low">Prijs: Laag naar Hoog</option>
+                        <option value="price-high">Prijs: Hoog naar Laag</option>
                     </select>
                 </div>
             </div>
-            <div class="products-grid" id="productsGrid">
-                <!-- Products will be populated by JavaScript -->
+            <div id="products-container" class="products-grid">
+                <!-- Producten worden via JavaScript geladen -->
             </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics-section">
+        <div class="container" id="stats-container">
+            <!-- Statistieken worden via JavaScript geladen -->
         </div>
     </section>
 
@@ -95,7 +102,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/1add3526-2b20-4f00-adfc-95534464e9ce.png" alt="Glutenvergelijker" class="logo-img">
+                    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/1add3526-2b20-4f00-adfc-95534464e9ce.png" alt="Glutenvergelijker" class="logo-img" />
                     <span class="logo-text">glutenvergelijker</span>
                 </div>
                 <div class="footer-text">
@@ -105,18 +112,18 @@
                 <div class="partner-stores">
                     <h4>Partner winkels:</h4>
                     <div class="store-logos">
-                        <img src="https://logoeps.com/wp-content/uploads/2013/03/albert-heijn-vector-logo.png" alt="Albert Heijn" class="store-logo">
-                        <img src="https://logoeps.com/wp-content/uploads/2014/09/jumbo-vector-logo.png" alt="Jumbo" class="store-logo">
-                        <img src="https://logoeps.com/wp-content/uploads/2013/12/plus-vector-logo.png" alt="Plus" class="store-logo">
-                        <img src="https://logoeps.com/wp-content/uploads/2013/03/etos-vector-logo.png" alt="Etos" class="store-logo">
+                        <img src="https://logoeps.com/wp-content/uploads/2013/03/albert-heijn-vector-logo.png" alt="Albert Heijn" class="store-logo" />
+                        <img src="https://logoeps.com/wp-content/uploads/2014/09/jumbo-vector-logo.png" alt="Jumbo" class="store-logo" />
+                        <img src="https://logoeps.com/wp-content/uploads/2013/12/plus-vector-logo.png" alt="Plus" class="store-logo" />
+                        <img src="https://logoeps.com/wp-content/uploads/2013/03/etos-vector-logo.png" alt="Etos" class="store-logo" />
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <!-- JavaScript scripts: eerst de data loader, dan app -->
     <script src="glutenvrij_data_loader.js"></script>
-
+    <script src="app.js"></script>
 </body>
 </html>
