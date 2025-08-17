@@ -10,6 +10,9 @@
             },
             {
                 "folderUri": "file:///home/renebraxhoofden"
+            },
+            {
+                "folderUri": "file:///home/renebraxhoofden/docs"
             }
         ],
         "emptyWindows": []
@@ -18,7 +21,8 @@
     "profileAssociations": {
         "workspaces": {
             "file:///home/renebraxhoofden": "__default__profile__",
-            "file:///home/renebraxhoofden/glutenvrij-website": "__default__profile__"
+            "file:///home/renebraxhoofden/glutenvrij-website": "__default__profile__",
+            "file:///home/renebraxhoofden/docs": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -54,8 +58,8 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/renebraxhoofden/glutenvrij-website",
-            "backupPath": "/home/renebraxhoofden/.config/Code/Backups/f1438cc5eff1852091c56b7c62ee794e",
+            "folder": "file:///home/renebraxhoofden/docs",
+            "backupPath": "/home/renebraxhoofden/.config/Code/Backups/b77d72b3d426ba76c3e07d79e88091c7",
             "uiState": {
                 "mode": 0,
                 "x": 0,
@@ -76,6 +80,10 @@
                     "auxiliaryBarVisible": true
                 },
                 "bced222ab365f7a5deb7bde1642173f7": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "5730cca2f2ba54d53a767b2516c7f839": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": true
                 }

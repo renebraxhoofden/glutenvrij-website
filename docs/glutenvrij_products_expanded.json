@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2025-08-15T16:19:42.953086",
+    "last_updated": "2025-08-15T16:19:00.677789",
     "total_products": 50,
-    "total_stores": 6,
-    "version": "2.1",
-    "features": "Multi-store price comparison + Glutenvrije Webshop import"
+    "total_stores": 1,
+    "version": "2.0",
+    "import_source": "Glutenvrije Webshop + Manual"
   },
   "stores": [
     {
@@ -12,36 +12,6 @@
       "naam": "Glutenvrije Webshop",
       "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
       "url": "https://www.glutenvrijewebshop.nl"
-    },
-    {
-      "id": "albert_heijn",
-      "naam": "Albert Heijn",
-      "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-      "url": "https://www.ah.nl"
-    },
-    {
-      "id": "jumbo",
-      "naam": "Jumbo",
-      "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-      "url": "https://www.jumbo.com"
-    },
-    {
-      "id": "plus",
-      "naam": "Plus",
-      "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-      "url": "https://www.plus.nl"
-    },
-    {
-      "id": "glutenvrijemarkt",
-      "naam": "Glutenvrijemarkt",
-      "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-      "url": "https://www.glutenvrijemarkt.com"
-    },
-    {
-      "id": "schaer_official",
-      "naam": "Schär Officieel",
-      "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
-      "url": "https://www.schaer.com/nl-nl"
     }
   ],
   "categories": [
@@ -109,22 +79,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 1.81,
-          "url": "https://albertheijn.nl/product/roze-koek",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Plus",
-          "prijs": 1.85,
-          "url": "https://plus.nl/product/roze-koek",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": false,
-          "beste": false
         }
       ]
     },
@@ -139,36 +93,12 @@
       "laatste_update": "2025-08-15T16:18:19.324807",
       "prijzen": [
         {
-          "winkel": "Albert Heijn",
-          "prijs": 2.46,
-          "url": "https://albertheijn.nl/product/speculaas",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 2.49,
           "url": "https://www.glutenvrijewebshop.nl/product/speculaas",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.52,
-          "url": "https://jumbo.nl/product/speculaas",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Plus",
-          "prijs": 2.52,
-          "url": "https://plus.nl/product/speculaas",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -189,14 +119,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 1.75,
-          "url": "https://albertheijn.nl/product/gevulde-koek",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -211,28 +133,12 @@
       "laatste_update": "2025-08-15T16:18:19.324839",
       "prijzen": [
         {
-          "winkel": "Plus",
-          "prijs": 3.31,
-          "url": "https://plus.nl/product/glutenvrije-oaties",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 3.49,
           "url": "https://www.glutenvrijewebshop.nl/product/glutenvrije-oaties",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.68,
-          "url": "https://albertheijn.nl/product/glutenvrije-oaties",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -247,36 +153,12 @@
       "laatste_update": "2025-08-15T16:18:19.324857",
       "prijzen": [
         {
-          "winkel": "Plus",
-          "prijs": 2.21,
-          "url": "https://plus.nl/product/kaaskoekjes",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 2.49,
           "url": "https://www.glutenvrijewebshop.nl/product/kaaskoekjes",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.5,
-          "url": "https://albertheijn.nl/product/kaaskoekjes",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 3.04,
-          "url": "https://glutenvrijemarkt.nl/product/kaaskoekjes",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -291,20 +173,12 @@
       "laatste_update": "2025-08-15T16:18:19.324870",
       "prijzen": [
         {
-          "winkel": "Albert Heijn",
-          "prijs": 2.38,
-          "url": "https://albertheijn.nl/product/kandijkoeken",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 2.49,
           "url": "https://www.glutenvrijewebshop.nl/product/kandijkoeken",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -325,22 +199,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 4.0,
-          "url": "https://albertheijn.nl/product/stroopwafels",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 4.61,
-          "url": "https://glutenvrijemarkt.nl/product/stroopwafels",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -361,30 +219,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.63,
-          "url": "https://albertheijn.nl/product/king-coooky",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär Officieel",
-          "prijs": 2.75,
-          "url": "https://schaerofficial.nl/product/king-coooky",
-          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 3.06,
-          "url": "https://glutenvrijemarkt.nl/product/king-coooky",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -405,30 +239,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 4.27,
-          "url": "https://albertheijn.nl/product/maria-biscuits",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 4.34,
-          "url": "https://jumbo.nl/product/maria-biscuits",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 5.3,
-          "url": "https://glutenvrijemarkt.nl/product/maria-biscuits",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -443,20 +253,12 @@
       "laatste_update": "2025-08-15T16:18:19.324950",
       "prijzen": [
         {
-          "winkel": "Plus",
-          "prijs": 7.67,
-          "url": "https://plus.nl/product/broodmix-wit-5-kilo",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 7.83,
           "url": "https://www.glutenvrijewebshop.nl/product/broodmix-wit-5-kilo",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -471,20 +273,12 @@
       "laatste_update": "2025-08-15T16:18:19.324961",
       "prijzen": [
         {
-          "winkel": "Plus",
-          "prijs": 7.39,
-          "url": "https://plus.nl/product/broodmix-bruin",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 8.2,
           "url": "https://www.glutenvrijewebshop.nl/product/broodmix-bruin",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -505,22 +299,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Plus",
-          "prijs": 2.71,
-          "url": "https://plus.nl/product/boekweitmeel",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 3.41,
-          "url": "https://glutenvrijemarkt.nl/product/boekweitmeel",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -561,30 +339,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Plus",
-          "prijs": 6.0,
-          "url": "https://plus.nl/product/4-koren-meel-volkoren",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 6.13,
-          "url": "https://jumbo.nl/product/4-koren-meel-volkoren",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 6.39,
-          "url": "https://glutenvrijemarkt.nl/product/4-koren-meel-volkoren",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -599,28 +353,12 @@
       "laatste_update": "2025-08-15T16:18:19.325038",
       "prijzen": [
         {
-          "winkel": "Plus",
-          "prijs": 7.47,
-          "url": "https://plus.nl/product/cakemix-chocolade",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 8.73,
           "url": "https://www.glutenvrijewebshop.nl/product/cakemix-chocolade",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 9.91,
-          "url": "https://glutenvrijemarkt.nl/product/cakemix-chocolade",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -635,28 +373,12 @@
       "laatste_update": "2025-08-15T16:18:19.325055",
       "prijzen": [
         {
-          "winkel": "Plus",
-          "prijs": 2.09,
-          "url": "https://plus.nl/product/universele-bakmix",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 2.45,
           "url": "https://www.glutenvrijewebshop.nl/product/universele-bakmix",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.47,
-          "url": "https://jumbo.nl/product/universele-bakmix",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -677,14 +399,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 5.26,
-          "url": "https://glutenvrijemarkt.nl/product/vegan-pinda-gezouten-karamel-reep",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -699,28 +413,12 @@
       "laatste_update": "2025-08-15T16:18:19.325137",
       "prijzen": [
         {
-          "winkel": "Jumbo",
-          "prijs": 2.28,
-          "url": "https://jumbo.nl/product/vegan-brownie-reep",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 2.39,
           "url": "https://www.glutenvrijewebshop.nl/product/vegan-brownie-reep",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 3.04,
-          "url": "https://glutenvrijemarkt.nl/product/vegan-brownie-reep",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -735,36 +433,12 @@
       "laatste_update": "2025-08-15T16:18:19.325150",
       "prijzen": [
         {
-          "winkel": "Jumbo",
-          "prijs": 4.41,
-          "url": "https://jumbo.nl/product/butterkekse",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Plus",
-          "prijs": 4.67,
-          "url": "https://plus.nl/product/butterkekse",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 4.74,
           "url": "https://www.glutenvrijewebshop.nl/product/butterkekse",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 5.99,
-          "url": "https://glutenvrijemarkt.nl/product/butterkekse",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -785,38 +459,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.02,
-          "url": "https://jumbo.nl/product/volkoren-cacao-koekjes",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.06,
-          "url": "https://albertheijn.nl/product/volkoren-cacao-koekjes",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär Officieel",
-          "prijs": 2.28,
-          "url": "https://schaerofficial.nl/product/volkoren-cacao-koekjes",
-          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 2.58,
-          "url": "https://glutenvrijemarkt.nl/product/volkoren-cacao-koekjes",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -837,22 +479,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 6.98,
-          "url": "https://albertheijn.nl/product/cannoli-croccante-pistache",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 7.54,
-          "url": "https://glutenvrijemarkt.nl/product/cannoli-croccante-pistache",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -887,20 +513,12 @@
       "laatste_update": "2025-08-15T16:18:19.325223",
       "prijzen": [
         {
-          "winkel": "Albert Heijn",
-          "prijs": 4.93,
-          "url": "https://albertheijn.nl/product/pistache-crème",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": false,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 4.99,
           "url": "https://www.glutenvrijewebshop.nl/product/pistache-crème",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -921,22 +539,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 4.09,
-          "url": "https://jumbo.nl/product/croissants",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär Officieel",
-          "prijs": 4.45,
-          "url": "https://schaerofficial.nl/product/croissants",
-          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -957,14 +559,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Plus",
-          "prijs": 3.03,
-          "url": "https://plus.nl/product/instant-pho-wok-kipsmaak",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -985,14 +579,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.15,
-          "url": "https://albertheijn.nl/product/instant-pho-soep-rundvleessmaak",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": false,
-          "beste": false
         }
       ]
     },
@@ -1013,14 +599,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 4.19,
-          "url": "https://glutenvrijemarkt.nl/product/instant-rice-thai-red-curry-shrimp",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": false,
-          "beste": false
         }
       ]
     },
@@ -1041,14 +619,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Schär Officieel",
-          "prijs": 10.58,
-          "url": "https://schaerofficial.nl/product/instant-rice-curried-shrimp",
-          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -1063,28 +633,12 @@
       "laatste_update": "2025-08-15T16:18:19.325371",
       "prijzen": [
         {
-          "winkel": "Plus",
-          "prijs": 4.81,
-          "url": "https://plus.nl/product/sriracha-saus",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 4.87,
           "url": "https://www.glutenvrijewebshop.nl/product/sriracha-saus",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär Officieel",
-          "prijs": 5.32,
-          "url": "https://schaerofficial.nl/product/sriracha-saus",
-          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
-          "in_stock": false,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -1099,28 +653,12 @@
       "laatste_update": "2025-08-15T16:18:19.325396",
       "prijzen": [
         {
-          "winkel": "Jumbo",
-          "prijs": 5.44,
-          "url": "https://jumbo.nl/product/meesterbakker-classic",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 5.76,
           "url": "https://www.glutenvrijewebshop.nl/product/meesterbakker-classic",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 6.56,
-          "url": "https://albertheijn.nl/product/meesterbakker-classic",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -1135,36 +673,12 @@
       "laatste_update": "2025-08-15T16:18:19.325439",
       "prijzen": [
         {
-          "winkel": "Jumbo",
-          "prijs": 5.42,
-          "url": "https://jumbo.nl/product/meesterbakker-donker",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 5.51,
           "url": "https://www.glutenvrijewebshop.nl/product/meesterbakker-donker",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 6.08,
-          "url": "https://albertheijn.nl/product/meesterbakker-donker",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 6.74,
-          "url": "https://glutenvrijemarkt.nl/product/meesterbakker-donker",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -1179,36 +693,12 @@
       "laatste_update": "2025-08-15T16:18:19.325461",
       "prijzen": [
         {
-          "winkel": "Plus",
-          "prijs": 5.16,
-          "url": "https://plus.nl/product/wit-brood",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 5.46,
           "url": "https://www.glutenvrijewebshop.nl/product/wit-brood",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 5.95,
-          "url": "https://jumbo.nl/product/wit-brood",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 6.01,
-          "url": "https://albertheijn.nl/product/wit-brood",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": false,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -1223,44 +713,12 @@
       "laatste_update": "2025-08-15T16:18:19.325474",
       "prijzen": [
         {
-          "winkel": "Plus",
-          "prijs": 1.98,
-          "url": "https://plus.nl/product/volkoren-brood",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.22,
-          "url": "https://albertheijn.nl/product/volkoren-brood",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 2.25,
           "url": "https://www.glutenvrijewebshop.nl/product/volkoren-brood",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär Officieel",
-          "prijs": 2.39,
-          "url": "https://schaerofficial.nl/product/volkoren-brood",
-          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 2.84,
-          "url": "https://glutenvrijemarkt.nl/product/volkoren-brood",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -1275,36 +733,12 @@
       "laatste_update": "2025-08-15T16:18:19.325490",
       "prijzen": [
         {
-          "winkel": "Plus",
-          "prijs": 1.95,
-          "url": "https://plus.nl/product/witte-bolletjes",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 1.99,
           "url": "https://www.glutenvrijewebshop.nl/product/witte-bolletjes",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.1,
-          "url": "https://albertheijn.nl/product/witte-bolletjes",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär Officieel",
-          "prijs": 2.38,
-          "url": "https://schaerofficial.nl/product/witte-bolletjes",
-          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
-          "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -1325,30 +759,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.02,
-          "url": "https://jumbo.nl/product/bruine-bolletjes",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.11,
-          "url": "https://albertheijn.nl/product/bruine-bolletjes",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 2.51,
-          "url": "https://glutenvrijemarkt.nl/product/bruine-bolletjes",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -1369,22 +779,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 6.82,
-          "url": "https://jumbo.nl/product/sourdough-brood",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 7.83,
-          "url": "https://glutenvrijemarkt.nl/product/sourdough-brood",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -1399,44 +793,12 @@
       "laatste_update": "2025-08-15T16:18:19.325543",
       "prijzen": [
         {
-          "winkel": "Jumbo",
-          "prijs": 5.62,
-          "url": "https://jumbo.nl/product/spaghetti",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 6.24,
           "url": "https://www.glutenvrijewebshop.nl/product/spaghetti",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Plus",
-          "prijs": 6.24,
-          "url": "https://plus.nl/product/spaghetti",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 6.91,
-          "url": "https://albertheijn.nl/product/spaghetti",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 7.08,
-          "url": "https://glutenvrijemarkt.nl/product/spaghetti",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -1451,44 +813,12 @@
       "laatste_update": "2025-08-15T16:18:19.325555",
       "prijzen": [
         {
-          "winkel": "Albert Heijn",
-          "prijs": 3.26,
-          "url": "https://albertheijn.nl/product/fusilli",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 3.37,
-          "url": "https://jumbo.nl/product/fusilli",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 3.43,
           "url": "https://www.glutenvrijewebshop.nl/product/fusilli",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär Officieel",
-          "prijs": 4.0,
-          "url": "https://schaerofficial.nl/product/fusilli",
-          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 4.03,
-          "url": "https://glutenvrijemarkt.nl/product/fusilli",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -1509,22 +839,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 4.2,
-          "url": "https://jumbo.nl/product/gnocchi-potato",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär Officieel",
-          "prijs": 4.33,
-          "url": "https://schaerofficial.nl/product/gnocchi-potato",
-          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -1545,22 +859,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Schär Officieel",
-          "prijs": 4.22,
-          "url": "https://schaerofficial.nl/product/gnocchi-potato-&-spinach",
-          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 4.4,
-          "url": "https://glutenvrijemarkt.nl/product/gnocchi-potato-&-spinach",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -1595,28 +893,12 @@
       "laatste_update": "2025-08-15T16:18:19.325606",
       "prijzen": [
         {
-          "winkel": "Jumbo",
-          "prijs": 2.69,
-          "url": "https://jumbo.nl/product/glutenvrije-penne",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 2.79,
           "url": "https://www.glutenvrijewebshop.nl/product/glutenvrije-penne",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 3.08,
-          "url": "https://glutenvrijemarkt.nl/product/glutenvrije-penne",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -1631,28 +913,12 @@
       "laatste_update": "2025-08-15T16:18:19.325618",
       "prijzen": [
         {
-          "winkel": "Plus",
-          "prijs": 4.42,
-          "url": "https://plus.nl/product/macaroni",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 4.87,
-          "url": "https://albertheijn.nl/product/macaroni",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 5.0,
           "url": "https://www.glutenvrijewebshop.nl/product/macaroni",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -1667,20 +933,12 @@
       "laatste_update": "2025-08-15T16:18:19.325654",
       "prijzen": [
         {
-          "winkel": "Plus",
-          "prijs": 3.62,
-          "url": "https://plus.nl/product/marshmallow-crunchies",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 3.67,
           "url": "https://www.glutenvrijewebshop.nl/product/marshmallow-crunchies",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -1695,20 +953,12 @@
       "laatste_update": "2025-08-15T16:18:19.325670",
       "prijzen": [
         {
-          "winkel": "Jumbo",
-          "prijs": 2.42,
-          "url": "https://jumbo.nl/product/color-loops",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 2.68,
           "url": "https://www.glutenvrijewebshop.nl/product/color-loops",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -1729,14 +979,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 6.28,
-          "url": "https://jumbo.nl/product/jerry-choco-balls",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Jumbo-Logo.png",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -1777,38 +1019,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Plus",
-          "prijs": 2.53,
-          "url": "https://plus.nl/product/havermout",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.86,
-          "url": "https://albertheijn.nl/product/havermout",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrijemarkt",
-          "prijs": 2.99,
-          "url": "https://glutenvrijemarkt.nl/product/havermout",
-          "logo": "https://www.glutenvrijemarkt.com/skin/frontend/fortis/glutenvrijemarkt/images/logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär Officieel",
-          "prijs": 2.99,
-          "url": "https://schaerofficial.nl/product/havermout",
-          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
-          "in_stock": true,
-          "beste": false
         }
       ]
     },
@@ -1823,36 +1033,12 @@
       "laatste_update": "2025-08-15T16:18:19.325738",
       "prijzen": [
         {
-          "winkel": "Plus",
-          "prijs": 2.48,
-          "url": "https://plus.nl/product/havervlokken",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Plus-Logo.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
           "winkel": "Glutenvrije Webshop",
           "prijs": 2.49,
           "url": "https://www.glutenvrijewebshop.nl/product/havervlokken",
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.67,
-          "url": "https://albertheijn.nl/product/havervlokken",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär Officieel",
-          "prijs": 3.07,
-          "url": "https://schaerofficial.nl/product/havervlokken",
-          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
-          "in_stock": true,
-          "beste": false
+          "beste": true
         }
       ]
     },
@@ -1873,22 +1059,6 @@
           "logo": "https://www.glutenvrijewebshop.nl/skin/frontend/ultimo/glutenvrije-webshop/images/logo.svg",
           "in_stock": true,
           "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.79,
-          "url": "https://albertheijn.nl/product/crunchy-granola-honing-&-noten",
-          "logo": "https://logos-world.net/wp-content/uploads/2020/11/Albert-Heijn-Logo.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär Officieel",
-          "prijs": 4.08,
-          "url": "https://schaerofficial.nl/product/crunchy-granola-honing-&-noten",
-          "logo": "https://www.schaer.com/themes/custom/dr_schaer/images/logo.svg",
-          "in_stock": true,
-          "beste": false
         }
       ]
     }

@@ -678,3 +678,16 @@
 2025-08-15 15:50:04.486 [info] > git rev-parse --show-toplevel [33ms]
 2025-08-15 15:50:06.720 [info] > git rev-parse --show-toplevel [11ms]
 2025-08-15 15:50:08.722 [info] > git rev-parse --show-toplevel [20ms]
+2025-08-15 16:54:48.015 [warning] [Model][getRepositoryExact] Failed to get repository realpath for: "/home/renebraxhoofden/glutenvrij-website". Error:Error: ENOENT: no such file or directory, realpath '/home/renebraxhoofden/glutenvrij-website'
+2025-08-15 16:55:04.663 [info] [main] Log level: Info
+2025-08-15 16:55:04.663 [info] [main] Validating found git in: "git"
+2025-08-15 16:55:04.663 [info] [main] Using git "2.39.5" from "git"
+2025-08-15 16:55:04.663 [info] [Model][doInitialScan] Initial repository scan started
+2025-08-15 16:55:04.663 [info] > git rev-parse --show-toplevel [155ms]
+2025-08-15 16:55:04.669 [info] > git rev-parse --show-toplevel [9ms]
+2025-08-15 16:55:04.683 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (1), unsafe repositories (0)
+2025-08-15 16:55:05.792 [info] > git rev-parse --show-toplevel [13ms]
+2025-08-15 16:55:06.021 [info] > git rev-parse --show-toplevel [6ms]
+2025-08-15 16:55:07.446 [info] > git rev-parse --show-toplevel [30ms]
+2025-08-15 16:55:07.952 [info] > git rev-parse --show-toplevel [10ms]
+2025-08-15 16:55:08.125 [info] > git rev-parse --show-toplevel [5ms]

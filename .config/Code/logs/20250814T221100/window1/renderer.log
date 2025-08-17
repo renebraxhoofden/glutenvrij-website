@@ -62,3 +62,24 @@
 2025-08-15 16:14:59.102 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
 2025-08-15 16:32:15.629 [warning] [File Watcher ('parcel')] Watcher shutdown because watched path got deleted (path: /home/renebraxhoofden/glutenvrij-website)
 2025-08-15 16:32:15.638 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2025-08-15 16:54:44.478 [error] Error: The editor could not be opened because the file was not found.
+    at GEe.gc (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2598:81151)
+    at async GEe.setInput (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2598:80309)
+    at async jqe.S (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:610:58567)
+    at async jqe.L (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:610:57122)
+    at async jqe.openEditor (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:610:56204)
+    at async vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:722:23350
+    at async yae.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1549:33803)
+2025-08-15 16:54:57.249 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vsliveshare.vsliveshare' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-15 16:54:57.257 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.gather' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-15 16:54:57.258 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-pylance' wants API proposal 'mcpConfigurationProvider' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-15 16:54:57.889 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-08-15 16:54:58.626 [info] Started local extension host with pid 13226.
+2025-08-15 16:55:07.275 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-08-15 16:55:08.692 [info] [perf] Render performance baseline is 84ms
+2025-08-15 19:36:10.275 [warning] Failed to fetch chat participant registry Failed to fetch
+2025-08-17 13:43:38.160 [warning] Failed to fetch chat participant registry Failed to fetch
+2025-08-17 13:43:38.181 [error] Error while getting the latest version for the extension ms-python.debugpy from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed to fetch
+2025-08-17 13:43:38.228 [error] Error while getting the latest version for the extension ms-python.python from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed to fetch
+2025-08-17 13:43:38.281 [error] Error while getting the latest version for the extension ms-python.vscode-pylance from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed to fetch
+2025-08-17 13:43:38.297 [error] Error while getting the latest version for the extension ms-python.vscode-python-envs from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed to fetch

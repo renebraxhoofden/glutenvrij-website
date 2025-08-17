@@ -14,3 +14,28 @@
 2025-08-15 15:40:56.039 [info] update#setState idle
 2025-08-15 15:45:29.348 [info] Extension host with pid 11338 exited with code: 0, signal: unknown.
 2025-08-15 15:46:43.181 [info] Extension host with pid 12327 exited with code: 0, signal: unknown.
+2025-08-15 16:40:51.092 [info] update#setState checking for updates
+2025-08-15 16:40:51.527 [info] update#setState idle
+2025-08-15 16:54:54.237 [info] Extension host with pid 12674 exited with code: 0, signal: unknown.
+2025-08-15 17:59:53.641 [warning] No ptyHost heartbeat after 6 seconds
+2025-08-15 17:59:53.647 [info] update#setState checking for updates
+2025-08-15 17:59:57.221 [info] update#setState idle
+2025-08-15 18:30:34.678 [warning] No ptyHost heartbeat after 6 seconds
+2025-08-15 19:35:43.688 [warning] No ptyHost heartbeat after 6 seconds
+2025-08-15 19:35:43.690 [info] update#setState checking for updates
+2025-08-15 19:36:10.070 [error] #14: https://update.code.visualstudio.com/api/update/linux-x64/stable/360a4e4fd251bfce169a4ddf857c7d25d1ad40da?bg=true - error undefined net::ERR_NAME_NOT_RESOLVED
+2025-08-15 19:36:10.072 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123921)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-08-15 19:36:10.074 [info] update#setState idle
+2025-08-15 20:35:43.943 [info] update#setState checking for updates
+2025-08-15 20:35:44.725 [info] update#setState idle
+2025-08-17 13:43:34.775 [warning] No ptyHost heartbeat after 6 seconds
+2025-08-17 13:43:34.842 [info] update#setState checking for updates
+2025-08-17 13:43:38.147 [error] #16: https://update.code.visualstudio.com/api/update/linux-x64/stable/360a4e4fd251bfce169a4ddf857c7d25d1ad40da?bg=true - error undefined net::ERR_NETWORK_CHANGED
+2025-08-17 13:43:38.148 [error] Error: net::ERR_NETWORK_CHANGED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123921)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-08-17 13:43:38.157 [info] update#setState idle
+2025-08-17 14:43:34.877 [info] update#setState checking for updates
+2025-08-17 14:43:35.102 [info] update#setState idle
