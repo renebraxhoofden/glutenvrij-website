@@ -1,0 +1,12 @@
+2025-08-17 15:30:34.755 [info] Getting Manifest... github.copilot
+2025-08-17 15:30:34.853 [info] Installing extension: github.copilot {"enable":true,"isApplicationScoped":true,"isMachineScoped":false,"installEverywhere":true,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/renebraxhoofden/.vscode/extensions/extensions.json","path":"/home/renebraxhoofden/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"productVersion":{"version":"1.103.1","date":"2025-08-12T16:25:40.542Z"}}
+2025-08-17 15:30:35.510 [info] Getting Manifest... github.copilot-chat
+2025-08-17 15:30:35.532 [info] Installing extension: github.copilot-chat {"enable":true,"isApplicationScoped":true,"isMachineScoped":false,"installEverywhere":true,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/renebraxhoofden/.vscode/extensions/extensions.json","path":"/home/renebraxhoofden/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"productVersion":{"version":"1.103.1","date":"2025-08-12T16:25:40.542Z"},"installGivenVersion":false,"context":{"dependecyOrPackExtensionInstall":true}}
+2025-08-17 15:30:43.092 [info] Extension signature verification result for github.copilot-chat: Success. Internal Code: 0. Executed: true. Duration: 6325ms.
+2025-08-17 15:30:44.439 [info] Extension signature verification result for github.copilot: Success. Internal Code: 0. Executed: true. Duration: 7541ms.
+2025-08-17 15:30:45.040 [info] Extracted extension to file:///home/renebraxhoofden/.vscode/extensions/github.copilot-chat-0.30.1: github.copilot-chat
+2025-08-17 15:30:45.095 [info] Renamed to /home/renebraxhoofden/.vscode/extensions/github.copilot-chat-0.30.1
+2025-08-17 15:30:48.568 [info] Extracted extension to file:///home/renebraxhoofden/.vscode/extensions/github.copilot-1.350.0: github.copilot
+2025-08-17 15:30:48.649 [info] Renamed to /home/renebraxhoofden/.vscode/extensions/github.copilot-1.350.0
+2025-08-17 15:30:48.768 [info] Extension installed successfully: github.copilot-chat vscode-userdata:/home/renebraxhoofden/.vscode/extensions/extensions.json
+2025-08-17 15:30:48.768 [info] Extension installed successfully: github.copilot vscode-userdata:/home/renebraxhoofden/.vscode/extensions/extensions.json

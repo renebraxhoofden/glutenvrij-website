@@ -39,3 +39,14 @@
 2025-08-17 13:43:38.157 [info] update#setState idle
 2025-08-17 14:43:34.877 [info] update#setState checking for updates
 2025-08-17 14:43:35.102 [info] update#setState idle
+2025-08-17 20:41:34.858 [warning] No ptyHost heartbeat after 6 seconds
+2025-08-17 20:41:35.182 [info] update#setState checking for updates
+2025-08-17 20:41:39.120 [info] update#setState idle
+2025-08-17 21:41:35.373 [info] update#setState checking for updates
+2025-08-17 21:41:35.569 [info] update#setState idle
+2025-08-18 21:17:43.952 [warning] No ptyHost heartbeat after 6 seconds
+2025-08-18 21:17:44.470 [info] update#setState checking for updates
+2025-08-18 21:17:49.333 [info] update#setState idle
+2025-08-18 22:08:43.764 [warning] No ptyHost heartbeat after 6 seconds
+2025-08-18 22:17:44.732 [info] update#setState checking for updates
+2025-08-18 22:17:44.945 [info] update#setState idle

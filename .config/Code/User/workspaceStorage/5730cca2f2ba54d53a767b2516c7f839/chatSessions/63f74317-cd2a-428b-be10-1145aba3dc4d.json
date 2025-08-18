@@ -1,7 +1,17 @@
 {
   "version": 3,
-  "requesterUsername": "",
-  "responderUsername": "",
+  "requesterUsername": "renebraxhoofden",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/226351137",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
   "initialLocation": "panel",
   "requests": [],
   "sessionId": "63f74317-cd2a-428b-be10-1145aba3dc4d",

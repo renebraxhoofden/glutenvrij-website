@@ -144,3 +144,175 @@ git push
 git add index.html script.js
 git commit -m "Prijzen live tonen op site"
 git push
+git add index.html script.js
+git commit -m "Prijzen live tonen op site"
+git push
+cd glutenvrij-website
+git add index.html script.js
+git commit -m "Prijzen live tonen op site"
+git push
+git add glutenvrij-website/index.html glutenvrij-website/script.js
+git commit -m "Prijzen live tonen op site"
+git push
+git add index.html script.js
+git commit -m "Prijzen live tonen op site"
+git push
+cd glutenvrij-website
+git add .
+git commit -m "Nieuwe websiteversie met fixes"
+git push
+git add .
+git commit -m "Zet site opnieuw online"
+git push
+cd renebraxhoofden/glutenvrij-website
+git add .
+git commit -m "Zet nieuwe website in glutenvrij-website map"
+git push
+mv glutenvrij-website docs
+cd
+mv glutenvrij-website docs
+git add .
+git commit -m "Hernoem website-map naar docs voor Github Pages"
+git push
+cd docs/
+git add .
+git commit -m "🚀 Launch automatic scraping system"  
+git push
+cp glutenvrij_products_complete.json docs/glutenvrij_products.json
+cp glutenvrij_data_loader.js docs/
+cp updated_app.js docs/app.js
+cd
+cp glutenvrij_products_complete.json docs/glutenvrij_products.json
+cp glutenvrij_data_loader.js docs/
+cp updated_app.js docs/app.js
+cp glutenvrij_products_complete.json docs/glutenvrij_products.json
+cp glutenvrij_data_loader.js docs/
+cp updated_app.js docs/app.js
+git add .
+git commit -m "🚀 Complete Glutenvrije Webshop integration"
+git push
+cp glutenvrij_products_complete.json docs/glutenvrij_products.json
+cp glutenvrij_data_loader.js docs/
+cp updated_app.js docs/app.js
+pwd
+ls
+cd dowcs/
+cd docs/
+pwd
+ls
+cp glutenvrij_products_complete.json docs/glutenvrij_products.json
+cp glutenvrij_data_loader.js docs/
+cp updated_app.js docs/app.js
+ls
+ls docs/
+cd
+ls docs/
+mv docs/updated_app.js docs/app.js
+cp docs/glutenvrij_products_complete.json docs/glutenvrij_products.json
+cd docs/
+git add app.js glutenvrij_products.json
+git commit -m "Update app.js en product database"
+git push
+git pull origin master
+git pull --no-rebase origin master
+cd docs/
+git pull --no-rebase origin master
+git status
+git commit -m "Merge remote-tracking branch 'origin/master' into master"
+git status
+git push origin master
+cd /pad/naar/jouw/project
+cd /docs/assets/logo/
+cd assents/
+lp
+ip
+cd
+git add docs/assets/logo/
+git commit -m "Voeg winkel-logo assets toe"
+git push
+chmod +x deploy.sh
+./deploy.sh
+cp glutenvrij_products_optimized.json docs/glutenvrij_products.json
+cp improved_app.js docs/app.js
+cp improved_style.css docs/style.css
+cd docs && git add . && git commit -m "🚀 Complete optimization" && git push
+cp glutenvrij_products_optimized.json docs/glutenvrij_products.json
+cp improved_app.js docs/app.js
+cp improved_style.css docs/style.css
+cd docs && git add . && git commit -m "🚀 Complete optimization" && git push
+cd
+cp glutenvrij_products_optimized.json docs/glutenvrij_products.json
+cp improved_app.js docs/app.js
+cp improved_style.css docs/style.css
+cd docs && git add . && git commit -m "🚀 Complete optimization" && git push
+cp glutenvrij_products_optimized.json docs/glutenvrij_products.json
+cp improved_app.js docs/app.js
+cp improved_style.css docs/style.css
+cd docs && git add . && git commit -m "🚀 Complete optimization" && git push
+pwd
+ls -l
+cp glutenvrij_products_optimized.json docs/glutenvrij_products.json
+cp improved_app.js docs/app.js
+cp improved_style.css docs/style.css
+cp glutenvrij_data_loader.js docs/
+cd
+cp glutenvrij_products_optimized.json docs/glutenvrij_products.json
+cp improved_app.js docs/app.js
+cp improved_style.css docs/style.css
+cp glutenvrij_data_loader.js docs/
+cd docs
+cp glutenvrij_products_optimized.json docs/glutenvrij_products.json
+cp improved_app.js docs/app.js
+cp improved_style.css docs/style.css
+cp glutenvrij_data_loader.js docs/
+find ~ -name "docs" -type d 2>/dev/null
+ls -la
+cd $(find ~ -name "docs" -type d 2>/dev/null | head -1 | dirname)
+cd docs
+cp glutenvrij_products_optimized.json docs/glutenvrij_products.json
+cp improved_app.js docs/app.js
+cp improved_style.css docs/style.css
+cp glutenvrij_data_loader.js docs/
+cp glutenvrij_products_optimized.json docs/glutenvrij_products.json
+cp improved_app.js docs/app.js
+cp improved_style.css docs/style.css
+cd docs && git add . && git commit -m "🚀 Complete optimization" && git push
+chmod +x deploy.sh
+./deploy.sh
+cd
+chmod +x deploy.sh
+./deploy.sh
+chmod +x deploy.sh
+./deploy.sh
+cd docs
+mv app.js app_old.js
+mv style.css style_old.css
+mv glutenvrij_products.json glutenvrij_products_old.json
+mv improved_app.js app.js
+mv improved_style.css style.css
+mv glutenvrij_products_optimized.json glutenvrij_products.json
+git add app.js style.css glutenvrij_products.json
+git commit -m "🚀 Zet geoptimaliseerde site live"
+git push
+python auto_product_expansion.py
+python3 --version
+python3 auto_product_expansion.py
+pip install requests
+pip3 install requests
+python3 auto_product_expansion.py
+sudo apt update
+sudo apt install python3-requests
+python3 auto_product_expansion.py
+git add .
+git commit -m "Alles vernieuwd: meer producten, snellere site"
+git push origin main
+git add .
+git commit -m "Alles vernieuwd: meer producten, snellere site"
+git push origin main
+git add .
+git commit -m "Alles vernieuwd: meer producten, snellere site"
+git push origin master
+git pull origin master
+git add .
+git commit -m "Conflicten opgelost en mijn aanpassingen toegevoegd"
+git pull --no-rebase origin master

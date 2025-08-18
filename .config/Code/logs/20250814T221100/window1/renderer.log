@@ -83,3 +83,10 @@
 2025-08-17 13:43:38.228 [error] Error while getting the latest version for the extension ms-python.python from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed to fetch
 2025-08-17 13:43:38.281 [error] Error while getting the latest version for the extension ms-python.vscode-pylance from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed to fetch
 2025-08-17 13:43:38.297 [error] Error while getting the latest version for the extension ms-python.vscode-python-envs from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed to fetch
+2025-08-17 15:30:48.919 [warning] [GitHub.copilot]: Cannot register 'github.copilot.advanced'. This property is already registered.
+2025-08-17 15:30:52.122 [error] [Extension Host] (node:13226) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `exe --trace-warnings ...` to show where the warning was created)
+2025-08-17 15:30:53.876 [info] Extension host (LocalProcess pid: 13226) is unresponsive.
+2025-08-17 15:30:55.555 [info] UNRESPONSIVE extension host: starting to profile NOW
+2025-08-17 15:31:00.943 [info] Extension host (LocalProcess pid: 13226) is responsive.
+2025-08-17 15:31:01.165 [warning] UNRESPONSIVE extension host: 'github.copilot' took 72.93834530420273% of 3671.329ms, saved PROFILE here: 'file:///tmp/exthost-3682ee.cpuprofile'
