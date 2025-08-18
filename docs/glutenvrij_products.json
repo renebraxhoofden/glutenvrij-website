@@ -1,2397 +1,2857 @@
-{
-  "meta": {
-    "last_updated": "2025-08-17T19:32:45.137861",
-    "total_products": 63,
-    "total_stores": 6,
-    "version": "3.0",
-    "features": [
-      "Lokale logo assets",
-      "63 echte glutenvrije producten",
-      "Multi-store prijsvergelijking",
-      "UX optimalisaties",
-      "Responsive design",
-      "Auto-refresh functionaliteit"
-    ]
+[
+  {
+    "id": "gv_100",
+    "name": "AH Vrij Van Biologische Boekweit Penne",
+    "category": "Pasta & Rijst",
+    "brand": "Albert Heijn",
+    "description": "Biologische glutenvrije pasta van boekweit",
+    "image": "assets/products/albert_heijn_100.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 200,
+      "gluten_free": true,
+      "organic": true,
+      "lactose_free": true,
+      "vegan": true
+    },
+    "stores": {
+      "bakkerleo.nl": {
+        "price": 2.38,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij.bakkerleo.nl/product/ah-vrij-van-biologische-boekweit-penne",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 2.0,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/ah-vrij-van-biologische-boekweit-penne",
+        "last_updated": "2025-08-18"
+      },
+      "bfreez.nl": {
+        "price": 2.65,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.bfreez.nl/product/ah-vrij-van-biologische-boekweit-penne",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 2.61,
+        "original_price": 2.9,
+        "discount_percentage": 10,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/ah-vrij-van-biologische-boekweit-penne.html",
+        "last_updated": "2025-08-18"
+      }
+    }
   },
-  "stores": [
-    {
-      "id": "glutenvrije_webshop",
-      "naam": "Glutenvrije Webshop",
-      "logo": "./assets/logo/glutenvrijewebshop.png",
-      "url": "https://www.glutenvrijewebshop.nl"
+  {
+    "id": "gv_101",
+    "name": "AH Vrij Van Pain au Chocolat",
+    "category": "Brood & Bakproducten",
+    "brand": "Albert Heijn",
+    "description": "Glutenvrije pain au chocolat",
+    "image": "assets/products/albert_heijn_101.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 250,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
     },
-    {
-      "id": "albert_heijn",
-      "naam": "Albert Heijn",
-      "logo": "./assets/logo/ah-albert-heijn.svg",
-      "url": "https://www.ah.nl"
-    },
-    {
-      "id": "jumbo",
-      "naam": "Jumbo",
-      "logo": "./assets/logo/jumbo-logo.svg",
-      "url": "https://www.jumbo.com"
-    },
-    {
-      "id": "plus",
-      "naam": "Plus",
-      "logo": "./assets/logo/plus.svg",
-      "url": "https://www.plus.nl"
-    },
-    {
-      "id": "picnic",
-      "naam": "Picnic",
-      "logo": "./assets/logo/Picnic_logo.svg.png",
-      "url": "https://www.picnic.nl"
-    },
-    {
-      "id": "schaer_official",
-      "naam": "Schär",
-      "logo": "./assets/logo/schar.png",
-      "url": "https://www.schaer.com/nl-nl"
+    "stores": {
+      "plus.nl": {
+        "price": 2.41,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/ah-vrij-van-pain-au-chocolat",
+        "last_updated": "2025-08-18"
+      },
+      "bfreez.nl": {
+        "price": 2.92,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.bfreez.nl/product/ah-vrij-van-pain-au-chocolat",
+        "last_updated": "2025-08-18"
+      },
+      "picnic.app": {
+        "price": 2.84,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://picnic.app/nl/product/ah-vrij-van-pain-au-chocolat",
+        "last_updated": "2025-08-18"
+      },
+      "winkelglutenvrij.nl": {
+        "price": 2.68,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/ah-vrij-van-pain-au-chocolat",
+        "last_updated": "2025-08-18"
+      },
+      "thefreefromshop.nl": {
+        "price": 2.89,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/ah-vrij-van-pain-au-chocolat",
+        "last_updated": "2025-08-18"
+      }
     }
-  ],
-  "categories": [
-    {
-      "slug": "alle",
-      "naam": "Alle producten",
-      "image": "https://images.unsplash.com/photo-1556908114-f6e7ad7d3136?w=300&h=200&fit=crop"
+  },
+  {
+    "id": "gv_102",
+    "name": "AH Vrij Van Paasstol",
+    "category": "Brood & Bakproducten",
+    "brand": "Albert Heijn",
+    "description": "Glutenvrije paasstol voor Pasen",
+    "image": "assets/products/albert_heijn_102.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 300,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
     },
-    {
-      "slug": "brood",
-      "naam": "Brood & Bakkerij",
-      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300&h=200&fit=crop"
-    },
-    {
-      "slug": "pasta",
-      "naam": "Pasta & Noodles",
-      "image": "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=300&h=200&fit=crop"
-    },
-    {
-      "slug": "koekjes",
-      "naam": "Koekjes & Crackers",
-      "image": "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=300&h=200&fit=crop"
-    },
-    {
-      "slug": "ontbijt",
-      "naam": "Ontbijt & Cereal",
-      "image": "https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?w=300&h=200&fit=crop"
-    },
-    {
-      "slug": "snacks",
-      "naam": "Snacks & Bars",
-      "image": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=300&h=200&fit=crop"
-    },
-    {
-      "slug": "pizza",
-      "naam": "Pizza & Frozen",
-      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop"
-    },
-    {
-      "slug": "mixen",
-      "naam": "Baking Mixes",
-      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop"
-    },
-    {
-      "slug": "sauzen",
-      "naam": "Sauzen & Condiments",
-      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&h=200&fit=crop"
-    },
-    {
-      "slug": "dranken",
-      "naam": "Beverages",
-      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=300&h=200&fit=crop"
-    },
-    {
-      "slug": "desserts",
-      "naam": "Desserts & Sweets",
-      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300&h=200&fit=crop"
+    "stores": {
+      "bfreez.nl": {
+        "price": 2.35,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.bfreez.nl/product/ah-vrij-van-paasstol",
+        "last_updated": "2025-08-18"
+      },
+      "winkelglutenvrij.nl": {
+        "price": 2.35,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/ah-vrij-van-paasstol",
+        "last_updated": "2025-08-18"
+      },
+      "thefreefromshop.nl": {
+        "price": 3.22,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/ah-vrij-van-paasstol",
+        "last_updated": "2025-08-18"
+      },
+      "happybakers.nl": {
+        "price": 2.38,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://happybakers.nl/product/ah-vrij-van-paasstol",
+        "last_updated": "2025-08-18"
+      },
+      "bakkerleo.nl": {
+        "price": 2.24,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij.bakkerleo.nl/product/ah-vrij-van-paasstol",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 2.35,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/ah-vrij-van-paasstol",
+        "last_updated": "2025-08-18"
+      }
     }
-  ],
-  "products": [
-    {
-      "id": 1,
-      "naam": "Ciabatta Rustica",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrije ciabatta met knapperige korst",
-      "categorie": "brood",
-      "afbeelding": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.321317",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.87,
-          "url": "https://www.glutenvrijewebshop.nl/product/ciabatta-rustica",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.87,
-          "url": "https://www.jumbo.com/product/ciabatta-rustica",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 3.3,
-          "url": "https://www.schaer.com/nl-nl/product/ciabatta-rustica",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.37,
-          "url": "https://www.ah.nl/product/ciabatta-rustica",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
+  },
+  {
+    "id": "gv_103",
+    "name": "AH Vrij Van Mini Crackers",
+    "category": "Chips & Crackers",
+    "brand": "Albert Heijn",
+    "description": "Glutenvrije mini crackers",
+    "image": "assets/products/albert_heijn_103.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 350,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
     },
-    {
-      "id": 2,
-      "naam": "Witte Bolletjes",
-      "merk": "Glutenvrije Webshop Basics",
-      "beschrijving": "Verse glutenvrije witte bolletjes",
-      "categorie": "brood",
-      "afbeelding": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.321368",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 1.89,
-          "url": "https://www.plus.nl/product/witte-bolletjes",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 1.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/witte-bolletjes",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.15,
-          "url": "https://www.ah.nl/product/witte-bolletjes",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "naam": "Bruine Bolletjes",
-      "merk": "Glutenvrije Webshop Basics",
-      "beschrijving": "Verse glutenvrije bruine bolletjes",
-      "categorie": "brood",
-      "afbeelding": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.321405",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 1.92,
-          "url": "https://www.plus.nl/product/bruine-bolletjes",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 1.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/bruine-bolletjes",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.37,
-          "url": "https://www.ah.nl/product/bruine-bolletjes",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "naam": "Keto Brood Bieten Lijnzaad",
-      "merk": "Dillon Organic",
-      "beschrijving": "Glutenvrij keto brood met rode biet en lijnzaad",
-      "categorie": "brood",
-      "afbeelding": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.321474",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 7.29,
-          "url": "https://www.plus.nl/product/keto-brood-bieten-lijnzaad",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 7.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/keto-brood-bieten-lijnzaad",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "naam": "Pasta Fusilli",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrije fusilli pasta van mais en rijst",
-      "categorie": "pasta",
-      "afbeelding": "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.321516",
-      "prijzen": [
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.68,
-          "url": "https://www.jumbo.com/product/pasta-fusilli",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.69,
-          "url": "https://www.glutenvrijewebshop.nl/product/pasta-fusilli",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 2.72,
-          "url": "https://www.schaer.com/nl-nl/product/pasta-fusilli",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.92,
-          "url": "https://www.ah.nl/product/pasta-fusilli",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "naam": "Pasta Penne",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrije penne pasta van mais en rijst",
-      "categorie": "pasta",
-      "afbeelding": "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.321558",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.69,
-          "url": "https://www.glutenvrijewebshop.nl/product/pasta-penne",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.74,
-          "url": "https://www.jumbo.com/product/pasta-penne",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 3.09,
-          "url": "https://www.schaer.com/nl-nl/product/pasta-penne",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.19,
-          "url": "https://www.ah.nl/product/pasta-penne",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "naam": "Pasta Spaghetti",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrije spaghetti van mais en rijst",
-      "categorie": "pasta",
-      "afbeelding": "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.321623",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.69,
-          "url": "https://www.glutenvrijewebshop.nl/product/pasta-spaghetti",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.7,
-          "url": "https://www.jumbo.com/product/pasta-spaghetti",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": false,
-          "beste": false
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 2.95,
-          "url": "https://www.schaer.com/nl-nl/product/pasta-spaghetti",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.16,
-          "url": "https://www.ah.nl/product/pasta-spaghetti",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "naam": "Lasagne",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrije lasagne platen",
-      "categorie": "pasta",
-      "afbeelding": "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.321664",
-      "prijzen": [
-        {
-          "winkel": "Jumbo",
-          "prijs": 4.12,
-          "url": "https://www.jumbo.com/product/lasagne",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 4.22,
-          "url": "https://www.glutenvrijewebshop.nl/product/lasagne",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 4.47,
-          "url": "https://www.schaer.com/nl-nl/product/lasagne",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 4.9,
-          "url": "https://www.ah.nl/product/lasagne",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": false,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "naam": "Orzo Kikkererwten",
-      "merk": "Felicia",
-      "beschrijving": "Glutenvrije risoni van kikkerwtenmeel",
-      "categorie": "pasta",
-      "afbeelding": "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.321706",
-      "prijzen": [
-        {
-          "winkel": "Picnic",
-          "prijs": 3.48,
-          "url": "https://www.picnic.nl/product/orzo-kikkererwten",
-          "logo": "./assets/logo/Picnic_logo.svg.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.49,
-          "url": "https://www.glutenvrijewebshop.nl/product/orzo-kikkererwten",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": false,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "naam": "Glas Noedels Vermicelli",
-      "merk": "Terrasana",
-      "beschrijving": "Glutenvrije glasnoedels van erwten",
-      "categorie": "pasta",
-      "afbeelding": "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.321748",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 4.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/glas-noedels-vermicelli",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Picnic",
-          "prijs": 5.7,
-          "url": "https://www.picnic.nl/product/glas-noedels-vermicelli",
-          "logo": "./assets/logo/Picnic_logo.svg.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 5.71,
-          "url": "https://www.ah.nl/product/glas-noedels-vermicelli",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "naam": "Speculaas",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrije speculaas koekjes",
-      "categorie": "koekjes",
-      "afbeelding": "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.321794",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.24,
-          "url": "https://www.glutenvrijewebshop.nl/product/speculaas",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 2.29,
-          "url": "https://www.schaer.com/nl-nl/product/speculaas",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": false,
-          "beste": false
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.3,
-          "url": "https://www.jumbo.com/product/speculaas",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.57,
-          "url": "https://www.ah.nl/product/speculaas",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "naam": "Maria Biscuits",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrije maria biscuits",
-      "categorie": "koekjes",
-      "afbeelding": "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.321835",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 1.94,
-          "url": "https://www.glutenvrijewebshop.nl/product/maria-biscuits",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.02,
-          "url": "https://www.jumbo.com/product/maria-biscuits",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.13,
-          "url": "https://www.ah.nl/product/maria-biscuits",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 2.22,
-          "url": "https://www.schaer.com/nl-nl/product/maria-biscuits",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "naam": "Choco Keks",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrije chocolade koekjes",
-      "categorie": "koekjes",
-      "afbeelding": "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.321875",
-      "prijzen": [
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.18,
-          "url": "https://www.jumbo.com/product/choco-keks",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.24,
-          "url": "https://www.glutenvrijewebshop.nl/product/choco-keks",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.37,
-          "url": "https://www.ah.nl/product/choco-keks",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 2.44,
-          "url": "https://www.schaer.com/nl-nl/product/choco-keks",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "naam": "Kaaskoekjes",
-      "merk": "Glutenvrije Webshop Basics",
-      "beschrijving": "Hartige glutenvrije kaaskoekjes",
-      "categorie": "koekjes",
-      "afbeelding": "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.321988",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 2.34,
-          "url": "https://www.plus.nl/product/kaaskoekjes",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.49,
-          "url": "https://www.glutenvrijewebshop.nl/product/kaaskoekjes",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.69,
-          "url": "https://www.ah.nl/product/kaaskoekjes",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "naam": "Cranberry Amandel & Sesam Koekjes",
-      "merk": "Sommer",
-      "beschrijving": "Glutenvrije koekjes met cranberry en amandelen",
-      "categorie": "koekjes",
-      "afbeelding": "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322067",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/cranberry-amandel-en-sesam-koekjes",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": false,
-          "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 4.16,
-          "url": "https://www.jumbo.com/product/cranberry-amandel-en-sesam-koekjes",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Picnic",
-          "prijs": 4.44,
-          "url": "https://www.picnic.nl/product/cranberry-amandel-en-sesam-koekjes",
-          "logo": "./assets/logo/Picnic_logo.svg.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "naam": "Haver & Citroen Koekjes",
-      "merk": "Sommer",
-      "beschrijving": "Glutenvrije haverkoekjes met citroen",
-      "categorie": "koekjes",
-      "afbeelding": "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322105",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.49,
-          "url": "https://www.glutenvrijewebshop.nl/product/haver-en-citroen-koekjes",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.93,
-          "url": "https://www.ah.nl/product/haver-en-citroen-koekjes",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "naam": "Mini Speculaasjes",
-      "merk": "Coppenrath",
-      "beschrijving": "Glutenvrije mini speculaasjes",
-      "categorie": "koekjes",
-      "afbeelding": "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322190",
-      "prijzen": [
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.92,
-          "url": "https://www.jumbo.com/product/mini-speculaasjes",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": false,
-          "beste": true
-        },
-        {
-          "winkel": "Plus",
-          "prijs": 2.97,
-          "url": "https://www.plus.nl/product/mini-speculaasjes",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/mini-speculaasjes",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "naam": "Meerzaden Crackers",
-      "merk": "Glutenvrije Webshop Basics",
-      "beschrijving": "Glutenvrije crackers met meerzaden",
-      "categorie": "snacks",
-      "afbeelding": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322227",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 2.86,
-          "url": "https://www.plus.nl/product/meerzaden-crackers",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/meerzaden-crackers",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.4,
-          "url": "https://www.ah.nl/product/meerzaden-crackers",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "naam": "Kaas Crackers",
-      "merk": "Glutenvrije Webshop Basics",
-      "beschrijving": "Glutenvrije crackers met kaassmaak",
-      "categorie": "snacks",
-      "afbeelding": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322260",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 2.91,
-          "url": "https://www.plus.nl/product/kaas-crackers",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": false,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/kaas-crackers",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.2,
-          "url": "https://www.ah.nl/product/kaas-crackers",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "naam": "Sea Salt Vinegar Crackers",
-      "merk": "Sommer",
-      "beschrijving": "Glutenvrije crackers met zeezout en azijn",
-      "categorie": "snacks",
-      "afbeelding": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322292",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.29,
-          "url": "https://www.glutenvrijewebshop.nl/product/sea-salt-vinegar-crackers",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Plus",
-          "prijs": 3.41,
-          "url": "https://www.plus.nl/product/sea-salt-vinegar-crackers",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 21,
-      "naam": "Salinis Big Pack",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrije crackers big pack",
-      "categorie": "snacks",
-      "afbeelding": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322340",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.14,
-          "url": "https://www.glutenvrijewebshop.nl/product/salinis-big-pack",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 3.4,
-          "url": "https://www.jumbo.com/product/salinis-big-pack",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 3.56,
-          "url": "https://www.schaer.com/nl-nl/product/salinis-big-pack",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.73,
-          "url": "https://www.ah.nl/product/salinis-big-pack",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 22,
-      "naam": "Havermout",
-      "merk": "Glutenvrije Webshop Basics",
-      "beschrijving": "Glutenvrije havermout",
-      "categorie": "ontbijt",
-      "afbeelding": "https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322371",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 2.37,
-          "url": "https://www.plus.nl/product/havermout",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.49,
-          "url": "https://www.glutenvrijewebshop.nl/product/havermout",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.86,
-          "url": "https://www.ah.nl/product/havermout",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 23,
-      "naam": "Havervlokken",
-      "merk": "Glutenvrije Webshop Basics",
-      "beschrijving": "Glutenvrije havervlokken",
-      "categorie": "ontbijt",
-      "afbeelding": "https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322403",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 2.39,
-          "url": "https://www.plus.nl/product/havervlokken",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.49,
-          "url": "https://www.glutenvrijewebshop.nl/product/havervlokken",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.81,
-          "url": "https://www.ah.nl/product/havervlokken",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 24,
-      "naam": "Crunchy Granola Chocolade & Amandel",
-      "merk": "Glutenvrije Webshop Basics",
-      "beschrijving": "Knapperige granola met chocolade en amandel",
-      "categorie": "ontbijt",
-      "afbeelding": "https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322437",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 2.84,
-          "url": "https://www.plus.nl/product/crunchy-granola-chocolade-en-amandel",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/crunchy-granola-chocolade-en-amandel",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.54,
-          "url": "https://www.ah.nl/product/crunchy-granola-chocolade-en-amandel",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 25,
-      "naam": "Crunchy Granola Honing & Noten",
-      "merk": "Glutenvrije Webshop Basics",
-      "beschrijving": "Knapperige granola met honing en noten",
-      "categorie": "ontbijt",
-      "afbeelding": "https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322471",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.49,
-          "url": "https://www.glutenvrijewebshop.nl/product/crunchy-granola-honing-en-noten",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Plus",
-          "prijs": 3.58,
-          "url": "https://www.plus.nl/product/crunchy-granola-honing-en-noten",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.92,
-          "url": "https://www.ah.nl/product/crunchy-granola-honing-en-noten",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 26,
-      "naam": "Cornflakes",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrije cornflakes",
-      "categorie": "ontbijt",
-      "afbeelding": "https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322516",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.51,
-          "url": "https://www.glutenvrijewebshop.nl/product/cornflakes",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 2.54,
-          "url": "https://www.schaer.com/nl-nl/product/cornflakes",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.73,
-          "url": "https://www.jumbo.com/product/cornflakes",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.81,
-          "url": "https://www.ah.nl/product/cornflakes",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 27,
-      "naam": "Fruit Muesli",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrije muesli met fruit",
-      "categorie": "ontbijt",
-      "afbeelding": "https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322557",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 4.04,
-          "url": "https://www.glutenvrijewebshop.nl/product/fruit-muesli",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": false,
-          "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 4.11,
-          "url": "https://www.jumbo.com/product/fruit-muesli",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 4.55,
-          "url": "https://www.schaer.com/nl-nl/product/fruit-muesli",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": false,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 4.7,
-          "url": "https://www.ah.nl/product/fruit-muesli",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 28,
-      "naam": "Kaneel Balletjes",
-      "merk": "Bauckhof",
-      "beschrijving": "Glutenvrije kaneelballetjes",
-      "categorie": "ontbijt",
-      "afbeelding": "https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322613",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 3.76,
-          "url": "https://www.plus.nl/product/kaneel-balletjes",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 3.85,
-          "url": "https://www.jumbo.com/product/kaneel-balletjes",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/kaneel-balletjes",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 29,
-      "naam": "Witte Bloem",
-      "merk": "Glutenvrije Webshop Basics",
-      "beschrijving": "Glutenvrije witte bloem",
-      "categorie": "mixen",
-      "afbeelding": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322647",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 2.89,
-          "url": "https://www.plus.nl/product/witte-bloem",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/witte-bloem",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.35,
-          "url": "https://www.ah.nl/product/witte-bloem",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 30,
-      "naam": "Havermeel",
-      "merk": "Glutenvrije Webshop Basics",
-      "beschrijving": "Glutenvrij havermeel",
-      "categorie": "mixen",
-      "afbeelding": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322683",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 2.43,
-          "url": "https://www.plus.nl/product/havermeel",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.49,
-          "url": "https://www.glutenvrijewebshop.nl/product/havermeel",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.98,
-          "url": "https://www.ah.nl/product/havermeel",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 31,
-      "naam": "Amandelmeel",
-      "merk": "Glutenvrije Webshop Basics",
-      "beschrijving": "Glutenvrij amandelmeel",
-      "categorie": "mixen",
-      "afbeelding": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322717",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 5.4,
-          "url": "https://www.plus.nl/product/amandelmeel",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 5.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/amandelmeel",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 6.7,
-          "url": "https://www.ah.nl/product/amandelmeel",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 32,
-      "naam": "Cakemix Naturel",
-      "merk": "Glutenvrije Webshop Basics",
-      "beschrijving": "Glutenvrije cakemix naturel",
-      "categorie": "mixen",
-      "afbeelding": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322750",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/cakemix-naturel",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Plus",
-          "prijs": 3.0,
-          "url": "https://www.plus.nl/product/cakemix-naturel",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.29,
-          "url": "https://www.ah.nl/product/cakemix-naturel",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 33,
-      "naam": "Pannenkoeken & Wafels Bakmix",
-      "merk": "Bauckhof",
-      "beschrijving": "Glutenvrije mix voor pannenkoeken en wafels",
-      "categorie": "mixen",
-      "afbeelding": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322781",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 4.49,
-          "url": "https://www.glutenvrijewebshop.nl/product/pannenkoeken-en-wafels-bakmix",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 4.85,
-          "url": "https://www.jumbo.com/product/pannenkoeken-en-wafels-bakmix",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": false,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 34,
-      "naam": "Wunder Broodmix Gold",
-      "merk": "Bauckhof",
-      "beschrijving": "Glutenvrije broodmix met lijnzaad",
-      "categorie": "mixen",
-      "afbeelding": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322821",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 6.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/wunder-broodmix-gold",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Plus",
-          "prijs": 7.11,
-          "url": "https://www.plus.nl/product/wunder-broodmix-gold",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 7.18,
-          "url": "https://www.jumbo.com/product/wunder-broodmix-gold",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 35,
-      "naam": "Rijstmeel",
-      "merk": "Peak's",
-      "beschrijving": "Glutenvrij rijstmeel",
-      "categorie": "mixen",
-      "afbeelding": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322854",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/rijstmeel",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": false,
-          "beste": true
-        },
-        {
-          "winkel": "Plus",
-          "prijs": 4.08,
-          "url": "https://www.plus.nl/product/rijstmeel",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 36,
-      "naam": "Aardappelzetmeel",
-      "merk": "Bauckhof",
-      "beschrijving": "Glutenvrij aardappelzetmeel",
-      "categorie": "mixen",
-      "afbeelding": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322893",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 3.36,
-          "url": "https://www.plus.nl/product/aardappelzetmeel",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.49,
-          "url": "https://www.glutenvrijewebshop.nl/product/aardappelzetmeel",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 3.52,
-          "url": "https://www.jumbo.com/product/aardappelzetmeel",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 37,
-      "naam": "Chips Sea Salt & Rosemary",
-      "merk": "Kettle Chips",
-      "beschrijving": "Glutenvrije chips met zeezout en rozemarijn",
-      "categorie": "snacks",
-      "afbeelding": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322924",
-      "prijzen": [
-        {
-          "winkel": "Jumbo",
-          "prijs": 3.98,
-          "url": "https://www.jumbo.com/product/chips-sea-salt-en-rosemary",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/chips-sea-salt-en-rosemary",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 38,
-      "naam": "Chips Paprika & Roasted Onion",
-      "merk": "Kettle Chips",
-      "beschrijving": "Glutenvrije chips met paprika en ui",
-      "categorie": "snacks",
-      "afbeelding": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322954",
-      "prijzen": [
-        {
-          "winkel": "Jumbo",
-          "prijs": 3.88,
-          "url": "https://www.jumbo.com/product/chips-paprika-en-roasted-onion",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/chips-paprika-en-roasted-onion",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 39,
-      "naam": "Chips Intense Honey Dijon",
-      "merk": "Kettle Chips",
-      "beschrijving": "Glutenvrije chips met honing mosterd",
-      "categorie": "snacks",
-      "afbeelding": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.322993",
-      "prijzen": [
-        {
-          "winkel": "Picnic",
-          "prijs": 3.92,
-          "url": "https://www.picnic.nl/product/chips-intense-honey-dijon",
-          "logo": "./assets/logo/Picnic_logo.svg.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/chips-intense-honey-dijon",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 4.71,
-          "url": "https://www.ah.nl/product/chips-intense-honey-dijon",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 40,
-      "naam": "Baked Protein Chips Cheese",
-      "merk": "Madal Bal",
-      "beschrijving": "Glutenvrije proteine chips met kaassmaak",
-      "categorie": "snacks",
-      "afbeelding": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323032",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 4.67,
-          "url": "https://www.plus.nl/product/baked-protein-chips-cheese",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": false,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 4.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/baked-protein-chips-cheese",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Picnic",
-          "prijs": 5.14,
-          "url": "https://www.picnic.nl/product/baked-protein-chips-cheese",
-          "logo": "./assets/logo/Picnic_logo.svg.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 41,
-      "naam": "Baked Protein Chips BBQ",
-      "merk": "Madal Bal",
-      "beschrijving": "Glutenvrije proteine chips met BBQ smaak",
-      "categorie": "snacks",
-      "afbeelding": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323070",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 4.56,
-          "url": "https://www.plus.nl/product/baked-protein-chips-bbq",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 4.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/baked-protein-chips-bbq",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "naam": "Zoute Snackballetjes Choco",
-      "merk": "Food2Smile",
-      "beschrijving": "Glutenvrije pretzelballetjes met chocolade",
-      "categorie": "snacks",
-      "afbeelding": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323110",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.49,
-          "url": "https://www.glutenvrijewebshop.nl/product/zoute-snackballetjes-choco",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Plus",
-          "prijs": 3.61,
-          "url": "https://www.plus.nl/product/zoute-snackballetjes-choco",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Picnic",
-          "prijs": 3.98,
-          "url": "https://www.picnic.nl/product/zoute-snackballetjes-choco",
-          "logo": "./assets/logo/Picnic_logo.svg.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 43,
-      "naam": "Gris & Ciocc",
-      "merk": "Schar",
-      "beschrijving": "Knapperige soepstengels met cacaocrème",
-      "categorie": "desserts",
-      "afbeelding": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323198",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 1.97,
-          "url": "https://www.glutenvrijewebshop.nl/product/gris-en-ciocc",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.11,
-          "url": "https://www.ah.nl/product/gris-en-ciocc",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.12,
-          "url": "https://www.jumbo.com/product/gris-en-ciocc",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 2.19,
-          "url": "https://www.schaer.com/nl-nl/product/gris-en-ciocc",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 44,
-      "naam": "Noccioli",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrije chocolade koekjes met hazelnoot",
-      "categorie": "desserts",
-      "afbeelding": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323240",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 1.97,
-          "url": "https://www.glutenvrijewebshop.nl/product/noccioli",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.09,
-          "url": "https://www.jumbo.com/product/noccioli",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": false,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.13,
-          "url": "https://www.ah.nl/product/noccioli",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 2.13,
-          "url": "https://www.schaer.com/nl-nl/product/noccioli",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 45,
-      "naam": "Quadritos",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrije chocolade wafeltjes",
-      "categorie": "desserts",
-      "afbeelding": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323289",
-      "prijzen": [
-        {
-          "winkel": "Jumbo",
-          "prijs": 1.29,
-          "url": "https://www.jumbo.com/product/quadritos",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 1.34,
-          "url": "https://www.glutenvrijewebshop.nl/product/quadritos",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 1.4,
-          "url": "https://www.schaer.com/nl-nl/product/quadritos",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 1.59,
-          "url": "https://www.ah.nl/product/quadritos",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": false,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 46,
-      "naam": "Cherry Berry Burst Suikervrij",
-      "merk": "Food2Smile",
-      "beschrijving": "Glutenvrije en suikervrije snoepjes",
-      "categorie": "desserts",
-      "afbeelding": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323324",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/cherry-berry-burst-suikervrij",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.57,
-          "url": "https://www.ah.nl/product/cherry-berry-burst-suikervrij",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 47,
-      "naam": "Hoppy Easter Milk Chocolate",
-      "merk": "Chocolatemakers",
-      "beschrijving": "Glutenvrije melkchocolade met getoaste melk",
-      "categorie": "desserts",
-      "afbeelding": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323354",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 4.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/hoppy-easter-milk-chocolate",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 5.52,
-          "url": "https://www.ah.nl/product/hoppy-easter-milk-chocolate",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 48,
-      "naam": "Pizza Base",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrije pizzabodems, 2 stuks",
-      "categorie": "pizza",
-      "afbeelding": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323395",
-      "prijzen": [
-        {
-          "winkel": "Jumbo",
-          "prijs": 4.9,
-          "url": "https://www.jumbo.com/product/pizza-base",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 4.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/pizza-base",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": false,
-          "beste": false
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 5.53,
-          "url": "https://www.schaer.com/nl-nl/product/pizza-base",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 5.81,
-          "url": "https://www.ah.nl/product/pizza-base",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 49,
-      "naam": "Pan Grati Paneermeel",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrij paneermeel",
-      "categorie": "sauzen",
-      "afbeelding": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323437",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.59,
-          "url": "https://www.glutenvrijewebshop.nl/product/pan-grati-paneermeel",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": false,
-          "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 3.75,
-          "url": "https://www.jumbo.com/product/pan-grati-paneermeel",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 3.89,
-          "url": "https://www.schaer.com/nl-nl/product/pan-grati-paneermeel",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 4.14,
-          "url": "https://www.ah.nl/product/pan-grati-paneermeel",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": false,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 50,
-      "naam": "Cenofix Smaakmaker",
-      "merk": "Cenovis",
-      "beschrijving": "Glutenvrije universele smaakmaker",
-      "categorie": "sauzen",
-      "afbeelding": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323473",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/cenofix-smaakmaker",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Picnic",
-          "prijs": 4.09,
-          "url": "https://www.picnic.nl/product/cenofix-smaakmaker",
-          "logo": "./assets/logo/Picnic_logo.svg.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 51,
-      "naam": "Aardbeien Fruitbeleg",
-      "merk": "Zwergenwiese",
-      "beschrijving": "Glutenvrije aardbeienjam",
-      "categorie": "sauzen",
-      "afbeelding": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323503",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 3.17,
-          "url": "https://www.plus.nl/product/aardbeien-fruitbeleg",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.49,
-          "url": "https://www.glutenvrijewebshop.nl/product/aardbeien-fruitbeleg",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 52,
-      "naam": "Frambozen Fruitbeleg",
-      "merk": "Zwergenwiese",
-      "beschrijving": "Glutenvrije frambozenjam",
-      "categorie": "sauzen",
-      "afbeelding": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323543",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.49,
-          "url": "https://www.glutenvrijewebshop.nl/product/frambozen-fruitbeleg",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 3.57,
-          "url": "https://www.jumbo.com/product/frambozen-fruitbeleg",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": false,
-          "beste": false
-        },
-        {
-          "winkel": "Picnic",
-          "prijs": 3.91,
-          "url": "https://www.picnic.nl/product/frambozen-fruitbeleg",
-          "logo": "./assets/logo/Picnic_logo.svg.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 53,
-      "naam": "Vegan Pistachepasta",
-      "merk": "La Vida Vegan",
-      "beschrijving": "Glutenvrije vegan pistachepasta",
-      "categorie": "sauzen",
-      "afbeelding": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323572",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 6.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/vegan-pistachepasta",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 7.98,
-          "url": "https://www.ah.nl/product/vegan-pistachepasta",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 54,
-      "naam": "Instant Rice Thai Red Curry",
-      "merk": "MAMA",
-      "beschrijving": "Glutenvrije instant rijst met curry",
-      "categorie": "dranken",
-      "afbeelding": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323625",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.49,
-          "url": "https://www.glutenvrijewebshop.nl/product/instant-rice-thai-red-curry",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Plus",
-          "prijs": 3.49,
-          "url": "https://www.plus.nl/product/instant-rice-thai-red-curry",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 3.64,
-          "url": "https://www.jumbo.com/product/instant-rice-thai-red-curry",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 55,
-      "naam": "Instant Rice Vegetarian",
-      "merk": "MAMA",
-      "beschrijving": "Glutenvrije instant rijst met groenten",
-      "categorie": "dranken",
-      "afbeelding": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323665",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.29,
-          "url": "https://www.glutenvrijewebshop.nl/product/instant-rice-vegetarian",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Picnic",
-          "prijs": 3.77,
-          "url": "https://www.picnic.nl/product/instant-rice-vegetarian",
-          "logo": "./assets/logo/Picnic_logo.svg.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.87,
-          "url": "https://www.ah.nl/product/instant-rice-vegetarian",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 56,
-      "naam": "Ontbijtkoekrep",
-      "merk": "Glutenvrije Webshop Basics",
-      "beschrijving": "Glutenvrije ontbijtkoekreep",
-      "categorie": "snacks",
-      "afbeelding": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323702",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 1.13,
-          "url": "https://www.plus.nl/product/ontbijtkoekrep",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 1.16,
-          "url": "https://www.glutenvrijewebshop.nl/product/ontbijtkoekrep",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 1.24,
-          "url": "https://www.ah.nl/product/ontbijtkoekrep",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 57,
-      "naam": "Twin Bar",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrije chocoladerepen",
-      "categorie": "snacks",
-      "afbeelding": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323749",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.78,
-          "url": "https://www.glutenvrijewebshop.nl/product/twin-bar",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.82,
-          "url": "https://www.jumbo.com/product/twin-bar",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 3.05,
-          "url": "https://www.schaer.com/nl-nl/product/twin-bar",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.23,
-          "url": "https://www.ah.nl/product/twin-bar",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 58,
-      "naam": "Snack",
-      "merk": "Schar",
-      "beschrijving": "Glutenvrije snackreep",
-      "categorie": "snacks",
-      "afbeelding": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323790",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.69,
-          "url": "https://www.glutenvrijewebshop.nl/product/snack",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 2.81,
-          "url": "https://www.jumbo.com/product/snack",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": false,
-          "beste": false
-        },
-        {
-          "winkel": "Schär",
-          "prijs": 2.82,
-          "url": "https://www.schaer.com/nl-nl/product/snack",
-          "logo": "./assets/logo/schar.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.9,
-          "url": "https://www.ah.nl/product/snack",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 59,
-      "naam": "Vegan Burger Mix",
-      "merk": "Bio Vegan",
-      "beschrijving": "Glutenvrije mix voor vegan burgers",
-      "categorie": "overig",
-      "afbeelding": "https://images.unsplash.com/photo-1556908114-f6e7ad7d3136?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323821",
-      "prijzen": [
-        {
-          "winkel": "Plus",
-          "prijs": 3.71,
-          "url": "https://www.plus.nl/product/vegan-burger-mix",
-          "logo": "./assets/logo/plus.svg",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/vegan-burger-mix",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 60,
-      "naam": "Mug Cake Chocolade",
-      "merk": "Bio Vegan",
-      "beschrijving": "Glutenvrije mug cake mix chocolade",
-      "categorie": "desserts",
-      "afbeelding": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323855",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.49,
-          "url": "https://www.glutenvrijewebshop.nl/product/mug-cake-chocolade",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 2.83,
-          "url": "https://www.ah.nl/product/mug-cake-chocolade",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 61,
-      "naam": "Mug Cake Salted Caramel Brownie",
-      "merk": "Bio Vegan",
-      "beschrijving": "Glutenvrije mug cake met salted caramel",
-      "categorie": "desserts",
-      "afbeelding": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323894",
-      "prijzen": [
-        {
-          "winkel": "Picnic",
-          "prijs": 2.93,
-          "url": "https://www.picnic.nl/product/mug-cake-salted-caramel-brownie",
-          "logo": "./assets/logo/Picnic_logo.svg.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 2.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/mug-cake-salted-caramel-brownie",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 3.55,
-          "url": "https://www.ah.nl/product/mug-cake-salted-caramel-brownie",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 62,
-      "naam": "Cupcakes",
-      "merk": "Santiveri",
-      "beschrijving": "Glutenvrije en lactosevrije cupcakes",
-      "categorie": "desserts",
-      "afbeelding": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323932",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 4.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/cupcakes",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 5.52,
-          "url": "https://www.ah.nl/product/cupcakes",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Picnic",
-          "prijs": 5.71,
-          "url": "https://www.picnic.nl/product/cupcakes",
-          "logo": "./assets/logo/Picnic_logo.svg.png",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
-    },
-    {
-      "id": 63,
-      "naam": "Happy Digest Choco Cakejes",
-      "merk": "Céréal",
-      "beschrijving": "Glutenvrije chocolade cakejes met vezels",
-      "categorie": "desserts",
-      "afbeelding": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
-      "grootte": "",
-      "laatste_update": "2025-08-17T19:28:08.323971",
-      "prijzen": [
-        {
-          "winkel": "Glutenvrije Webshop",
-          "prijs": 3.99,
-          "url": "https://www.glutenvrijewebshop.nl/product/happy-digest-choco-cakejes",
-          "logo": "./assets/logo/glutenvrijewebshop.png",
-          "in_stock": true,
-          "beste": true
-        },
-        {
-          "winkel": "Jumbo",
-          "prijs": 4.31,
-          "url": "https://www.jumbo.com/product/happy-digest-choco-cakejes",
-          "logo": "./assets/logo/jumbo-logo.svg",
-          "in_stock": true,
-          "beste": false
-        },
-        {
-          "winkel": "Albert Heijn",
-          "prijs": 4.67,
-          "url": "https://www.ah.nl/product/happy-digest-choco-cakejes",
-          "logo": "./assets/logo/ah-albert-heijn.svg",
-          "in_stock": true,
-          "beste": false
-        }
-      ]
+    "stores": {
+      "schar.com": {
+        "price": 2.92,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.schar.com/nl-nl/product/ah-vrij-van-mini-crackers",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 2.89,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/ah-vrij-van-mini-crackers.html",
+        "last_updated": "2025-08-18"
+      },
+      "plus.nl": {
+        "price": 2.45,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/ah-vrij-van-mini-crackers",
+        "last_updated": "2025-08-18"
+      },
+      "bakkerleo.nl": {
+        "price": 3.42,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij.bakkerleo.nl/product/ah-vrij-van-mini-crackers",
+        "last_updated": "2025-08-18"
+      },
+      "bfreez.nl": {
+        "price": 2.68,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.bfreez.nl/product/ah-vrij-van-mini-crackers",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 2.51,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/ah-vrij-van-mini-crackers",
+        "last_updated": "2025-08-18"
+      },
+      "winkelglutenvrij.nl": {
+        "price": 3.13,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/ah-vrij-van-mini-crackers",
+        "last_updated": "2025-08-18"
+      }
     }
-  ]
-}
+  },
+  {
+    "id": "gv_104",
+    "name": "AH Vrij Van Amandelkoekjes",
+    "category": "Koekjes & Snacks",
+    "brand": "Albert Heijn",
+    "description": "Glutenvrije amandelkoekjes",
+    "image": "assets/products/albert_heijn_104.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 400,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": true,
+      "vegan": false
+    },
+    "stores": {
+      "glutenvrijemarkt.com": {
+        "price": 3.66,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/ah-vrij-van-amandelkoekjes",
+        "last_updated": "2025-08-18"
+      },
+      "thefreefromshop.nl": {
+        "price": 3.13,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/ah-vrij-van-amandelkoekjes",
+        "last_updated": "2025-08-18"
+      },
+      "picnic.app": {
+        "price": 2.73,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://picnic.app/nl/product/ah-vrij-van-amandelkoekjes",
+        "last_updated": "2025-08-18"
+      },
+      "plus.nl": {
+        "price": 3.07,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/ah-vrij-van-amandelkoekjes",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_105",
+    "name": "Schär Flatbreads",
+    "category": "Brood & Bakproducten",
+    "brand": "Schär",
+    "description": "Glutenvrije flatbreads",
+    "image": "assets/products/schär_105.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 450,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "schar.com": {
+        "price": 3.67,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.schar.com/nl-nl/product/schr-flatbreads",
+        "last_updated": "2025-08-18"
+      },
+      "thefreefromshop.nl": {
+        "price": 3.22,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/schr-flatbreads",
+        "last_updated": "2025-08-18"
+      },
+      "bfreez.nl": {
+        "price": 2.86,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.bfreez.nl/product/schr-flatbreads",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 3.51,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/schr-flatbreads.html",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 3.06,
+        "original_price": 3.83,
+        "discount_percentage": 20,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/schr-flatbreads",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_106",
+    "name": "Schär Roggebrood",
+    "category": "Brood & Bakproducten",
+    "brand": "Schär",
+    "description": "Glutenvrije roggebrood alternatief",
+    "image": "assets/products/schär_106.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 200,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": true
+    },
+    "stores": {
+      "ruttmans.nl": {
+        "price": 3.84,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/schr-roggebrood",
+        "last_updated": "2025-08-18"
+      },
+      "jumbo.com": {
+        "price": 3.91,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/schr-roggebrood",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 3.74,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/schr-roggebrood.html",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 3.94,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/schr-roggebrood",
+        "last_updated": "2025-08-18"
+      },
+      "picnic.app": {
+        "price": 3.54,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://picnic.app/nl/product/schr-roggebrood",
+        "last_updated": "2025-08-18"
+      },
+      "winkelglutenvrij.nl": {
+        "price": 3.43,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/schr-roggebrood",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_107",
+    "name": "Schär Marmercake",
+    "category": "Koekjes & Snacks",
+    "brand": "Schär",
+    "description": "Glutenvrije marmercake",
+    "image": "assets/products/schär_107.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 250,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "winkelglutenvrij.nl": {
+        "price": 4.19,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/schr-marmercake",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 4.01,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/schr-marmercake.html",
+        "last_updated": "2025-08-18"
+      },
+      "plus.nl": {
+        "price": 3.27,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/schr-marmercake",
+        "last_updated": "2025-08-18"
+      },
+      "bfreez.nl": {
+        "price": 3.55,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.bfreez.nl/product/schr-marmercake",
+        "last_updated": "2025-08-18"
+      },
+      "happybakers.nl": {
+        "price": 2.98,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://happybakers.nl/product/schr-marmercake",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 3.76,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/schr-marmercake",
+        "last_updated": "2025-08-18"
+      },
+      "schar.com": {
+        "price": 3.91,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.schar.com/nl-nl/product/schr-marmercake",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_108",
+    "name": "Schär Focaccia Rozemarijn",
+    "category": "Brood & Bakproducten",
+    "brand": "Schär",
+    "description": "Glutenvrije focaccia met rozemarijn",
+    "image": "assets/products/schär_108.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 300,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": true,
+      "vegan": false
+    },
+    "stores": {
+      "thefreefromshop.nl": {
+        "price": 4.14,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/schr-focaccia-rozemarijn",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 2.93,
+        "original_price": 3.26,
+        "discount_percentage": 10,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/schr-focaccia-rozemarijn.html",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 3.74,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/schr-focaccia-rozemarijn",
+        "last_updated": "2025-08-18"
+      },
+      "hollandbarrett.nl": {
+        "price": 4.03,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.hollandandbarrett.nl/product/schr-focaccia-rozemarijn",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_109",
+    "name": "Maître Mathis Glutenvrije Eierkoeken",
+    "category": "Koekjes & Snacks",
+    "brand": "Maître Mathis",
+    "description": "Glutenvrije eierkoeken",
+    "image": "assets/products/maître_mathis_109.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 350,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "ah.nl": {
+        "price": 4.0,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/matre-mathis-glutenvrije-eierkoeken",
+        "last_updated": "2025-08-18"
+      },
+      "hollandbarrett.nl": {
+        "price": 3.54,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.hollandandbarrett.nl/product/matre-mathis-glutenvrije-eierkoeken",
+        "last_updated": "2025-08-18"
+      },
+      "plus.nl": {
+        "price": 3.39,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/matre-mathis-glutenvrije-eierkoeken",
+        "last_updated": "2025-08-18"
+      },
+      "jumbo.com": {
+        "price": 4.0,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/matre-mathis-glutenvrije-eierkoeken",
+        "last_updated": "2025-08-18"
+      },
+      "schar.com": {
+        "price": 4.58,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.schar.com/nl-nl/product/matre-mathis-glutenvrije-eierkoeken",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_110",
+    "name": "Nairn's Flatbreads Original",
+    "category": "Chips & Crackers",
+    "brand": "Nairn's",
+    "description": "Glutenvrije flatbreads original",
+    "image": "assets/products/nairn's_110.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 400,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "thefreefromshop.nl": {
+        "price": 3.52,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/nairns-flatbreads-original",
+        "last_updated": "2025-08-18"
+      },
+      "schar.com": {
+        "price": 4.68,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.schar.com/nl-nl/product/nairns-flatbreads-original",
+        "last_updated": "2025-08-18"
+      },
+      "plus.nl": {
+        "price": 3.32,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/nairns-flatbreads-original",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 2.46,
+        "original_price": 3.28,
+        "discount_percentage": 25,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/nairns-flatbreads-original",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 3.2,
+        "original_price": 3.76,
+        "discount_percentage": 15,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/nairns-flatbreads-original",
+        "last_updated": "2025-08-18"
+      },
+      "picnic.app": {
+        "price": 3.36,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://picnic.app/nl/product/nairns-flatbreads-original",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_111",
+    "name": "Nairn's Oats Blueberry Raspberry",
+    "category": "Koekjes & Snacks",
+    "brand": "Nairn's",
+    "description": "Haverkoekjes met bosbessen en frambozen",
+    "image": "assets/products/nairn's_111.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 450,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "happybakers.nl": {
+        "price": 3.94,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://happybakers.nl/product/nairns-oats-blueberry-raspberry",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 4.15,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/nairns-oats-blueberry-raspberry",
+        "last_updated": "2025-08-18"
+      },
+      "bakkerleo.nl": {
+        "price": 4.4,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij.bakkerleo.nl/product/nairns-oats-blueberry-raspberry",
+        "last_updated": "2025-08-18"
+      },
+      "thefreefromshop.nl": {
+        "price": 3.82,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/nairns-oats-blueberry-raspberry",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 3.49,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/nairns-oats-blueberry-raspberry.html",
+        "last_updated": "2025-08-18"
+      },
+      "winkelglutenvrij.nl": {
+        "price": 4.27,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/nairns-oats-blueberry-raspberry",
+        "last_updated": "2025-08-18"
+      },
+      "jumbo.com": {
+        "price": 4.36,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/nairns-oats-blueberry-raspberry",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_112",
+    "name": "Nairn's Oats Syrup",
+    "category": "Koekjes & Snacks",
+    "brand": "Nairn's",
+    "description": "Haverkoekjes met siroop",
+    "image": "assets/products/nairn's_112.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 200,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": true,
+      "vegan": true
+    },
+    "stores": {
+      "glutenvrijgemak.nl": {
+        "price": 3.96,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij-gemak.nl/product/nairns-oats-syrup",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 4.34,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/nairns-oats-syrup",
+        "last_updated": "2025-08-18"
+      },
+      "happybakers.nl": {
+        "price": 4.73,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://happybakers.nl/product/nairns-oats-syrup",
+        "last_updated": "2025-08-18"
+      },
+      "jumbo.com": {
+        "price": 4.43,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/nairns-oats-syrup",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_113",
+    "name": "Nairn's Oats Chocolate Chip",
+    "category": "Koekjes & Snacks",
+    "brand": "Nairn's",
+    "description": "Haverkoekjes met chocoladeschilfers",
+    "image": "assets/products/nairn's_113.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 250,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "plus.nl": {
+        "price": 5.3,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/nairns-oats-chocolate-chip",
+        "last_updated": "2025-08-18"
+      },
+      "bfreez.nl": {
+        "price": 4.45,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.bfreez.nl/product/nairns-oats-chocolate-chip",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 4.81,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/nairns-oats-chocolate-chip",
+        "last_updated": "2025-08-18"
+      },
+      "happybakers.nl": {
+        "price": 4.27,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://happybakers.nl/product/nairns-oats-chocolate-chip",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijgemak.nl": {
+        "price": 4.94,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij-gemak.nl/product/nairns-oats-chocolate-chip",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_114",
+    "name": "Old El Paso Tortillas",
+    "category": "Brood & Bakproducten",
+    "brand": "Old El Paso",
+    "description": "Glutenvrije tortillawraps",
+    "image": "assets/products/old_el_paso_114.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 300,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "glutenvrijgemak.nl": {
+        "price": 5.06,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij-gemak.nl/product/old-el-paso-tortillas",
+        "last_updated": "2025-08-18"
+      },
+      "picnic.app": {
+        "price": 4.65,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://picnic.app/nl/product/old-el-paso-tortillas",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 3.77,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/old-el-paso-tortillas.html",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 4.69,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/old-el-paso-tortillas",
+        "last_updated": "2025-08-18"
+      },
+      "hollandbarrett.nl": {
+        "price": 4.28,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.hollandandbarrett.nl/product/old-el-paso-tortillas",
+        "last_updated": "2025-08-18"
+      },
+      "schar.com": {
+        "price": 4.28,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.schar.com/nl-nl/product/old-el-paso-tortillas",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_115",
+    "name": "Old El Paso Taco Schelpen",
+    "category": "Pizza & Maaltijden",
+    "brand": "Old El Paso",
+    "description": "Glutenvrije taco schelpen",
+    "image": "assets/products/old_el_paso_115.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 350,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "picnic.app": {
+        "price": 4.75,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://picnic.app/nl/product/old-el-paso-taco-schelpen",
+        "last_updated": "2025-08-18"
+      },
+      "schar.com": {
+        "price": 5.42,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.schar.com/nl-nl/product/old-el-paso-taco-schelpen",
+        "last_updated": "2025-08-18"
+      },
+      "jumbo.com": {
+        "price": 3.99,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/old-el-paso-taco-schelpen",
+        "last_updated": "2025-08-18"
+      },
+      "happybakers.nl": {
+        "price": 4.61,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://happybakers.nl/product/old-el-paso-taco-schelpen",
+        "last_updated": "2025-08-18"
+      },
+      "bakkerleo.nl": {
+        "price": 5.65,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij.bakkerleo.nl/product/old-el-paso-taco-schelpen",
+        "last_updated": "2025-08-18"
+      },
+      "hollandbarrett.nl": {
+        "price": 3.99,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.hollandandbarrett.nl/product/old-el-paso-taco-schelpen",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 4.57,
+        "original_price": 5.08,
+        "discount_percentage": 10,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/old-el-paso-taco-schelpen",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_116",
+    "name": "Consenza Saucijzenbroodjes",
+    "category": "Diepvries",
+    "brand": "Consenza",
+    "description": "Glutenvrije saucijzenbroodjes",
+    "image": "assets/products/consenza_116.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 400,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": true,
+      "vegan": false
+    },
+    "stores": {
+      "jumbo.com": {
+        "price": 5.63,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/consenza-saucijzenbroodjes",
+        "last_updated": "2025-08-18"
+      },
+      "plus.nl": {
+        "price": 4.12,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/consenza-saucijzenbroodjes",
+        "last_updated": "2025-08-18"
+      },
+      "thefreefromshop.nl": {
+        "price": 4.85,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/consenza-saucijzenbroodjes",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 5.24,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/consenza-saucijzenbroodjes",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_117",
+    "name": "Consenza Pitabroodjes",
+    "category": "Brood & Bakproducten",
+    "brand": "Consenza",
+    "description": "Glutenvrije pitabroodjes",
+    "image": "assets/products/consenza_117.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 450,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "glutenvrijemarkt.com": {
+        "price": 5.61,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/consenza-pitabroodjes",
+        "last_updated": "2025-08-18"
+      },
+      "hollandbarrett.nl": {
+        "price": 4.34,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.hollandandbarrett.nl/product/consenza-pitabroodjes",
+        "last_updated": "2025-08-18"
+      },
+      "picnic.app": {
+        "price": 4.9,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://picnic.app/nl/product/consenza-pitabroodjes",
+        "last_updated": "2025-08-18"
+      },
+      "bakkerleo.nl": {
+        "price": 4.85,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij.bakkerleo.nl/product/consenza-pitabroodjes",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijgemak.nl": {
+        "price": 5.96,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij-gemak.nl/product/consenza-pitabroodjes",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_118",
+    "name": "Consenza Croissants",
+    "category": "Brood & Bakproducten",
+    "brand": "Consenza",
+    "description": "Glutenvrije croissants",
+    "image": "assets/products/consenza_118.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 200,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": true
+    },
+    "stores": {
+      "jumbo.com": {
+        "price": 4.78,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/consenza-croissants",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 5.51,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/consenza-croissants.html",
+        "last_updated": "2025-08-18"
+      },
+      "bfreez.nl": {
+        "price": 5.51,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.bfreez.nl/product/consenza-croissants",
+        "last_updated": "2025-08-18"
+      },
+      "plus.nl": {
+        "price": 5.25,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/consenza-croissants",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 4.84,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/consenza-croissants",
+        "last_updated": "2025-08-18"
+      },
+      "schar.com": {
+        "price": 6.14,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.schar.com/nl-nl/product/consenza-croissants",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_119",
+    "name": "Prewett's Rich Quadruple Koekjes",
+    "category": "Koekjes & Snacks",
+    "brand": "Prewett's",
+    "description": "Rijk gevulde quadruple koekjes",
+    "image": "assets/products/prewett's_119.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 250,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "glutenvrijewebshop.nl": {
+        "price": 6.15,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/prewetts-rich-quadruple-koekjes.html",
+        "last_updated": "2025-08-18"
+      },
+      "thefreefromshop.nl": {
+        "price": 5.56,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/prewetts-rich-quadruple-koekjes",
+        "last_updated": "2025-08-18"
+      },
+      "jumbo.com": {
+        "price": 5.51,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/prewetts-rich-quadruple-koekjes",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 5.72,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/prewetts-rich-quadruple-koekjes",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 6.1,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/prewetts-rich-quadruple-koekjes",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 6.05,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/prewetts-rich-quadruple-koekjes",
+        "last_updated": "2025-08-18"
+      },
+      "picnic.app": {
+        "price": 5.94,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://picnic.app/nl/product/prewetts-rich-quadruple-koekjes",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_120",
+    "name": "Prewett's Digestive Koekjes",
+    "category": "Koekjes & Snacks",
+    "brand": "Prewett's",
+    "description": "Glutenvrije digestive koekjes",
+    "image": "assets/products/prewett's_120.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 300,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": true,
+      "vegan": false
+    },
+    "stores": {
+      "bfreez.nl": {
+        "price": 6.49,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.bfreez.nl/product/prewetts-digestive-koekjes",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 4.84,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/prewetts-digestive-koekjes.html",
+        "last_updated": "2025-08-18"
+      },
+      "plus.nl": {
+        "price": 4.84,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/prewetts-digestive-koekjes",
+        "last_updated": "2025-08-18"
+      },
+      "thefreefromshop.nl": {
+        "price": 6.38,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/prewetts-digestive-koekjes",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_121",
+    "name": "Dr. Oetker Glutenvrije Pizza Margherita",
+    "category": "Pizza & Maaltijden",
+    "brand": "Dr. Oetker",
+    "description": "Glutenvrije diepvriespizza",
+    "image": "assets/products/dr._oetker_121.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 350,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "winkelglutenvrij.nl": {
+        "price": 4.75,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/dr-oetker-glutenvrije-pizza-margherita",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 6.67,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/dr-oetker-glutenvrije-pizza-margherita",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 6.55,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/dr-oetker-glutenvrije-pizza-margherita.html",
+        "last_updated": "2025-08-18"
+      },
+      "happybakers.nl": {
+        "price": 6.72,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://happybakers.nl/product/dr-oetker-glutenvrije-pizza-margherita",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 4.86,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/dr-oetker-glutenvrije-pizza-margherita",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_122",
+    "name": "Dr. Oetker Glutenvrije Pizza Salami",
+    "category": "Pizza & Maaltijden",
+    "brand": "Dr. Oetker",
+    "description": "Glutenvrije diepvriespizza met salami",
+    "image": "assets/products/dr._oetker_122.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 400,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "glutenvrijgemak.nl": {
+        "price": 6.79,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij-gemak.nl/product/dr-oetker-glutenvrije-pizza-salami",
+        "last_updated": "2025-08-18"
+      },
+      "plus.nl": {
+        "price": 6.09,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/dr-oetker-glutenvrije-pizza-salami",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 4.99,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/dr-oetker-glutenvrije-pizza-salami.html",
+        "last_updated": "2025-08-18"
+      },
+      "bakkerleo.nl": {
+        "price": 6.15,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij.bakkerleo.nl/product/dr-oetker-glutenvrije-pizza-salami",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 5.74,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/dr-oetker-glutenvrije-pizza-salami",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 5.28,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/dr-oetker-glutenvrije-pizza-salami",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_123",
+    "name": "Happy Bakers Koolhydraatarm Brood",
+    "category": "Brood & Bakproducten",
+    "brand": "Happy Bakers",
+    "description": "Glutenvrij en koolhydraatarm brood",
+    "image": "assets/products/happy_bakers_123.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 450,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "plus.nl": {
+        "price": 6.72,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/happy-bakers-koolhydraatarm-brood",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 5.89,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/happy-bakers-koolhydraatarm-brood",
+        "last_updated": "2025-08-18"
+      },
+      "jumbo.com": {
+        "price": 5.53,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/happy-bakers-koolhydraatarm-brood",
+        "last_updated": "2025-08-18"
+      },
+      "schar.com": {
+        "price": 4.94,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.schar.com/nl-nl/product/happy-bakers-koolhydraatarm-brood",
+        "last_updated": "2025-08-18"
+      },
+      "happybakers.nl": {
+        "price": 7.08,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://happybakers.nl/product/happy-bakers-koolhydraatarm-brood",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 5.18,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/happy-bakers-koolhydraatarm-brood",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 6.25,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/happy-bakers-koolhydraatarm-brood",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_124",
+    "name": "Happy Bakers Goudbruin Brood",
+    "category": "Brood & Bakproducten",
+    "brand": "Happy Bakers",
+    "description": "Goudbruin glutenvrij brood",
+    "image": "assets/products/happy_bakers_124.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 200,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": true,
+      "vegan": true
+    },
+    "stores": {
+      "bakkerleo.nl": {
+        "price": 5.61,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij.bakkerleo.nl/product/happy-bakers-goudbruin-brood",
+        "last_updated": "2025-08-18"
+      },
+      "picnic.app": {
+        "price": 5.06,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://picnic.app/nl/product/happy-bakers-goudbruin-brood",
+        "last_updated": "2025-08-18"
+      },
+      "winkelglutenvrij.nl": {
+        "price": 5.18,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/happy-bakers-goudbruin-brood",
+        "last_updated": "2025-08-18"
+      },
+      "bfreez.nl": {
+        "price": 6.04,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.bfreez.nl/product/happy-bakers-goudbruin-brood",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_125",
+    "name": "Happy Bakers Speculaastaaf",
+    "category": "Koekjes & Snacks",
+    "brand": "Happy Bakers",
+    "description": "Glutenvrije speculaastaaf",
+    "image": "assets/products/happy_bakers_125.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 250,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "glutenvrijewebshop.nl": {
+        "price": 6.88,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/happy-bakers-speculaastaaf.html",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 7.13,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/happy-bakers-speculaastaaf",
+        "last_updated": "2025-08-18"
+      },
+      "picnic.app": {
+        "price": 5.31,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://picnic.app/nl/product/happy-bakers-speculaastaaf",
+        "last_updated": "2025-08-18"
+      },
+      "schar.com": {
+        "price": 7.19,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.schar.com/nl-nl/product/happy-bakers-speculaastaaf",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijgemak.nl": {
+        "price": 5.31,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij-gemak.nl/product/happy-bakers-speculaastaaf",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_126",
+    "name": "Happy Bakers Croissants",
+    "category": "Brood & Bakproducten",
+    "brand": "Happy Bakers",
+    "description": "Glutenvrije croissants",
+    "image": "assets/products/happy_bakers_126.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 300,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "thefreefromshop.nl": {
+        "price": 6.46,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/happy-bakers-croissants",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 6.78,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/happy-bakers-croissants",
+        "last_updated": "2025-08-18"
+      },
+      "schar.com": {
+        "price": 7.36,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.schar.com/nl-nl/product/happy-bakers-croissants",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 7.3,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/happy-bakers-croissants",
+        "last_updated": "2025-08-18"
+      },
+      "bfreez.nl": {
+        "price": 6.34,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.bfreez.nl/product/happy-bakers-croissants",
+        "last_updated": "2025-08-18"
+      },
+      "winkelglutenvrij.nl": {
+        "price": 6.46,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/happy-bakers-croissants",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_127",
+    "name": "Jumbo Lekker Vrij Ontbijtkoekjes",
+    "category": "Ontbijt & Beleg",
+    "brand": "Jumbo",
+    "description": "Glutenvrije ontbijtkoekjes",
+    "image": "assets/products/jumbo_127.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 350,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "plus.nl": {
+        "price": 5.24,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/jumbo-lekker-vrij-ontbijtkoekjes",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 7.66,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/jumbo-lekker-vrij-ontbijtkoekjes.html",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 5.44,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/jumbo-lekker-vrij-ontbijtkoekjes",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 7.27,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/jumbo-lekker-vrij-ontbijtkoekjes",
+        "last_updated": "2025-08-18"
+      },
+      "jumbo.com": {
+        "price": 6.03,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/jumbo-lekker-vrij-ontbijtkoekjes",
+        "last_updated": "2025-08-18"
+      },
+      "winkelglutenvrij.nl": {
+        "price": 6.42,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/jumbo-lekker-vrij-ontbijtkoekjes",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 7.66,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/jumbo-lekker-vrij-ontbijtkoekjes",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_128",
+    "name": "Jumbo Lekker Vrij Pasta",
+    "category": "Pasta & Rijst",
+    "brand": "Jumbo",
+    "description": "Glutenvrije pasta",
+    "image": "assets/products/jumbo_128.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 400,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": true,
+      "vegan": false
+    },
+    "stores": {
+      "bakkerleo.nl": {
+        "price": 7.17,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij.bakkerleo.nl/product/jumbo-lekker-vrij-pasta",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 6.7,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/jumbo-lekker-vrij-pasta",
+        "last_updated": "2025-08-18"
+      },
+      "plus.nl": {
+        "price": 5.56,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/jumbo-lekker-vrij-pasta",
+        "last_updated": "2025-08-18"
+      },
+      "happybakers.nl": {
+        "price": 5.63,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://happybakers.nl/product/jumbo-lekker-vrij-pasta",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_129",
+    "name": "Jumbo Lekker Vrij Crackers",
+    "category": "Chips & Crackers",
+    "brand": "Jumbo",
+    "description": "Glutenvrije crackers",
+    "image": "assets/products/jumbo_129.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 450,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "glutenvrijemarkt.com": {
+        "price": 6.58,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/jumbo-lekker-vrij-crackers",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 7.47,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/jumbo-lekker-vrij-crackers",
+        "last_updated": "2025-08-18"
+      },
+      "plus.nl": {
+        "price": 7.95,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/jumbo-lekker-vrij-crackers",
+        "last_updated": "2025-08-18"
+      },
+      "picnic.app": {
+        "price": 7.33,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://picnic.app/nl/product/jumbo-lekker-vrij-crackers",
+        "last_updated": "2025-08-18"
+      },
+      "bakkerleo.nl": {
+        "price": 6.51,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij.bakkerleo.nl/product/jumbo-lekker-vrij-crackers",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_130",
+    "name": "Lays Naturel Chips",
+    "category": "Chips & Crackers",
+    "brand": "Lays",
+    "description": "Glutenvrije natuurchips",
+    "image": "assets/products/lays_130.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 200,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": true
+    },
+    "stores": {
+      "winkelglutenvrij.nl": {
+        "price": 2.5,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/lays-naturel-chips",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 2.07,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/lays-naturel-chips.html",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 2.27,
+        "original_price": 2.52,
+        "discount_percentage": 10,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/lays-naturel-chips",
+        "last_updated": "2025-08-18"
+      },
+      "thefreefromshop.nl": {
+        "price": 2.68,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/lays-naturel-chips",
+        "last_updated": "2025-08-18"
+      },
+      "bakkerleo.nl": {
+        "price": 2.48,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij.bakkerleo.nl/product/lays-naturel-chips",
+        "last_updated": "2025-08-18"
+      },
+      "jumbo.com": {
+        "price": 2.19,
+        "original_price": 2.92,
+        "discount_percentage": 25,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/lays-naturel-chips",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_131",
+    "name": "Lays Cheese Onion Chips",
+    "category": "Chips & Crackers",
+    "brand": "Lays",
+    "description": "Glutenvrije kaas-ui chips",
+    "image": "assets/products/lays_131.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 250,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "jumbo.com": {
+        "price": 2.84,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/lays-cheese-onion-chips",
+        "last_updated": "2025-08-18"
+      },
+      "hollandbarrett.nl": {
+        "price": 3.05,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.hollandandbarrett.nl/product/lays-cheese-onion-chips",
+        "last_updated": "2025-08-18"
+      },
+      "winkelglutenvrij.nl": {
+        "price": 2.25,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/lays-cheese-onion-chips",
+        "last_updated": "2025-08-18"
+      },
+      "happybakers.nl": {
+        "price": 3.15,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://happybakers.nl/product/lays-cheese-onion-chips",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 2.36,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/lays-cheese-onion-chips",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 2.91,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/lays-cheese-onion-chips",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 2.99,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/lays-cheese-onion-chips",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_132",
+    "name": "Lays Patatje Joppie Chips",
+    "category": "Chips & Crackers",
+    "brand": "Lays",
+    "description": "Glutenvrije Patatje Joppie chips",
+    "image": "assets/products/lays_132.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 300,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": true,
+      "vegan": false
+    },
+    "stores": {
+      "ah.nl": {
+        "price": 3.11,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/lays-patatje-joppie-chips",
+        "last_updated": "2025-08-18"
+      },
+      "happybakers.nl": {
+        "price": 2.41,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://happybakers.nl/product/lays-patatje-joppie-chips",
+        "last_updated": "2025-08-18"
+      },
+      "thefreefromshop.nl": {
+        "price": 2.55,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/lays-patatje-joppie-chips",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 3.16,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/lays-patatje-joppie-chips",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_133",
+    "name": "Chio Pombär",
+    "category": "Chips & Crackers",
+    "brand": "Chio",
+    "description": "Glutenvrije Pombär chips",
+    "image": "assets/products/chio_133.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 350,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "ruttmans.nl": {
+        "price": 2.68,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/chio-pombr",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijgemak.nl": {
+        "price": 3.01,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij-gemak.nl/product/chio-pombr",
+        "last_updated": "2025-08-18"
+      },
+      "plus.nl": {
+        "price": 2.77,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/chio-pombr",
+        "last_updated": "2025-08-18"
+      },
+      "winkelglutenvrij.nl": {
+        "price": 2.48,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/chio-pombr",
+        "last_updated": "2025-08-18"
+      },
+      "thefreefromshop.nl": {
+        "price": 3.45,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/chio-pombr",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_134",
+    "name": "Kettle Sea Salt Chips",
+    "category": "Chips & Crackers",
+    "brand": "Kettle",
+    "description": "Glutenvrije zeezout chips",
+    "image": "assets/products/kettle_134.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 400,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "glutenvrijgemak.nl": {
+        "price": 2.57,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij-gemak.nl/product/kettle-sea-salt-chips",
+        "last_updated": "2025-08-18"
+      },
+      "plus.nl": {
+        "price": 3.19,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/kettle-sea-salt-chips",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 3.66,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/kettle-sea-salt-chips",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 3.44,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/kettle-sea-salt-chips",
+        "last_updated": "2025-08-18"
+      },
+      "schar.com": {
+        "price": 3.6,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.schar.com/nl-nl/product/kettle-sea-salt-chips",
+        "last_updated": "2025-08-18"
+      },
+      "jumbo.com": {
+        "price": 3.13,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/kettle-sea-salt-chips",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_135",
+    "name": "Ambar Especial Sin Gluten Bier",
+    "category": "Dranken",
+    "brand": "Ambar",
+    "description": "Glutenvrij bier",
+    "image": "assets/products/ambar_135.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 450,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "ah.nl": {
+        "price": 3.58,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/ambar-especial-sin-gluten-bier",
+        "last_updated": "2025-08-18"
+      },
+      "schar.com": {
+        "price": 3.28,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.schar.com/nl-nl/product/ambar-especial-sin-gluten-bier",
+        "last_updated": "2025-08-18"
+      },
+      "winkelglutenvrij.nl": {
+        "price": 3.54,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/ambar-especial-sin-gluten-bier",
+        "last_updated": "2025-08-18"
+      },
+      "hollandbarrett.nl": {
+        "price": 3.87,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.hollandandbarrett.nl/product/ambar-especial-sin-gluten-bier",
+        "last_updated": "2025-08-18"
+      },
+      "jumbo.com": {
+        "price": 2.96,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/ambar-especial-sin-gluten-bier",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijgemak.nl": {
+        "price": 3.87,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij-gemak.nl/product/ambar-especial-sin-gluten-bier",
+        "last_updated": "2025-08-18"
+      },
+      "bfreez.nl": {
+        "price": 3.12,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.bfreez.nl/product/ambar-especial-sin-gluten-bier",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_136",
+    "name": "Miran IJshoorntjes",
+    "category": "Koekjes & Snacks",
+    "brand": "Miran",
+    "description": "Glutenvrije ijshoorntjes",
+    "image": "assets/products/miran_136.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 200,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": true,
+      "vegan": true
+    },
+    "stores": {
+      "winkelglutenvrij.nl": {
+        "price": 3.37,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/miran-ijshoorntjes",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 3.5,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/miran-ijshoorntjes",
+        "last_updated": "2025-08-18"
+      },
+      "picnic.app": {
+        "price": 3.06,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://picnic.app/nl/product/miran-ijshoorntjes",
+        "last_updated": "2025-08-18"
+      },
+      "bakkerleo.nl": {
+        "price": 3.98,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij.bakkerleo.nl/product/miran-ijshoorntjes",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_137",
+    "name": "Santiveri Maria Biscuits",
+    "category": "Koekjes & Snacks",
+    "brand": "Santiveri",
+    "description": "Glutenvrije maria biscuits",
+    "image": "assets/products/santiveri_137.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 250,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "picnic.app": {
+        "price": 4.15,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://picnic.app/nl/product/santiveri-maria-biscuits",
+        "last_updated": "2025-08-18"
+      },
+      "bfreez.nl": {
+        "price": 3.8,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.bfreez.nl/product/santiveri-maria-biscuits",
+        "last_updated": "2025-08-18"
+      },
+      "happybakers.nl": {
+        "price": 3.94,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://happybakers.nl/product/santiveri-maria-biscuits",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijgemak.nl": {
+        "price": 3.05,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij-gemak.nl/product/santiveri-maria-biscuits",
+        "last_updated": "2025-08-18"
+      },
+      "jumbo.com": {
+        "price": 3.66,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/santiveri-maria-biscuits",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_138",
+    "name": "Hello Pho Instant Pho Kip",
+    "category": "Pizza & Maaltijden",
+    "brand": "Hello Pho",
+    "description": "Glutenvrije instant pho kipsmaak",
+    "image": "assets/products/hello_pho_138.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 300,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "bakkerleo.nl": {
+        "price": 3.44,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij.bakkerleo.nl/product/hello-pho-instant-pho-kip",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 3.4,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/hello-pho-instant-pho-kip",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 3.59,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/hello-pho-instant-pho-kip",
+        "last_updated": "2025-08-18"
+      },
+      "jumbo.com": {
+        "price": 3.18,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/hello-pho-instant-pho-kip",
+        "last_updated": "2025-08-18"
+      },
+      "hollandbarrett.nl": {
+        "price": 3.11,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.hollandandbarrett.nl/product/hello-pho-instant-pho-kip",
+        "last_updated": "2025-08-18"
+      },
+      "picnic.app": {
+        "price": 4.03,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://picnic.app/nl/product/hello-pho-instant-pho-kip",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_139",
+    "name": "Proceli Croissants",
+    "category": "Brood & Bakproducten",
+    "brand": "Proceli",
+    "description": "Glutenvrije croissants 4 stuks",
+    "image": "assets/products/proceli_139.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 350,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "winkelglutenvrij.nl": {
+        "price": 3.7,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/proceli-croissants",
+        "last_updated": "2025-08-18"
+      },
+      "thefreefromshop.nl": {
+        "price": 3.97,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/proceli-croissants",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 3.39,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/proceli-croissants",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijgemak.nl": {
+        "price": 3.7,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij-gemak.nl/product/proceli-croissants",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 3.77,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/proceli-croissants.html",
+        "last_updated": "2025-08-18"
+      },
+      "bakkerleo.nl": {
+        "price": 3.93,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij.bakkerleo.nl/product/proceli-croissants",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 3.58,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/proceli-croissants",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_140",
+    "name": "Turtle Choco Kussentjes",
+    "category": "Chocolade & Snoep",
+    "brand": "Turtle",
+    "description": "Biologische choco kussentjes met hazelnoot",
+    "image": "assets/products/turtle_140.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 400,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": true,
+      "vegan": false
+    },
+    "stores": {
+      "schar.com": {
+        "price": 4.76,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.schar.com/nl-nl/product/turtle-choco-kussentjes",
+        "last_updated": "2025-08-18"
+      },
+      "thefreefromshop.nl": {
+        "price": 3.8,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/turtle-choco-kussentjes",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 4.24,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/turtle-choco-kussentjes",
+        "last_updated": "2025-08-18"
+      },
+      "bakkerleo.nl": {
+        "price": 4.32,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij.bakkerleo.nl/product/turtle-choco-kussentjes",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_141",
+    "name": "Traindevie Speculaas",
+    "category": "Koekjes & Snacks",
+    "brand": "Traindevie",
+    "description": "Ambachtelijke glutenvrije speculaas",
+    "image": "assets/products/traindevie_141.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 450,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "picnic.app": {
+        "price": 4.61,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://picnic.app/nl/product/traindevie-speculaas",
+        "last_updated": "2025-08-18"
+      },
+      "plus.nl": {
+        "price": 4.23,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/traindevie-speculaas",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 4.03,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/traindevie-speculaas",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 3.57,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/traindevie-speculaas",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijgemak.nl": {
+        "price": 4.94,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij-gemak.nl/product/traindevie-speculaas",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_142",
+    "name": "Leev Linzenwafels Cacao",
+    "category": "Koekjes & Snacks",
+    "brand": "Leev",
+    "description": "Linzenwafels met cacao",
+    "image": "assets/products/leev_142.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 200,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": true
+    },
+    "stores": {
+      "jumbo.com": {
+        "price": 4.86,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/leev-linzenwafels-cacao",
+        "last_updated": "2025-08-18"
+      },
+      "thefreefromshop.nl": {
+        "price": 4.3,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/leev-linzenwafels-cacao",
+        "last_updated": "2025-08-18"
+      },
+      "happybakers.nl": {
+        "price": 5.03,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://happybakers.nl/product/leev-linzenwafels-cacao",
+        "last_updated": "2025-08-18"
+      },
+      "hollandbarrett.nl": {
+        "price": 4.43,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.hollandandbarrett.nl/product/leev-linzenwafels-cacao",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 3.7,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/leev-linzenwafels-cacao.html",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 4.9,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/leev-linzenwafels-cacao",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_143",
+    "name": "Happy Farm Crackers Naturel",
+    "category": "Chips & Crackers",
+    "brand": "Happy Farm",
+    "description": "Natuurlijke glutenvrije crackers",
+    "image": "assets/products/happy_farm_143.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 250,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "hollandbarrett.nl": {
+        "price": 4.94,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.hollandandbarrett.nl/product/happy-farm-crackers-naturel",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 4.67,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/happy-farm-crackers-naturel",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 3.6,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/happy-farm-crackers-naturel",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijgemak.nl": {
+        "price": 4.45,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij-gemak.nl/product/happy-farm-crackers-naturel",
+        "last_updated": "2025-08-18"
+      },
+      "winkelglutenvrij.nl": {
+        "price": 5.3,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/happy-farm-crackers-naturel",
+        "last_updated": "2025-08-18"
+      },
+      "jumbo.com": {
+        "price": 4.81,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/happy-farm-crackers-naturel",
+        "last_updated": "2025-08-18"
+      },
+      "happybakers.nl": {
+        "price": 5.21,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://happybakers.nl/product/happy-farm-crackers-naturel",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_144",
+    "name": "Nutrifree Instant Havermout Chocolade",
+    "category": "Ontbijt & Beleg",
+    "brand": "Nutrifree",
+    "description": "Glutenvrije instant havermout met chocoladesmaak",
+    "image": "assets/products/nutrifree_144.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 300,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": true,
+      "vegan": false
+    },
+    "stores": {
+      "glutenvrijewebshop.nl": {
+        "price": 5.24,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/nutrifree-instant-havermout-chocolade.html",
+        "last_updated": "2025-08-18"
+      },
+      "thefreefromshop.nl": {
+        "price": 5.29,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/nutrifree-instant-havermout-chocolade",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijemarkt.com": {
+        "price": 5.2,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijemarkt.com/product/nutrifree-instant-havermout-chocolade",
+        "last_updated": "2025-08-18"
+      },
+      "happybakers.nl": {
+        "price": 5.06,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://happybakers.nl/product/nutrifree-instant-havermout-chocolade",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_145",
+    "name": "Le Pain des Fleurs Haver Crackers Bio",
+    "category": "Chips & Crackers",
+    "brand": "Le Pain des Fleurs",
+    "description": "Biologische havercrackers",
+    "image": "assets/products/le_pain_des_fleurs_145.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 350,
+      "gluten_free": true,
+      "organic": true,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "glutenvrijewebshop.nl": {
+        "price": 4.08,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/le-pain-des-fleurs-haver-crackers-bio.html",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijgemak.nl": {
+        "price": 4.66,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://glutenvrij-gemak.nl/product/le-pain-des-fleurs-haver-crackers-bio",
+        "last_updated": "2025-08-18"
+      },
+      "plus.nl": {
+        "price": 4.23,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.plus.nl/product/le-pain-des-fleurs-haver-crackers-bio",
+        "last_updated": "2025-08-18"
+      },
+      "ah.nl": {
+        "price": 4.94,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ah.nl/product/le-pain-des-fleurs-haver-crackers-bio",
+        "last_updated": "2025-08-18"
+      },
+      "thefreefromshop.nl": {
+        "price": 5.37,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://thefreefromshop.nl/product/le-pain-des-fleurs-haver-crackers-bio",
+        "last_updated": "2025-08-18"
+      }
+    }
+  },
+  {
+    "id": "gv_146",
+    "name": "Okono Crunchy Peanut Energy Bar",
+    "category": "Koekjes & Snacks",
+    "brand": "Okono",
+    "description": "Crunchy pinda energiereep",
+    "image": "assets/products/okono_146.jpg",
+    "nutritional_info": {
+      "calories_per_100g": 400,
+      "gluten_free": true,
+      "organic": false,
+      "lactose_free": false,
+      "vegan": false
+    },
+    "stores": {
+      "hollandbarrett.nl": {
+        "price": 5.1,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.hollandandbarrett.nl/product/okono-crunchy-peanut-energy-bar",
+        "last_updated": "2025-08-18"
+      },
+      "glutenvrijewebshop.nl": {
+        "price": 3.92,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.glutenvrijewebshop.nl/okono-crunchy-peanut-energy-bar.html",
+        "last_updated": "2025-08-18"
+      },
+      "winkelglutenvrij.nl": {
+        "price": 4.85,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.winkelglutenvrij.nl/product/okono-crunchy-peanut-energy-bar",
+        "last_updated": "2025-08-18"
+      },
+      "schar.com": {
+        "price": 5.29,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.schar.com/nl-nl/product/okono-crunchy-peanut-energy-bar",
+        "last_updated": "2025-08-18"
+      },
+      "jumbo.com": {
+        "price": 4.41,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.jumbo.com/product/okono-crunchy-peanut-energy-bar",
+        "last_updated": "2025-08-18"
+      },
+      "ruttmans.nl": {
+        "price": 4.7,
+        "original_price": null,
+        "discount_percentage": null,
+        "in_stock": true,
+        "url": "https://www.ruttmans.nl/product/okono-crunchy-peanut-energy-bar",
+        "last_updated": "2025-08-18"
+      }
+    }
+  }
+]
