@@ -1,0 +1,32 @@
+name: Daily Glutenvrij Scraper
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # Elke ochtend om 06:00 UTC
+  workflow_dispatch:       # Handmatig starten via GitHub
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install aiohttp beautifulsoup4 lxml
+
+      - name: Run scraper
+        run: python3 ultimate_product_scraper.py
+
+      - name: Commit updated database
+        run: |
+          git config --global user.email "bot@glutenvergelijker.nl"
+          git config --global user.name "Glutenvergelijker Bot"
+          git add glutenvrij_products.json
+          git commit -m "🤖 Daily automatic product update" || echo "No changes"
+          git push
