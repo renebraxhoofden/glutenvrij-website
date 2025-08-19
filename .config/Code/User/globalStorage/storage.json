@@ -6,12 +6,6 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/renebraxhoofden/glutenvrij-website"
-            },
-            {
-                "folderUri": "file:///home/renebraxhoofden"
-            },
-            {
                 "folderUri": "file:///home/renebraxhoofden/docs"
             }
         ],
@@ -61,7 +55,7 @@
             "folder": "file:///home/renebraxhoofden/docs",
             "backupPath": "/home/renebraxhoofden/.config/Code/Backups/b77d72b3d426ba76c3e07d79e88091c7",
             "uiState": {
-                "mode": 0,
+                "mode": 1,
                 "x": 0,
                 "y": 0,
                 "width": 1366,

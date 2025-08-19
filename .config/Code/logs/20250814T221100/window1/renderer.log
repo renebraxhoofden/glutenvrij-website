@@ -90,3 +90,4 @@
 2025-08-17 15:30:55.555 [info] UNRESPONSIVE extension host: starting to profile NOW
 2025-08-17 15:31:00.943 [info] Extension host (LocalProcess pid: 13226) is responsive.
 2025-08-17 15:31:01.165 [warning] UNRESPONSIVE extension host: 'github.copilot' took 72.93834530420273% of 3671.329ms, saved PROFILE here: 'file:///tmp/exthost-3682ee.cpuprofile'
+2025-08-19 21:10:59.573 [warning] [lifecycle] onWillShutdown is taking a long time, pending operations: join.chatSessionStore, join.chatEditingSession

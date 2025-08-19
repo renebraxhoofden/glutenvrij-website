@@ -53,3 +53,9 @@
 2025-08-19 18:22:19.545 [warning] No ptyHost heartbeat after 6 seconds
 2025-08-19 18:22:20.490 [info] update#setState checking for updates
 2025-08-19 18:22:25.869 [info] update#setState idle
+2025-08-19 19:55:38.667 [info] update#setState checking for updates
+2025-08-19 19:55:46.651 [info] update#setState idle
+2025-08-19 21:05:45.647 [warning] No ptyHost heartbeat after 6 seconds
+2025-08-19 21:05:45.685 [info] update#setState checking for updates
+2025-08-19 21:05:50.228 [info] update#setState idle
+2025-08-19 21:10:59.232 [info] Extension host with pid 13226 exited with code: 0, signal: unknown.

@@ -1,2 +1,3 @@
-2025/08/14-22:10:50.005 102c Creating DB /home/renebraxhoofden/.config/Code/Session Storage since it was missing.
-2025/08/14-22:10:50.055 102c Reusing MANIFEST /home/renebraxhoofden/.config/Code/Session Storage/MANIFEST-000001
+2025/08/19-21:11:00.856 1b31 Reusing MANIFEST /home/renebraxhoofden/.config/Code/Session Storage/MANIFEST-000001
+2025/08/19-21:11:00.857 1b31 Recovering log #3
+2025/08/19-21:11:00.857 1b31 Reusing old log /home/renebraxhoofden/.config/Code/Session Storage/000003.log 

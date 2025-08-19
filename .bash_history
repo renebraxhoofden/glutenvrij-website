@@ -332,3 +332,6 @@ git commit -m "🌾 MEGA UPDATE: 2500+ products, automation, affiliate ready"
 git push origin master
 git pull origin master
 git pull --no-rebase origin master
+git add .
+git commit -m "🌾 MEGA UPDATE: Alles gefixt + 2500 producten automatisering"
+git push origin master
