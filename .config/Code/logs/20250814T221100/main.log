@@ -50,3 +50,6 @@
 2025-08-18 22:08:43.764 [warning] No ptyHost heartbeat after 6 seconds
 2025-08-18 22:17:44.732 [info] update#setState checking for updates
 2025-08-18 22:17:44.945 [info] update#setState idle
+2025-08-19 18:22:19.545 [warning] No ptyHost heartbeat after 6 seconds
+2025-08-19 18:22:20.490 [info] update#setState checking for updates
+2025-08-19 18:22:25.869 [info] update#setState idle

@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glutenvergelijker.nl - Vergelijk Glutenvrije Producten</title>
-    <meta name="description" content="Vergelijk prijzen van glutenvrije producten bij alle Nederlandse webshops. Vind de beste deals op brood, pasta, koekjes en meer.">
-    <link rel="stylesheet" href="improved_style.css">
+    <title>Glutenvergelijker.nl - Vergelijk 2500+ Glutenvrije Producten</title>
+    <meta name="description" content="Vergelijk prijzen van meer dan 2500 glutenvrije producten bij alle Nederlandse webshops. Vind de beste deals, kortingen en aanbiedingen.">
+    <meta name="keywords" content="glutenvrij, glutenvrije producten, prijsvergelijking, albert heijn, jumbo, schär, nederland">
+
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="Glutenvergelijker.nl - 2500+ Glutenvrije Producten">
+    <meta property="og:description" content="De grootste vergelijker van glutenvrije producten in Nederland">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.glutenvergelijker.nl/">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://www.glutenvergelijker.nl/">
 </head>
 <body>
     <nav class="main-nav">
         <div class="nav-container">
             <div class="logo">
                 <h1>🌾 Glutenvergelijker.nl</h1>
+                <p class="tagline">2500+ Glutenvrije Producten</p>
             </div>
-            <!-- Removed problematic buttons as requested -->
             <div class="search-container">
                 <input type="text" id="search-input" placeholder="Zoek glutenvrije producten..." aria-label="Zoek producten">
                 <button id="search-btn" aria-label="Zoeken">🔍</button>
@@ -22,13 +31,14 @@
     </nav>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero" id="hero-section">
             <div class="hero-content">
-                <h2>Vind de beste prijzen voor glutenvrije producten</h2>
-                <p>Vergelijk prijzen van meer dan 100 glutenvrije producten bij 15+ Nederlandse webshops</p>
+                <h2>Nederland's Grootste Glutenvrije Productvergelijker</h2>
+                <p>Vergelijk prijzen van meer dan 2500 glutenvrije producten bij 15+ Nederlandse webshops. Automatisch bijgewerkt met de nieuwste aanbiedingen.</p>
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number" id="total-products">100+</span>
+                        <span class="stat-number" id="total-products">2500+</span>
                         <span class="stat-label">Producten</span>
                     </div>
                     <div class="stat">
@@ -36,84 +46,155 @@
                         <span class="stat-label">Webshops</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">€</span>
-                        <span class="stat-label">Besparingen</span>
+                        <span class="stat-number" id="daily-deals">50+</span>
+                        <span class="stat-label">Dagelijkse Deals</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">€2.50</span>
+                        <span class="stat-label">Gem. Besparing</span>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Filters Section -->
         <section class="filters-section">
             <div class="container">
                 <div class="filters">
-                    <select id="category-filter">
+                    <select id="category-filter" aria-label="Filter op categorie">
                         <option value="">Alle categorieën</option>
+                        <!-- Populated by JavaScript -->
                     </select>
-                    <select id="brand-filter">
+                    <select id="brand-filter" aria-label="Filter op merk">
                         <option value="">Alle merken</option>
+                        <!-- Populated by JavaScript -->
                     </select>
-                    <select id="sort-filter">
+                    <select id="store-filter" aria-label="Filter op winkel">
+                        <option value="">Alle winkels</option>
+                        <!-- Populated by JavaScript -->
+                    </select>
+                    <select id="sort-filter" aria-label="Sorteer resultaten">
                         <option value="">Sorteren op</option>
                         <option value="price-low">Prijs (laag naar hoog)</option>
                         <option value="price-high">Prijs (hoog naar laag)</option>
                         <option value="name">Naam (A-Z)</option>
                         <option value="discount">Kortingen eerst</option>
+                        <option value="newest">Nieuwste eerst</option>
                     </select>
+                    <button id="clear-filters" class="clear-btn" aria-label="Wis alle filters">Wis filters</button>
                 </div>
             </div>
         </section>
 
+        <!-- Categories Section -->
         <section class="categories-section" id="categories-container">
             <div class="container">
-                <h3>Categorieën</h3>
+                <h3>Populaire Categorieën</h3>
                 <div class="categories-grid" id="categories-grid">
-                    <!-- Categories will be populated by JavaScript -->
+                    <!-- Categories populated by JavaScript -->
                 </div>
             </div>
         </section>
 
+        <!-- Quick Access Deals -->
+        <section class="deals-section" id="deals-section">
+            <div class="container">
+                <h3>🔥 Vandaag in de Aanbieding</h3>
+                <div class="deals-grid" id="deals-grid">
+                    <!-- Deals populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
         <section class="products-section" id="products-container">
             <div class="container">
-                <h3 id="products-title">Alle Producten</h3>
-                <div class="products-grid" id="products-grid">
-                    <!-- Products will be populated by JavaScript -->
+                <div class="products-header">
+                    <h3 id="products-title">Alle Producten</h3>
+                    <div class="products-info">
+                        <span id="products-count">Laden...</span>
+                        <span class="update-info">Laatst bijgewerkt: <span id="last-updated">vandaag</span></span>
+                    </div>
                 </div>
-                <div class="loading" id="loading" style="display: none;">
+
+                <!-- Loading indicator -->
+                <div class="loading" id="loading">
                     <div class="spinner"></div>
                     <p>Producten laden...</p>
                 </div>
+
+                <!-- Products grid -->
+                <div class="products-grid" id="products-grid">
+                    <!-- Products populated by JavaScript -->
+                </div>
+
+                <!-- Load more button -->
+                <div class="load-more-container">
+                    <button id="load-more-btn" class="load-more-btn">Meer producten laden</button>
+                </div>
             </div>
         </section>
 
+        <!-- Statistics Section -->
         <section class="stats-section" id="stats-container">
             <div class="container">
-                <h3>Statistieken</h3>
+                <h3>Live Statistieken</h3>
                 <div class="stats-grid">
                     <div class="stat-card">
-                        <h4>Gemiddelde Besparing</h4>
+                        <h4>🎯 Totaal Producten</h4>
+                        <p class="stat-value" id="total-products-stat">2500+</p>
+                        <small>Automatisch bijgewerkt</small>
+                    </div>
+                    <div class="stat-card">
+                        <h4>💰 Gemiddelde Besparing</h4>
                         <p class="stat-value" id="avg-savings">€2.50</p>
+                        <small>Per product vergelijking</small>
                     </div>
                     <div class="stat-card">
-                        <h4>Producten in Aanbieding</h4>
-                        <p class="stat-value" id="products-on-sale">12</p>
+                        <h4>🔥 Aanbiedingen Vandaag</h4>
+                        <p class="stat-value" id="products-on-sale">50+</p>
+                        <small>Dagelijks bijgewerkt</small>
                     </div>
                     <div class="stat-card">
-                        <h4>Populairste Categorie</h4>
+                        <h4>📈 Populairste Categorie</h4>
                         <p class="stat-value" id="popular-category">Brood</p>
+                        <small id="popular-category-count">500+ producten</small>
                     </div>
                     <div class="stat-card">
-                        <h4>Nieuwe Producten</h4>
-                        <p class="stat-value" id="new-products">8</p>
+                        <h4>🆕 Nieuw Deze Week</h4>
+                        <p class="stat-value" id="new-products">25+</p>
+                        <small>Automatisch ontdekt</small>
+                    </div>
+                    <div class="stat-card">
+                        <h4>🏪 Aangesloten Winkels</h4>
+                        <p class="stat-value">15+</p>
+                        <small>Steeds meer partners</small>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Partners Section -->
         <section class="partners-section">
             <div class="container">
                 <h3>Onze Partners</h3>
-                <div class="partners-grid">
-                    <!-- Partners will be populated by JavaScript with logos -->
+                <p class="partners-intro">Wij vergelijken prijzen bij alle grote Nederlandse glutenvrije webshops</p>
+                <div class="partners-grid" id="partners-grid">
+                    <!-- Partners populated by JavaScript with logos -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h3>📧 Blijf op de hoogte van nieuwe producten en aanbiedingen</h3>
+                    <p>Ontvang dagelijks de beste glutenvrije deals in je inbox</p>
+                    <div class="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="Je e-mailadres" aria-label="E-mailadres voor nieuwsbrief">
+                        <button id="newsletter-btn" type="button">Inschrijven</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -121,17 +202,54 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Glutenvergelijker.nl - Alle rechten voorbehouden</p>
-            <div class="footer-links">
-                <a href="#privacy">Privacy</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">Over ons</a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Glutenvergelijker.nl</h4>
+                    <p>Nederland's grootste glutenvrije productvergelijker met 2500+ producten van 15+ webshops.</p>
+                    <p class="update-notice">Prijzen automatisch bijgewerkt elke ochtend om 06:00</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Populaire Categorieën</h4>
+                    <ul class="footer-links">
+                        <li><a href="#brood">Glutenvrij Brood</a></li>
+                        <li><a href="#pasta">Glutenvrije Pasta</a></li>
+                        <li><a href="#koekjes">Glutenvrije Koekjes</a></li>
+                        <li><a href="#pizza">Glutenvrije Pizza</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#privacy">Privacy</a></li>
+                        <li><a href="#about">Over ons</a></li>
+                        <li><a href="#api">API voor developers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Voor Webshops</h4>
+                    <ul class="footer-links">
+                        <li><a href="#partner">Word partner</a></li>
+                        <li><a href="#feed">Product feed</a></li>
+                        <li><a href="#affiliate">Affiliate programma</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Glutenvergelijker.nl - Alle rechten voorbehouden</p>
+                <p class="disclaimer">Prijzen kunnen afwijken, controleer altijd de actuele prijs op de webshop</p>
             </div>
         </div>
     </footer>
 
-    <!-- Load data first, then the app -->
+    <!-- Scripts - IMPORTANT: Load data first, then app -->
     <script src="glutenvrij_data_loader.js"></script>
-    <script src="improved_app.js"></script>
+    <script src="app.js"></script>
+
+    <!-- Analytics placeholder (add your own) -->
+    <script>
+    // Google Analytics or other tracking code here
+    console.log('🌾 Glutenvergelijker.nl loaded successfully');
+    </script>
 </body>
 </html>

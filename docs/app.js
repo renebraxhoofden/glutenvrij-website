@@ -1,99 +1,69 @@
-// Glutenvergelijker.nl - Improved Application
+// Glutenvergelijker.nl - Main Application
+// Supports 2500+ products with automatic updates and affiliate links
+
 class GlutenvergelijkerApp {
     constructor() {
+        // Core data
         this.products = [];
         this.filteredProducts = [];
         this.categories = [];
+        this.stats = {};
         this.partners = [];
+
+        // UI state
         this.currentFilter = {
             category: '',
             brand: '',
+            store: '',
             search: '',
             sort: ''
         };
 
+        this.displayedProducts = 0;
+        this.productsPerPage = 24;
+        this.isLoading = false;
+
+        // Initialize when data is loaded
         this.init();
     }
 
     async init() {
-        console.log('🌾 Initializing Glutenvergelijker.nl...');
-        await this.loadData();
-        this.setupEventListeners();
-        this.renderCategories();
-        this.renderProducts();
-        this.renderPartners();
-        this.updateStats();
+        console.log('🌾 Initializing Glutenvergelijker.nl App...');
 
-        // Initialize link validation in background
-        this.initLinkValidation();
-
-        console.log('✅ App initialized successfully');
-    }
-
-    async loadData() {
-        try {
-            // Use the global products data loaded by glutenvrij_data_loader.js
-            if (window.glutenvrijeProducten) {
-                this.products = window.glutenvrijeProducten;
-                this.filteredProducts = [...this.products];
-            } else {
-                console.error('Product data not loaded');
-                this.products = [];
-                this.filteredProducts = [];
-            }
-
-            this.extractCategories();
-            this.setupPartners();
-
-        } catch (error) {
-            console.error('Error loading data:', error);
+        // Wait for data to load
+        if (window.glutenvrijeProducten && window.glutenvrijeProducten.length > 0) {
+            this.onDataLoaded();
+        } else {
+            document.addEventListener('glutenvrijeDataLoaded', () => {
+                this.onDataLoaded();
+            });
         }
     }
 
-    extractCategories() {
-        const categoryMap = {};
-        this.products.forEach(product => {
-            if (!categoryMap[product.category]) {
-                categoryMap[product.category] = [];
-            }
-            categoryMap[product.category].push(product);
-        });
+    onDataLoaded() {
+        console.log('📊 Data loaded, starting app...');
 
-        this.categories = Object.keys(categoryMap).map(category => ({
-            name: category,
-            count: categoryMap[category].length,
-            icon: this.getCategoryIcon(category)
-        }));
-    }
+        // Load data
+        this.products = window.glutenvrijeProducten || [];
+        this.categories = window.glutenvrijeCategories || [];
+        this.stats = window.glutenvrijeStats || {};
 
-    getCategoryIcon(category) {
-        const icons = {
-            'Brood & Bakproducten': '🍞',
-            'Pasta & Rijst': '🍝',
-            'Koekjes & Snacks': '🍪',
-            'Ontbijt & Beleg': '🥣',
-            'Diepvries': '❄️',
-            'Sauzen & Kruiden': '🧂',
-            'Dranken': '🥤',
-            'Zuivel & Alternatieven': '🥛',
-            'Bakingrediënten': '🧁',
-            'Pizza & Maaltijden': '🍕',
-            'Chips & Crackers': '🟡',
-            'Chocolade & Snoep': '🍫'
-        };
-        return icons[category] || '🌾';
-    }
+        console.log(`✅ App initialized with ${this.products.length} products`);
 
-    setupPartners() {
-        // Partners with their logos from assets folder
-        this.partners = [
-            { name: 'Albert Heijn', logo: 'assets/logo/ah-albert-heijn.svg', url: 'https://ah.nl' },
-            { name: 'Jumbo', logo: 'assets/logo/jumbo-logo.svg', url: 'https://jumbo.com' },
-            { name: 'Plus', logo: 'assets/logo/plus.svg', url: 'https://plus.nl' },
-            { name: 'Glutenvrije Webshop', logo: 'assets/logo/glutenvrijewebshop.png', url: 'https://glutenvrijewebshop.nl' },
-            { name: 'Schär', logo: 'assets/logo/schar.png', url: 'https://schar.com' },
-            { name: 'Picnic', logo: 'assets/logo/Picnic_logo.svg.png', url: 'https://picnic.app' }
-        ];
+        // Setup UI
+        this.setupEventListeners();
+        this.setupPartners();
+        this.renderCategories();
+        this.renderDeals();
+        this.resetAndRenderProducts();
+        this.updateStatistics();
+        this.updateProductCount();
+
+        // Hide loading indicator
+        const loading = document.getElementById('loading');
+        if (loading) loading.style.display = 'none';
+
+        console.log('🎉 Glutenvergelijker.nl ready!');
     }
 
     setupEventListeners() {
@@ -102,77 +72,100 @@ class GlutenvergelijkerApp {
         const searchBtn = document.getElementById('search-btn');
 
         if (searchInput) {
+            let searchTimeout;
             searchInput.addEventListener('input', (e) => {
-                this.currentFilter.search = e.target.value.toLowerCase();
-                this.filterProducts();
-                this.toggleHeroSection();
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => {
+                    this.currentFilter.search = e.target.value.toLowerCase().trim();
+                    this.applyFiltersAndRender();
+                }, 300);
             });
         }
 
         if (searchBtn) {
             searchBtn.addEventListener('click', () => {
-                this.filterProducts();
-                this.toggleHeroSection();
+                this.applyFiltersAndRender();
             });
         }
 
         // Filter controls
-        const categoryFilter = document.getElementById('category-filter');
-        const brandFilter = document.getElementById('brand-filter');
-        const sortFilter = document.getElementById('sort-filter');
+        this.setupFilterControl('category-filter', 'category');
+        this.setupFilterControl('brand-filter', 'brand');  
+        this.setupFilterControl('store-filter', 'store');
+        this.setupFilterControl('sort-filter', 'sort');
 
-        if (categoryFilter) {
-            categoryFilter.addEventListener('change', (e) => {
-                this.currentFilter.category = e.target.value;
-                this.filterProducts();
-                this.toggleHeroSection();
+        // Clear filters
+        const clearFilters = document.getElementById('clear-filters');
+        if (clearFilters) {
+            clearFilters.addEventListener('click', () => {
+                this.clearAllFilters();
             });
         }
 
-        if (brandFilter) {
-            brandFilter.addEventListener('change', (e) => {
-                this.currentFilter.brand = e.target.value;
-                this.filterProducts();
-                this.toggleHeroSection();
+        // Load more button
+        const loadMoreBtn = document.getElementById('load-more-btn');
+        if (loadMoreBtn) {
+            loadMoreBtn.addEventListener('click', () => {
+                this.loadMoreProducts();
             });
         }
 
-        if (sortFilter) {
-            sortFilter.addEventListener('change', (e) => {
-                this.currentFilter.sort = e.target.value;
-                this.sortProducts();
+        // Newsletter signup
+        const newsletterBtn = document.getElementById('newsletter-btn');
+        if (newsletterBtn) {
+            newsletterBtn.addEventListener('click', () => {
+                this.handleNewsletterSignup();
             });
         }
     }
 
-    toggleHeroSection() {
-        const heroSection = document.getElementById('hero-section');
-        const categoriesContainer = document.getElementById('categories-container');
-
-        if (this.hasActiveFilters()) {
-            // Hide hero and make categories compact when filtering
-            if (heroSection) heroSection.classList.add('hidden');
-            if (categoriesContainer) categoriesContainer.classList.add('compact');
-        } else {
-            // Show hero and normal categories when no filters
-            if (heroSection) heroSection.classList.remove('hidden');
-            if (categoriesContainer) categoriesContainer.classList.remove('compact');
+    setupFilterControl(elementId, filterType) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.addEventListener('change', (e) => {
+                this.currentFilter[filterType] = e.target.value;
+                this.applyFiltersAndRender();
+            });
         }
     }
 
-    hasActiveFilters() {
-        return this.currentFilter.search || 
-               this.currentFilter.category || 
-               this.currentFilter.brand ||
-               this.currentFilter.sort;
+    setupPartners() {
+        // Get unique stores from products
+        const storeMap = new Map();
+        this.products.forEach(product => {
+            if (product.stores) {
+                Object.keys(product.stores).forEach(storeId => {
+                    if (!storeMap.has(storeId)) {
+                        storeMap.set(storeId, {
+                            id: storeId,
+                            name: this.getStoreName(storeId),
+                            logo: this.getStoreLogo(storeId),
+                            productCount: 0
+                        });
+                    }
+                    storeMap.get(storeId).productCount++;
+                });
+            }
+        });
+
+        this.partners = Array.from(storeMap.values())
+            .sort((a, b) => b.productCount - a.productCount);
+
+        this.renderPartners();
     }
 
     renderCategories() {
         const categoriesGrid = document.getElementById('categories-grid');
         if (!categoriesGrid) return;
 
-        categoriesGrid.innerHTML = this.categories.map(category => `
-            <div class="category-card" onclick="app.selectCategory('${category.name}')" 
+        // Sort categories by product count
+        const sortedCategories = [...this.categories]
+            .sort((a, b) => b.count - a.count)
+            .slice(0, 8); // Show top 8 categories
+
+        categoriesGrid.innerHTML = sortedCategories.map(category => `
+            <div class="category-card" data-category="${category.name}" 
+                 onclick="app.selectCategory('${category.name}')" 
                  tabindex="0" role="button" aria-label="Filter by ${category.name}">
                 <div class="category-icon">${category.icon}</div>
                 <div class="category-name">${category.name}</div>
@@ -189,44 +182,127 @@ class GlutenvergelijkerApp {
         const categoryFilter = document.getElementById('category-filter');
         if (categoryFilter) {
             categoryFilter.innerHTML = '<option value="">Alle categorieën</option>' +
-                this.categories.map(cat => `<option value="${cat.name}">${cat.name}</option>`).join('');
+                this.categories
+                    .sort((a, b) => a.name.localeCompare(b.name))
+                    .map(cat => `<option value="${cat.name}">${cat.name} (${cat.count})</option>`)
+                    .join('');
         }
 
         // Brand filter
-        const brands = [...new Set(this.products.map(p => p.brand))].sort();
+        const brands = [...new Set(this.products.map(p => p.brand))]
+            .filter(brand => brand)
+            .sort();
+
         const brandFilter = document.getElementById('brand-filter');
         if (brandFilter) {
             brandFilter.innerHTML = '<option value="">Alle merken</option>' +
-                brands.map(brand => `<option value="${brand}">${brand}</option>`).join('');
+                brands.map(brand => {
+                    const count = this.products.filter(p => p.brand === brand).length;
+                    return `<option value="${brand}">${brand} (${count})</option>`;
+                }).join('');
         }
+
+        // Store filter
+        const storeFilter = document.getElementById('store-filter');
+        if (storeFilter) {
+            storeFilter.innerHTML = '<option value="">Alle winkels</option>' +
+                this.partners.map(partner => 
+                    `<option value="${partner.id}">${partner.name} (${partner.productCount})</option>`
+                ).join('');
+        }
+    }
+
+    renderDeals() {
+        const dealsGrid = document.getElementById('deals-grid');
+        if (!dealsGrid) return;
+
+        // Find products with discounts
+        const dealsProducts = this.products
+            .filter(product => this.hasDiscount(product))
+            .sort((a, b) => this.getHighestDiscount(b) - this.getHighestDiscount(a))
+            .slice(0, 6);
+
+        if (dealsProducts.length === 0) {
+            document.getElementById('deals-section').style.display = 'none';
+            return;
+        }
+
+        dealsGrid.innerHTML = dealsProducts.map(product => {
+            const bestStore = this.findBestPriceStore(product);
+            const discount = this.getHighestDiscount(product);
+
+            return `
+                <div class="deal-card">
+                    <div class="deal-badge">-${discount}%</div>
+                    <div class="deal-content">
+                        <h4 class="deal-title">${product.name}</h4>
+                        <div class="deal-price">
+                            <span class="deal-old-price">€${bestStore[1].original_price}</span>
+                            <span class="deal-new-price">€${bestStore[1].price}</span>
+                        </div>
+                        <div class="deal-store">${this.getStoreName(bestStore[0])}</div>
+                    </div>
+                </div>
+            `;
+        }).join('');
     }
 
     selectCategory(categoryName) {
         this.currentFilter.category = categoryName;
         const categoryFilter = document.getElementById('category-filter');
         if (categoryFilter) categoryFilter.value = categoryName;
+        this.applyFiltersAndRender();
+
+        // Scroll to products
+        document.getElementById('products-container').scrollIntoView({ 
+            behavior: 'smooth' 
+        });
+    }
+
+    applyFiltersAndRender() {
         this.filterProducts();
         this.toggleHeroSection();
+        this.resetAndRenderProducts();
+        this.updateProductsTitle();
+        this.updateProductCount();
     }
 
     filterProducts() {
         this.filteredProducts = this.products.filter(product => {
-            const matchesSearch = !this.currentFilter.search || 
-                product.name.toLowerCase().includes(this.currentFilter.search) ||
-                product.brand.toLowerCase().includes(this.currentFilter.search);
+            // Search filter
+            if (this.currentFilter.search) {
+                const searchTerm = this.currentFilter.search;
+                const searchable = [
+                    product.name,
+                    product.brand,
+                    product.category,
+                    product.description
+                ].join(' ').toLowerCase();
 
-            const matchesCategory = !this.currentFilter.category || 
-                product.category === this.currentFilter.category;
+                if (!searchable.includes(searchTerm)) {
+                    return false;
+                }
+            }
 
-            const matchesBrand = !this.currentFilter.brand || 
-                product.brand === this.currentFilter.brand;
+            // Category filter
+            if (this.currentFilter.category && product.category !== this.currentFilter.category) {
+                return false;
+            }
 
-            return matchesSearch && matchesCategory && matchesBrand;
+            // Brand filter
+            if (this.currentFilter.brand && product.brand !== this.currentFilter.brand) {
+                return false;
+            }
+
+            // Store filter
+            if (this.currentFilter.store && !product.stores[this.currentFilter.store]) {
+                return false;
+            }
+
+            return true;
         });
 
         this.sortProducts();
-        this.renderProducts();
-        this.updateProductsTitle();
     }
 
     sortProducts() {
@@ -241,18 +317,228 @@ class GlutenvergelijkerApp {
                 this.filteredProducts.sort((a, b) => a.name.localeCompare(b.name));
                 break;
             case 'discount':
-                this.filteredProducts.sort((a, b) => this.hasDiscount(b) - this.hasDiscount(a));
+                this.filteredProducts.sort((a, b) => this.getHighestDiscount(b) - this.getHighestDiscount(a));
                 break;
+            case 'newest':
+                this.filteredProducts.sort((a, b) => new Date(b.last_discovered || 0) - new Date(a.last_discovered || 0));
+                break;
+            default:
+                // Default: sort by relevance (discounts first, then alphabetical)
+                this.filteredProducts.sort((a, b) => {
+                    const aDiscount = this.hasDiscount(a) ? 1 : 0;
+                    const bDiscount = this.hasDiscount(b) ? 1 : 0;
+                    if (aDiscount !== bDiscount) return bDiscount - aDiscount;
+                    return a.name.localeCompare(b.name);
+                });
         }
     }
 
-    getLowestPrice(product) {
-        const prices = Object.values(product.stores).map(store => store.price);
-        return prices.length > 0 ? Math.min(...prices) : Infinity;
+    resetAndRenderProducts() {
+        this.displayedProducts = 0;
+        const productsGrid = document.getElementById('products-grid');
+        if (productsGrid) {
+            productsGrid.innerHTML = '';
+        }
+        this.loadMoreProducts();
     }
 
-    hasDiscount(product) {
-        return Object.values(product.stores).some(store => store.discount_percentage > 0) ? 1 : 0;
+    loadMoreProducts() {
+        const productsGrid = document.getElementById('products-grid');
+        const loadMoreBtn = document.getElementById('load-more-btn');
+
+        if (!productsGrid) return;
+
+        const startIndex = this.displayedProducts;
+        const endIndex = Math.min(startIndex + this.productsPerPage, this.filteredProducts.length);
+
+        if (startIndex >= this.filteredProducts.length) {
+            if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+            return;
+        }
+
+        // Show loading state
+        this.isLoading = true;
+        if (loadMoreBtn) {
+            loadMoreBtn.textContent = 'Laden...';
+            loadMoreBtn.disabled = true;
+        }
+
+        // Simulate loading delay for better UX
+        setTimeout(() => {
+            const productsToShow = this.filteredProducts.slice(startIndex, endIndex);
+
+            productsToShow.forEach(product => {
+                const productCard = this.createProductCard(product);
+                productsGrid.insertAdjacentHTML('beforeend', productCard);
+            });
+
+            this.displayedProducts = endIndex;
+
+            // Update load more button
+            if (loadMoreBtn) {
+                if (endIndex >= this.filteredProducts.length) {
+                    loadMoreBtn.style.display = 'none';
+                } else {
+                    loadMoreBtn.textContent = `Meer producten laden (${this.filteredProducts.length - endIndex} over)`;
+                    loadMoreBtn.disabled = false;
+                    loadMoreBtn.style.display = 'block';
+                }
+            }
+
+            this.isLoading = false;
+
+            // Update count
+            this.updateProductCount();
+
+        }, 300);
+    }
+
+    createProductCard(product) {
+        const stores = Object.entries(product.stores || {});
+        const bestStore = this.findBestPriceStore(product);
+        const hasDiscountFlag = this.hasDiscount(product);
+        const highestDiscount = this.getHighestDiscount(product);
+
+        return `
+            <div class="product-card" data-product-id="${product.id}">
+                <div class="product-image">
+                    ${product.image ? 
+                        `<img src="${product.image}" alt="${product.name}" onerror="this.style.display='none'">` : 
+                        this.getCategoryIcon(product.category)
+                    }
+                    ${hasDiscountFlag ? `<div class="product-discount-badge">-${highestDiscount}%</div>` : ''}
+                </div>
+
+                <div class="product-info">
+                    <h4 class="product-name">${product.name}</h4>
+                    <div class="product-brand">${product.brand || 'Onbekend merk'}</div>
+                    ${product.description ? `<div class="product-description">${product.description}</div>` : ''}
+
+                    <div class="product-badges">
+                        ${product.nutritional_info?.organic ? '<span class="badge badge-organic">Bio</span>' : ''}
+                        ${product.nutritional_info?.vegan ? '<span class="badge badge-vegan">Vegan</span>' : ''}
+                        ${product.nutritional_info?.lactose_free ? '<span class="badge badge-lactose">Lactosevrij</span>' : ''}
+                    </div>
+
+                    <div class="product-pricing">
+                        ${this.renderPriceComparison(product, bestStore)}
+                        ${this.renderProductActions(product, bestStore, stores)}
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    renderPriceComparison(product, bestStore) {
+        const stores = Object.entries(product.stores || {});
+        const [bestStoreId, bestStoreData] = bestStore;
+
+        return `
+            <div class="price-comparison">
+                <div class="price-header">
+                    <span class="best-price-badge">Beste prijs</span>
+                    <div class="price-value">
+                        ${bestStoreData.original_price ? 
+                            `<span class="original-price">€${bestStoreData.original_price.toFixed(2)}</span>` : ''
+                        }
+                        <span class="current-price">€${bestStoreData.price.toFixed(2)}</span>
+                        ${bestStoreData.discount_percentage ? 
+                            `<span class="discount-badge">-${bestStoreData.discount_percentage}%</span>` : ''
+                        }
+                    </div>
+                </div>
+
+                ${stores.length > 1 ? `
+                    <div class="store-prices">
+                        ${stores
+                            .sort((a, b) => a[1].price - b[1].price)
+                            .map(([storeId, storeData]) => `
+                                <div class="store-price ${storeId === bestStoreId ? 'best-price' : ''}">
+                                    <div class="store-name">
+                                        <img src="${this.getStoreLogo(storeId)}" alt="${this.getStoreName(storeId)}" class="store-logo" onerror="this.style.display='none'">
+                                        <span>${this.getStoreName(storeId)}</span>
+                                    </div>
+                                    <div class="store-price-value">€${storeData.price.toFixed(2)}</div>
+                                </div>
+                            `).join('')}
+                    </div>
+                ` : ''}
+            </div>
+        `;
+    }
+
+    renderProductActions(product, bestStore, stores) {
+        const [bestStoreId, bestStoreData] = bestStore;
+        const otherStores = stores.filter(([id]) => id !== bestStoreId).slice(0, 2);
+
+        return `
+            <div class="product-actions">
+                <a href="${bestStoreData.url}" target="_blank" rel="noopener nofollow" 
+                   class="buy-button primary" 
+                   onclick="app.trackClick('${product.id}', '${bestStoreId}', 'primary')">
+                    <span class="button-store">Koop bij ${this.getStoreName(bestStoreId)}</span>
+                    <span class="button-price">€${bestStoreData.price.toFixed(2)}</span>
+                </a>
+
+                ${otherStores.map(([storeId, storeData]) => `
+                    <a href="${storeData.url}" target="_blank" rel="noopener nofollow" 
+                       class="buy-button secondary"
+                       onclick="app.trackClick('${product.id}', '${storeId}', 'secondary')">
+                        <span class="button-store">${this.getStoreName(storeId)}</span>
+                        <span class="button-price">€${storeData.price.toFixed(2)}</span>
+                    </a>
+                `).join('')}
+            </div>
+        `;
+    }
+
+    toggleHeroSection() {
+        const heroSection = document.getElementById('hero-section');
+        const categoriesContainer = document.getElementById('categories-container');
+        const dealsSection = document.getElementById('deals-section');
+
+        if (this.hasActiveFilters()) {
+            // Hide hero and deals, compact categories when filtering
+            if (heroSection) heroSection.classList.add('hidden');
+            if (categoriesContainer) categoriesContainer.classList.add('compact');
+            if (dealsSection) dealsSection.classList.add('hidden');
+        } else {
+            // Show hero and deals, normal categories when no filters
+            if (heroSection) heroSection.classList.remove('hidden');
+            if (categoriesContainer) categoriesContainer.classList.remove('compact');
+            if (dealsSection) dealsSection.classList.remove('hidden');
+        }
+    }
+
+    hasActiveFilters() {
+        return this.currentFilter.search || 
+               this.currentFilter.category || 
+               this.currentFilter.brand ||
+               this.currentFilter.store ||
+               this.currentFilter.sort;
+    }
+
+    clearAllFilters() {
+        // Reset filter state
+        this.currentFilter = {
+            category: '',
+            brand: '',
+            store: '',
+            search: '',
+            sort: ''
+        };
+
+        // Reset UI elements
+        const searchInput = document.getElementById('search-input');
+        if (searchInput) searchInput.value = '';
+
+        ['category-filter', 'brand-filter', 'store-filter', 'sort-filter'].forEach(id => {
+            const element = document.getElementById(id);
+            if (element) element.value = '';
+        });
+
+        // Re-render
+        this.applyFiltersAndRender();
     }
 
     updateProductsTitle() {
@@ -264,178 +550,153 @@ class GlutenvergelijkerApp {
         } else if (this.hasActiveFilters()) {
             title.textContent = `Zoekresultaten (${this.filteredProducts.length} producten)`;
         } else {
-            title.textContent = `Alle Producten (${this.filteredProducts.length})`;
+            title.textContent = `Alle Producten`;
         }
     }
 
-    renderProducts() {
-        const productsGrid = document.getElementById('products-grid');
-        if (!productsGrid) return;
+    updateProductCount() {
+        const countElement = document.getElementById('products-count');
+        if (countElement) {
+            if (this.hasActiveFilters()) {
+                countElement.textContent = `${this.displayedProducts} van ${this.filteredProducts.length} producten getoond`;
+            } else {
+                countElement.textContent = `${this.displayedProducts} van ${this.products.length} producten getoond`;
+            }
+        }
+    }
 
-        if (this.filteredProducts.length === 0) {
-            productsGrid.innerHTML = `
-                <div style="grid-column: 1 / -1; text-align: center; padding: 40px;">
-                    <h3>Geen producten gevonden</h3>
-                    <p>Probeer andere filters of zoektermen.</p>
+    updateStatistics() {
+        // Update hero stats
+        const totalProductsEl = document.getElementById('total-products');
+        const dailyDealsEl = document.getElementById('daily-deals');
+
+        if (totalProductsEl) {
+            totalProductsEl.textContent = `${this.products.length}+`;
+        }
+
+        const dealsCount = this.products.filter(p => this.hasDiscount(p)).length;
+        if (dailyDealsEl) {
+            dailyDealsEl.textContent = `${dealsCount}+`;
+        }
+
+        // Update detailed stats
+        const avgSavingsEl = document.getElementById('avg-savings');
+        const productsOnSaleEl = document.getElementById('products-on-sale');
+        const popularCategoryEl = document.getElementById('popular-category');
+        const newProductsEl = document.getElementById('new-products');
+        const totalProductsStatEl = document.getElementById('total-products-stat');
+
+        if (avgSavingsEl) {
+            const avgSavings = this.calculateAverageSavings();
+            avgSavingsEl.textContent = `€${avgSavings.toFixed(2)}`;
+        }
+
+        if (productsOnSaleEl) {
+            productsOnSaleEl.textContent = dealsCount.toString();
+        }
+
+        if (popularCategoryEl) {
+            const popularCategory = this.findPopularCategory();
+            popularCategoryEl.textContent = popularCategory.name;
+
+            const popularCategoryCountEl = document.getElementById('popular-category-count');
+            if (popularCategoryCountEl) {
+                popularCategoryCountEl.textContent = `${popularCategory.count} producten`;
+            }
+        }
+
+        if (newProductsEl) {
+            const newCount = this.products.filter(p => {
+                if (!p.last_discovered) return false;
+                const discovered = new Date(p.last_discovered);
+                const weekAgo = new Date();
+                weekAgo.setDate(weekAgo.getDate() - 7);
+                return discovered > weekAgo;
+            }).length;
+            newProductsEl.textContent = newCount.toString();
+        }
+
+        if (totalProductsStatEl) {
+            totalProductsStatEl.textContent = `${this.products.length}+`;
+        }
+
+        // Update last updated
+        const lastUpdatedEl = document.getElementById('last-updated');
+        if (lastUpdatedEl) {
+            lastUpdatedEl.textContent = this.stats.lastUpdated || 'vandaag';
+        }
+    }
+
+    renderPartners() {
+        const partnersGrid = document.getElementById('partners-grid');
+        if (!partnersGrid) return;
+
+        partnersGrid.innerHTML = this.partners.map(partner => `
+            <div class="partner-item" data-store="${partner.id}">
+                <img src="${partner.logo}" alt="${partner.name}" class="partner-logo" 
+                     onerror="this.style.display='none'">
+                <div class="partner-info">
+                    <div class="partner-name">${partner.name}</div>
+                    <div class="partner-count">${partner.productCount} producten</div>
                 </div>
-            `;
+            </div>
+        `).join('');
+    }
+
+    handleNewsletterSignup() {
+        const emailInput = document.getElementById('newsletter-email');
+        const btn = document.getElementById('newsletter-btn');
+
+        if (!emailInput || !btn) return;
+
+        const email = emailInput.value.trim();
+
+        if (!email || !email.includes('@')) {
+            alert('Voer een geldig e-mailadres in');
             return;
         }
 
-        productsGrid.innerHTML = this.filteredProducts.map(product => 
-            this.renderProductCard(product)
-        ).join('');
+        // Simulate signup
+        btn.textContent = 'Inschrijven...';
+        btn.disabled = true;
+
+        setTimeout(() => {
+            alert('Bedankt voor je inschrijving! Je ontvangt binnenkort de eerste nieuwsbrief.');
+            emailInput.value = '';
+            btn.textContent = 'Ingeschreven ✓';
+
+            setTimeout(() => {
+                btn.textContent = 'Inschrijven';
+                btn.disabled = false;
+            }, 3000);
+        }, 1000);
     }
 
-    renderProductCard(product) {
-        const stores = Object.entries(product.stores);
-        const bestStore = this.findBestPriceStore(product);
-
-        return `
-            <div class="product-card" data-product-id="${product.id}">
-                <div class="product-image">${this.getCategoryIcon(product.category)}</div>
-                <div class="product-info">
-                    <h4 class="product-name">${product.name}</h4>
-                    <div class="product-brand">${product.brand}</div>
-                    <div class="product-description">${product.description}</div>
-
-                    <div class="product-pricing">
-                        ${this.renderPriceComparison(product, bestStore)}
-                        ${this.renderProductActions(product, bestStore)}
-                    </div>
-                </div>
-            </div>
-        `;
-    }
-
-    renderPriceComparison(product, bestStore) {
-        const stores = Object.entries(product.stores);
-        const [bestStoreId, bestStoreData] = bestStore;
-
-        return `
-            <div class="price-comparison">
-                <div class="price-header">
-                    <span class="best-price-badge">Beste prijs</span>
-                    <div class="price-value">
-                        ${bestStoreData.original_price ? 
-                            `<span class="original-price">€${bestStoreData.original_price}</span>` : ''
-                        }
-                        €${bestStoreData.price}
-                        ${bestStoreData.discount_percentage ? 
-                            `<span class="discount-badge">-${bestStoreData.discount_percentage}%</span>` : ''
-                        }
-                    </div>
-                </div>
-                <div class="store-prices">
-                    ${stores.map(([storeId, storeData]) => `
-                        <div class="store-price ${storeId === bestStoreId ? 'best-price' : ''}">
-                            <div class="store-name">
-                                <img src="${this.getStoreLogo(storeId)}" alt="${this.getStoreName(storeId)}" class="store-logo" onerror="this.style.display='none'">
-                                ${this.getStoreName(storeId)}
-                            </div>
-                            <div class="store-price-value">€${storeData.price}</div>
-                        </div>
-                    `).join('')}
-                </div>
-            </div>
-        `;
-    }
-
-    renderProductActions(product, bestStore) {
-        const [bestStoreId, bestStoreData] = bestStore;
-        const otherStores = Object.entries(product.stores).filter(([id, data]) => id !== bestStoreId);
-
-        return `
-            <div class="product-actions">
-                <a href="${bestStoreData.url}" target="_blank" rel="noopener" class="buy-button primary" 
-                   onclick="app.trackClick('${product.id}', '${bestStoreId}')">
-                    <span class="button-store">${this.getStoreName(bestStoreId)}</span>
-                    <span class="button-price">€${bestStoreData.price}</span>
-                </a>
-                ${otherStores.slice(0, 2).map(([storeId, storeData]) => `
-                    <a href="${storeData.url}" target="_blank" rel="noopener" class="buy-button secondary"
-                       onclick="app.trackClick('${product.id}', '${storeId}')">
-                        <span class="button-store">${this.getStoreName(storeId)}</span>
-                        <span class="button-price">€${storeData.price}</span>
-                    </a>
-                `).join('')}
-            </div>
-        `;
-    }
-
+    // Utility functions
     findBestPriceStore(product) {
+        if (!product.stores) return ['unknown', { price: 0, url: '#' }];
+
         const stores = Object.entries(product.stores);
         return stores.reduce((best, current) => {
             return current[1].price < best[1].price ? current : best;
         });
     }
 
-    getStoreName(storeId) {
-        const storeNames = {
-            'glutenvrijewebshop.nl': 'Glutenvrije Webshop',
-            'glutenvrijemarkt.com': 'Glutenvrijemarkt',
-            'ah.nl': 'Albert Heijn',
-            'jumbo.com': 'Jumbo',
-            'plus.nl': 'Plus',
-            'schar.com': 'Schär',
-            'picnic.app': 'Picnic',
-            'happybakers.nl': 'Happy Bakers',
-            'thefreefromshop.nl': 'The Free From Shop',
-            'winkelglutenvrij.nl': 'Winkelglutenvrij',
-            'ruttmans.nl': 'Ruttmans',
-            'glutenvrijgemak.nl': 'Glutenvrij Gemak',
-            'bfreez.nl': 'BFreez',
-            'bakkerleo.nl': 'Bakker Leo',
-            'hollandbarrett.nl': 'Holland & Barrett'
-        };
-        return storeNames[storeId] || storeId;
+    getLowestPrice(product) {
+        if (!product.stores) return Infinity;
+        const prices = Object.values(product.stores).map(store => store.price);
+        return prices.length > 0 ? Math.min(...prices) : Infinity;
     }
 
-    getStoreLogo(storeId) {
-        const logoMap = {
-            'ah.nl': 'assets/logo/ah-albert-heijn.svg',
-            'jumbo.com': 'assets/logo/jumbo-logo.svg', 
-            'plus.nl': 'assets/logo/plus.svg',
-            'glutenvrijewebshop.nl': 'assets/logo/glutenvrijewebshop.png',
-            'schar.com': 'assets/logo/schar.png',
-            'picnic.app': 'assets/logo/Picnic_logo.svg.png'
-        };
-        return logoMap[storeId] || 'assets/logo/default.png';
+    hasDiscount(product) {
+        if (!product.stores) return false;
+        return Object.values(product.stores).some(store => store.discount_percentage > 0);
     }
 
-    renderPartners() {
-        const partnersGrid = document.querySelector('.partners-grid');
-        if (!partnersGrid) return;
-
-        partnersGrid.innerHTML = this.partners.map(partner => `
-            <div class="partner-item">
-                <img src="${partner.logo}" alt="${partner.name}" class="partner-logo" onerror="this.style.display='none'">
-                <div class="partner-name">${partner.name}</div>
-            </div>
-        `).join('');
-    }
-
-    updateStats() {
-        // Calculate statistics
-        const productsWithDiscount = this.products.filter(p => 
-            Object.values(p.stores).some(s => s.discount_percentage > 0)
-        );
-
-        const avgSavings = this.calculateAverageSavings();
-        const popularCategory = this.findPopularCategory();
-
-        // Update stat displays
-        const avgSavingsEl = document.getElementById('avg-savings');
-        const productsOnSaleEl = document.getElementById('products-on-sale');
-        const popularCategoryEl = document.getElementById('popular-category');
-        const newProductsEl = document.getElementById('new-products');
-        const totalProductsEl = document.getElementById('total-products');
-
-        if (avgSavingsEl) avgSavingsEl.textContent = `€${avgSavings.toFixed(2)}`;
-        if (productsOnSaleEl) productsOnSaleEl.textContent = productsWithDiscount.length.toString();
-        if (popularCategoryEl) popularCategoryEl.textContent = popularCategory;
-        if (newProductsEl) newProductsEl.textContent = Math.floor(this.products.length * 0.15).toString();
-        if (totalProductsEl) totalProductsEl.textContent = `${this.products.length}+`;
+    getHighestDiscount(product) {
+        if (!product.stores) return 0;
+        const discounts = Object.values(product.stores).map(store => store.discount_percentage || 0);
+        return Math.max(...discounts);
     }
 
     calculateAverageSavings() {
@@ -443,191 +704,94 @@ class GlutenvergelijkerApp {
         let count = 0;
 
         this.products.forEach(product => {
-            Object.values(product.stores).forEach(store => {
-                if (store.original_price && store.price) {
-                    totalSavings += store.original_price - store.price;
-                    count++;
-                }
-            });
+            if (product.stores) {
+                Object.values(product.stores).forEach(store => {
+                    if (store.original_price && store.price && store.original_price > store.price) {
+                        totalSavings += store.original_price - store.price;
+                        count++;
+                    }
+                });
+            }
         });
 
         return count > 0 ? totalSavings / count : 0;
     }
 
     findPopularCategory() {
-        const categoryCounts = {};
-        this.products.forEach(product => {
-            categoryCounts[product.category] = (categoryCounts[product.category] || 0) + 1;
-        });
+        if (this.categories.length === 0) return { name: 'Brood', count: 0 };
 
-        return Object.entries(categoryCounts)
-            .sort(([,a], [,b]) => b - a)[0]?.[0]?.split(' ')[0] || 'Brood';
+        const sorted = [...this.categories].sort((a, b) => b.count - a.count);
+        return sorted[0];
     }
 
-    trackClick(productId, storeId) {
-        console.log(`Product clicked: ${productId} at ${storeId}`);
-        // Here you can add analytics tracking
-    }
-
-    // Link validation system - addresses user's concern about broken links
-    async initLinkValidation() {
-        console.log('🔍 Initializing link validation system...');
-
-        // Background validation - don't block UI
-        setTimeout(() => {
-            this.validateAllProductLinks();
-        }, 3000);
-    }
-
-    async validateAllProductLinks() {
-        console.log('🔗 Starting comprehensive link validation...');
-        let validLinks = 0;
-        let brokenLinks = 0;
-        const brokenLinksList = [];
-
-        for (const product of this.products) {
-            for (const [storeId, storeData] of Object.entries(product.stores)) {
-                try {
-                    const isValid = await this.validateLink(storeData.url, storeId);
-                    if (isValid) {
-                        validLinks++;
-                    } else {
-                        brokenLinks++;
-                        brokenLinksList.push({
-                            product: product.name,
-                            store: this.getStoreName(storeId),
-                            url: storeData.url,
-                            suggestedFix: this.suggestUrlFix(storeData.url, storeId, product.name)
-                        });
-                    }
-                } catch (error) {
-                    console.warn(`Link validation failed for ${product.name} at ${storeId}:`, error);
-                    brokenLinks++;
-                }
-
-                // Add small delay to prevent overwhelming servers
-                await this.delay(100);
-            }
-        }
-
-        console.log(`✅ Link validation complete: ${validLinks} valid, ${brokenLinks} broken`);
-
-        if (brokenLinksList.length > 0) {
-            console.log('🔧 Suggested link fixes:', brokenLinksList);
-            this.reportBrokenLinks(brokenLinksList);
-        }
-    }
-
-    async validateLink(url, storeId) {
-        // For client-side validation, we'll use a different approach
-        // Since CORS prevents direct checking, we'll validate URL structure
-        return this.validateUrlStructure(url, storeId);
-    }
-
-    validateUrlStructure(url, storeId) {
-        try {
-            const urlObj = new URL(url);
-
-            // Store-specific validation rules based on research
-            const validationRules = {
-                'glutenvrijewebshop.nl': {
-                    domain: 'www.glutenvrijewebshop.nl',
-                    pattern: /\.html$/,
-                    pathFormat: 'kebab-case'
-                },
-                'ah.nl': {
-                    domain: 'www.ah.nl',
-                    pattern: /\/producten\//,
-                    pathFormat: 'kebab-case'
-                },
-                'jumbo.com': {
-                    domain: 'www.jumbo.com',
-                    pattern: /\/producten\//,
-                    pathFormat: 'kebab-case'
-                }
-            };
-
-            const rule = validationRules[storeId];
-            if (rule) {
-                return urlObj.hostname === rule.domain && 
-                       (rule.pattern ? rule.pattern.test(url) : true);
-            }
-
-            return true; // Default to valid if no specific rules
-        } catch (error) {
-            return false;
-        }
-    }
-
-    suggestUrlFix(brokenUrl, storeId, productName) {
-        // Generate correct URL structure based on user's example
-        const safeName = productName.toLowerCase()
-            .replace(/[^a-z0-9\s]/g, '')
-            .replace(/\s+/g, '-')
-            .trim();
-
-        const fixes = {
-            'glutenvrijewebshop.nl': `https://www.glutenvrijewebshop.nl/${safeName}.html`,
-            'ah.nl': `https://www.ah.nl/producten/${safeName}`,
-            'jumbo.com': `https://www.jumbo.com/producten/${safeName}`
+    getStoreName(storeId) {
+        const storeNames = {
+            'ah.nl': 'Albert Heijn',
+            'jumbo.com': 'Jumbo',
+            'plus.nl': 'Plus',
+            'glutenvrijewebshop.nl': 'Glutenvrije Webshop',
+            'glutenvrijemarkt.com': 'Glutenvrijemarkt',
+            'happybakers.nl': 'Happy Bakers',
+            'thefreefromshop.nl': 'The Free From Shop',
+            'winkelglutenvrij.nl': 'Winkelglutenvrij',
+            'ruttmans.nl': 'Ruttmans',
+            'bakkerleo.nl': 'Bakker Leo',
+            'bfreez.nl': 'BFreez'
         };
-
-        return fixes[storeId] || brokenUrl.replace(/\/product\/[^/]+$/, `/product/${safeName}`);
+        return storeNames[storeId] || storeId.replace('.nl', '').replace('.com', '');
     }
 
-    reportBrokenLinks(brokenLinks) {
-        // This would normally send data to your backend for fixing
-        console.log('📋 Broken Links Report:');
-        brokenLinks.forEach(link => {
-            console.log(`❌ ${link.product} (${link.store})`);
-            console.log(`   Broken: ${link.url}`);
-            console.log(`   Suggested: ${link.suggestedFix}`);
-        });
+    getStoreLogo(storeId) {
+        const logoMap = {
+            'ah.nl': 'assets/logo/ah-albert-heijn.svg',
+            'jumbo.com': 'assets/logo/jumbo-logo.svg',
+            'plus.nl': 'assets/logo/plus.svg',
+            'glutenvrijewebshop.nl': 'assets/logo/glutenvrijewebshop.png',
+            'glutenvrijemarkt.com': 'assets/logo/glutenvrijemarkt.png',
+            'happybakers.nl': 'assets/logo/happybakers.png'
+        };
+        return logoMap[storeId] || 'assets/logo/default.png';
     }
 
-    delay(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
+    getCategoryIcon(category) {
+        const icons = {
+            'Brood & Bakproducten': '🍞',
+            'Pasta & Rijst': '🍝',
+            'Koekjes & Snacks': '🍪',
+            'Pizza & Maaltijden': '🍕',
+            'Ontbijt & Beleg': '🥣',
+            'Chips & Crackers': '🟡',
+            'Chocolade & Snoep': '🍫',
+            'Dranken': '🥤',
+            'Bakingrediënten': '🧁',
+            'Sauzen & Kruiden': '🧂',
+            'Diepvries': '❄️',
+            'Overig': '🌾'
+        };
+        return icons[category] || '🌾';
     }
 
-    // Automated Product Discovery System
-    async startProductDiscovery() {
-        console.log('🤖 Starting automated product discovery...');
+    trackClick(productId, storeId, type) {
+        // Track clicks for analytics and affiliate conversion
+        console.log(`🔗 Product click: ${productId} → ${storeId} (${type})`);
 
-        const discoveryTargets = [
-            'glutenvrijewebshop.nl',
-            'glutenvrijemarkt.com',
-            'ah.nl',
-            'jumbo.com',
-            'thefreefromshop.nl',
-            'happybakers.nl'
-        ];
-
-        for (const target of discoveryTargets) {
-            await this.discoverProductsFromStore(target);
+        // Send to analytics (implement your tracking here)
+        if (window.gtag) {
+            gtag('event', 'product_click', {
+                'product_id': productId,
+                'store_id': storeId,
+                'click_type': type
+            });
         }
-    }
 
-    async discoverProductsFromStore(storeId) {
-        // This is a placeholder for automated discovery
-        // In a real implementation, this would involve:
-        // 1. Scraping store product pages
-        // 2. Identifying new glutenvrije products
-        // 3. Extracting pricing and details
-        // 4. Updating the database
-
-        console.log(`🔍 Discovering products from ${storeId}...`);
-
-        // Simulated discovery results
-        const mockDiscoveredProducts = [
-            `New glutenvrije product found at ${storeId}`,
-            `Price update detected for existing product at ${storeId}`
-        ];
-
-        console.log(`✅ Discovery complete for ${storeId}:`, mockDiscoveredProducts);
+        // Track for affiliate conversion
+        if (window.affiliateTracker) {
+            window.affiliateTracker.track(productId, storeId, type);
+        }
     }
 }
 
-// Initialize the application when DOM is loaded
+// Initialize app when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     window.app = new GlutenvergelijkerApp();
 });
