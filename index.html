@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlutenVergelijker.nl - Vergelijk alle glutenvrije producten</title>
+    <meta name="description" content="Vergelijk prijzen van glutenvrije producten bij alle Nederlandse supermarkten en webshops. Vind de beste deals op glutenvrije brood, pasta, snacks en meer.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <h1>🌾 GlutenVergelijker.nl</h1>
+                    <p class="header__tagline">De slimste manier om glutenvrije producten te vergelijken</p>
+                </div>
+                <div class="header__search">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Zoek glutenvrije producten..." class="search-input">
+                        <button class="search-button" id="searchButton">🔍</button>
+                    </div>
+                </div>
+                <nav class="header__nav">
+                    <a href="#producten" class="nav-link">Producten</a>
+                    <a href="#statistieken" class="nav-link">Statistieken</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h2>Vind de beste prijzen voor glutenvrije producten</h2>
+                <p>Vergelijk prijzen van duizenden glutenvrije producten bij Albert Heijn, Jumbo, Bol.com en meer. Bespaar tijd en geld met onze slimme vergelijker.</p>
+                <div class="hero__stats">
+                    <div class="stat">
+                        <span class="stat__number" id="totalProducts">500+</span>
+                        <span class="stat__label">Producten</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number" id="totalBrands">25+</span>
+                        <span class="stat__label">Merken</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">3</span>
+                        <span class="stat__label">Supermarkten</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main" id="producten">
+        <div class="container">
+            <div class="main__content">
+                <!-- Sidebar Filters -->
+                <aside class="sidebar">
+                    <div class="filter-section">
+                        <h3>Filters</h3>
+                        
+                        <!-- Sort Options -->
+                        <div class="form-group">
+                            <label class="form-label">Sorteer op:</label>
+                            <select id="sortSelect" class="form-control">
+                                <option value="relevance">Relevantie</option>
+                                <option value="price-low">Prijs (laag → hoog)</option>
+                                <option value="price-high">Prijs (hoog → laag)</option>
+                                <option value="alphabetical">Alfabetisch</option>
+                                <option value="brand">Merk</option>
+                            </select>
+                        </div>
+
+                        <!-- Brand Filter -->
+                        <div class="filter-group">
+                            <h4>Merk</h4>
+                            <div id="brandFilters" class="checkbox-group">
+                                <!-- Dynamically populated -->
+                            </div>
+                        </div>
+
+                        <!-- Category Filter -->
+                        <div class="filter-group">
+                            <h4>Categorie</h4>
+                            <div id="categoryFilters" class="checkbox-group">
+                                <!-- Dynamically populated -->
+                            </div>
+                        </div>
+
+                        <!-- Store Filter -->
+                        <div class="filter-group">
+                            <h4>Verkrijgbaar bij</h4>
+                            <div id="storeFilters" class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="albert_heijn" class="store-filter">
+                                    <span class="store-icon">🏪</span> Albert Heijn
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="jumbo" class="store-filter">
+                                    <span class="store-icon">🛒</span> Jumbo
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="bol" class="store-filter">
+                                    <span class="store-icon">📦</span> Bol.com
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Price Range Filter -->
+                        <div class="filter-group">
+                            <h4>Prijsrange</h4>
+                            <div class="price-range">
+                                <input type="range" id="minPriceRange" min="0" max="20" value="0" step="0.5" class="price-slider">
+                                <input type="range" id="maxPriceRange" min="0" max="20" value="20" step="0.5" class="price-slider">
+                                <div class="price-labels">
+                                    <span>€<span id="minPriceLabel">0</span></span>
+                                    <span>€<span id="maxPriceLabel">20</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button id="resetFilters" class="btn btn--secondary btn--full-width">Reset filters</button>
+                    </div>
+                </aside>
+
+                <!-- Products Section -->
+                <section class="products-section">
+                    <div class="products-header">
+                        <h2>Glutenvrije producten</h2>
+                        <div class="results-info">
+                            <span id="resultsCount">500 producten gevonden</span>
+                            <button id="favoritesToggle" class="btn btn--outline">Toon alleen favorieten</button>
+                        </div>
+                    </div>
+
+                    <div id="loadingState" class="loading-state hidden">
+                        <p>Producten laden...</p>
+                    </div>
+
+                    <div id="noResults" class="no-results hidden">
+                        <p>Geen producten gevonden met de huidige filters. Probeer andere zoektermen of pas je filters aan.</p>
+                    </div>
+
+                    <div id="productsGrid" class="products-grid">
+                        <!-- Products will be dynamically populated -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Statistics Section -->
+    <section class="statistics-section" id="statistieken">
+        <div class="container">
+            <h2>Markt Overzicht</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Populairste Merken</h3>
+                    <div id="brandStats" class="brand-stats">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <h3>Categorieën</h3>
+                    <div id="categoryStats" class="category-stats">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <h3>Prijzen Vergelijking</h3>
+                    <div id="priceStats" class="price-stats">
+                        <div class="price-comparison">
+                            <div class="store-comparison">
+                                <span class="store-name">Albert Heijn</span>
+                                <span class="avg-price" id="avgPriceAH">€2.85</span>
+                            </div>
+                            <div class="store-comparison">
+                                <span class="store-name">Jumbo</span>
+                                <span class="avg-price" id="avgPriceJumbo">€2.79</span>
+                            </div>
+                            <div class="store-comparison">
+                                <span class="store-name">Bol.com</span>
+                                <span class="avg-price" id="avgPriceBol">€3.12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal hidden">
+        <div class="modal__backdrop"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 id="modalProductName">Product Details</h3>
+                <button id="closeModal" class="modal__close">×</button>
+            </div>
+            <div class="modal__body">
+                <div class="product-detail">
+                    <div class="product-detail__image">
+                        <img id="modalProductImage" src="" alt="" class="product-image">
+                    </div>
+                    <div class="product-detail__info">
+                        <h4 id="modalProductBrand"></h4>
+                        <p id="modalProductDescription"></p>
+                        <div class="product-features">
+                            <h5>Kenmerken:</h5>
+                            <div id="modalProductFeatures" class="features-list"></div>
+                        </div>
+                        <div class="product-allergens">
+                            <h5>Allergenen:</h5>
+                            <p id="modalProductAllergens"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-comparison-detailed">
+                    <h4>Prijsvergelijking</h4>
+                    <div id="modalPriceComparison" class="price-comparison-list">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <button id="addToFavorites" class="btn btn--primary">Toevoegen aan favorieten</button>
+                <button id="closeModalFooter" class="btn btn--secondary">Sluiten</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h4>GlutenVergelijker.nl</h4>
+                    <p>De meest complete vergelijkingssite voor glutenvrije producten in Nederland.</p>
+                    <p>Wij helpen mensen met coeliakie en glutenintolerantie om de beste producten tegen de beste prijs te vinden.</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Nuttige Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="https://www.coeliakievereniging.nl" target="_blank">Nederlandse Coeliakie Vereniging</a></li>
+                        <li><a href="https://www.glutenvrij.nl" target="_blank">Glutenvrij.nl</a></li>
+                        <li><a href="https://www.voedingcentrum.nl" target="_blank">Voedingscentrum</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Contact</h4>
+                    <p>Heb je vragen of suggesties?</p>
+                    <p>Email: info@glutenvergelijker.nl</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank">Facebook</a>
+                        <a href="#" target="_blank">Instagram</a>
+                        <a href="#" target="_blank">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 GlutenVergelijker.nl. Alle rechten voorbehouden.</p>
+                <p class="disclaimer">Prijzen kunnen afwijken van werkelijke winkelprijzen. Controleer altijd de actuele prijs bij de betreffende winkel.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

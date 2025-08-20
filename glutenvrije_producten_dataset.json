@@ -1,0 +1,404 @@
+[
+  {
+    "name": "Schär Ciabatta",
+    "brand": "Schär",
+    "category": "Brood",
+    "description": "Met zuurdesem en extra vergine olijfolie",
+    "weight": "200g",
+    "price_ah": 3.49,
+    "price_jumbo": 3.59,
+    "price_bol": 3.89,
+    "features": [
+      "Lactosevrij",
+      "Conserveermiddelvrij",
+      "Rijk aan vezels"
+    ],
+    "image_url": "https://images.schar.com/ciabatta-nl.jpg",
+    "barcode": "8008698011256",
+    "shop_links": {
+      "albert_heijn": "https://ah.nl/producten/product/wi123456",
+      "jumbo": "https://jumbo.com/producten/schar-ciabatta",
+      "bol": "https://bol.com/nl/p/schar-ciabatta"
+    },
+    "allergens": "Kan sporen bevatten van soja"
+  },
+  {
+    "name": "Schär Penne Pasta",
+    "brand": "Schär",
+    "category": "Pasta",
+    "description": "Glutenvrije penne pasta, 11 minuten kooktijd",
+    "weight": "400g",
+    "price_ah": 2.99,
+    "price_jumbo": 2.89,
+    "price_bol": 3.19,
+    "features": [
+      "Made in Italy",
+      "11 minuten kooktijd"
+    ],
+    "image_url": "https://images.schar.com/penne-pasta-nl.jpg",
+    "barcode": "8008698011263",
+    "shop_links": {
+      "albert_heijn": "https://ah.nl/producten/product/wi123457",
+      "jumbo": "https://jumbo.com/producten/schar-penne",
+      "bol": "https://bol.com/nl/p/schar-penne"
+    },
+    "allergens": "Kan sporen bevatten van soja"
+  },
+  {
+    "name": "Schär Mini Baguette",
+    "brand": "Schär",
+    "category": "Brood",
+    "description": "Mini baguette met zuurdesem",
+    "weight": "150g (2 stuks)",
+    "price_ah": 2.79,
+    "price_jumbo": 2.89,
+    "price_bol": 3.09,
+    "features": [
+      "Lactosevrij",
+      "Conserveermiddelvrij",
+      "Rijk aan vezels"
+    ],
+    "image_url": "https://images.schar.com/mini-baguette-nl.jpg",
+    "barcode": "8008698011270",
+    "shop_links": {
+      "albert_heijn": "https://ah.nl/producten/product/wi123458",
+      "jumbo": "https://jumbo.com/producten/schar-mini-baguette",
+      "bol": "https://bol.com/nl/p/schar-mini-baguette"
+    },
+    "allergens": "Kan sporen bevatten van soja"
+  },
+  {
+    "name": "Schär Spaghetti",
+    "brand": "Schär",
+    "category": "Pasta",
+    "description": "Glutenvrije spaghetti, 10-12 minuten kooktijd",
+    "weight": "500g",
+    "price_ah": 2.99,
+    "price_jumbo": 2.79,
+    "price_bol": 3.29,
+    "features": [
+      "Made in Italy",
+      "10-12 minuten kooktijd"
+    ],
+    "image_url": "https://images.schar.com/spaghetti-nl.jpg",
+    "barcode": "8008698011277",
+    "shop_links": {
+      "albert_heijn": "https://ah.nl/producten/product/wi123459",
+      "jumbo": "https://jumbo.com/producten/schar-spaghetti",
+      "bol": "https://bol.com/nl/p/schar-spaghetti"
+    },
+    "allergens": "Kan sporen bevatten van soja"
+  },
+  {
+    "name": "Schär Fusilli",
+    "brand": "Schär",
+    "category": "Pasta",
+    "description": "Glutenvrije fusilli pasta",
+    "weight": "400g",
+    "price_ah": 2.99,
+    "price_jumbo": 2.89,
+    "price_bol": 3.19,
+    "features": [
+      "Made in Italy"
+    ],
+    "image_url": "https://images.schar.com/fusilli-nl.jpg",
+    "barcode": "8008698011284",
+    "shop_links": {
+      "albert_heijn": "https://ah.nl/producten/product/wi123460",
+      "jumbo": "https://jumbo.com/producten/schar-fusilli",
+      "bol": "https://bol.com/nl/p/schar-fusilli"
+    },
+    "allergens": "Kan sporen bevatten van soja"
+  },
+  {
+    "name": "AH VrijVan Wit Brood Half",
+    "brand": "Albert Heijn VrijVan",
+    "category": "Brood",
+    "description": "Glutenvrij wit brood, half brood",
+    "weight": "400g",
+    "price_ah": 2.49,
+    "price_jumbo": null,
+    "price_bol": null,
+    "features": [
+      "Huismerk Albert Heijn",
+      "Dagvers"
+    ],
+    "image_url": "https://static.ah.nl/dam/product/AHI_43545239313233343536_1_LowRes_JPG.jpg",
+    "barcode": "8710398567890",
+    "shop_links": {
+      "albert_heijn": "https://ah.nl/producten/product/wi435452",
+      "jumbo": null,
+      "bol": null
+    },
+    "allergens": "Kan sporen bevatten van soja en lupine"
+  },
+  {
+    "name": "AH VrijVan Fusilli",
+    "brand": "Albert Heijn VrijVan",
+    "category": "Pasta",
+    "description": "Glutenvrije fusilli pasta",
+    "weight": "400g",
+    "price_ah": 1.99,
+    "price_jumbo": null,
+    "price_bol": null,
+    "features": [
+      "Huismerk Albert Heijn",
+      "Voordelig"
+    ],
+    "image_url": "https://static.ah.nl/dam/product/AHI_43545239313433343536_1_LowRes_JPG.jpg",
+    "barcode": "8710398567891",
+    "shop_links": {
+      "albert_heijn": "https://ah.nl/producten/product/wi435453",
+      "jumbo": null,
+      "bol": null
+    },
+    "allergens": "Kan sporen bevatten van soja"
+  },
+  {
+    "name": "AH VrijVan Spaghetti",
+    "brand": "Albert Heijn VrijVan",
+    "category": "Pasta",
+    "description": "Glutenvrije spaghetti",
+    "weight": "400g",
+    "price_ah": 1.99,
+    "price_jumbo": null,
+    "price_bol": null,
+    "features": [
+      "Huismerk Albert Heijn",
+      "Voordelig"
+    ],
+    "image_url": "https://static.ah.nl/dam/product/AHI_43545239313533343536_1_LowRes_JPG.jpg",
+    "barcode": "8710398567892",
+    "shop_links": {
+      "albert_heijn": "https://ah.nl/producten/product/wi435454",
+      "jumbo": null,
+      "bol": null
+    },
+    "allergens": "Kan sporen bevatten van soja"
+  },
+  {
+    "name": "AH VrijVan Crackers",
+    "brand": "Albert Heijn VrijVan",
+    "category": "Crackers",
+    "description": "Glutenvrije crackers",
+    "weight": "125g",
+    "price_ah": 1.79,
+    "price_jumbo": null,
+    "price_bol": null,
+    "features": [
+      "Huismerk Albert Heijn",
+      "Knapperig"
+    ],
+    "image_url": "https://static.ah.nl/dam/product/AHI_43545239313633343536_1_LowRes_JPG.jpg",
+    "barcode": "8710398567893",
+    "shop_links": {
+      "albert_heijn": "https://ah.nl/producten/product/wi435455",
+      "jumbo": null,
+      "bol": null
+    },
+    "allergens": "Kan sporen bevatten van soja en sesam"
+  },
+  {
+    "name": "AH VrijVan Mini Crackers",
+    "brand": "Albert Heijn VrijVan",
+    "category": "Crackers",
+    "description": "Glutenvrije mini crackers",
+    "weight": "100g",
+    "price_ah": 1.69,
+    "price_jumbo": null,
+    "price_bol": null,
+    "features": [
+      "Huismerk Albert Heijn",
+      "Perfect voor tussendoor"
+    ],
+    "image_url": "https://static.ah.nl/dam/product/AHI_43545239313733343536_1_LowRes_JPG.jpg",
+    "barcode": "8710398567894",
+    "shop_links": {
+      "albert_heijn": "https://ah.nl/producten/product/wi435456",
+      "jumbo": null,
+      "bol": null
+    },
+    "allergens": "Kan sporen bevatten van soja en sesam"
+  },
+  {
+    "name": "Jumbo Lekker Vrij Cakemix",
+    "brand": "Jumbo Lekker Vrij",
+    "category": "Bakmixen",
+    "description": "Glutenvrije cakemix, voeg 4 eieren en 225g margarine toe",
+    "weight": "400g",
+    "price_ah": null,
+    "price_jumbo": 1.97,
+    "price_bol": null,
+    "features": [
+      "Huismerk Jumbo",
+      "Makkelijk bakken"
+    ],
+    "image_url": "https://image.jumbo.com/product_images/070221081659_394050-1_720x720_2.png",
+    "barcode": "8714100789123",
+    "shop_links": {
+      "albert_heijn": null,
+      "jumbo": "https://jumbo.com/producten/jumbo-lekker-vrij-cakemix",
+      "bol": null
+    },
+    "allergens": "Kan sporen bevatten van soja en lupine"
+  },
+  {
+    "name": "Jumbo Lekker Vrij Ontbijtkoek",
+    "brand": "Jumbo Lekker Vrij",
+    "category": "Koek",
+    "description": "Glutenvrije ongesneden ontbijtkoek",
+    "weight": "350g",
+    "price_ah": null,
+    "price_jumbo": 2.49,
+    "price_bol": null,
+    "features": [
+      "Huismerk Jumbo",
+      "Ongesneden",
+      "Kruidige smaak"
+    ],
+    "image_url": "https://image.jumbo.com/product_images/070221081660_394051-1_720x720_2.png",
+    "barcode": "8714100789124",
+    "shop_links": {
+      "albert_heijn": null,
+      "jumbo": "https://jumbo.com/producten/jumbo-lekker-vrij-ontbijtkoek",
+      "bol": null
+    },
+    "allergens": "Kan sporen bevatten van soja en lupine"
+  },
+  {
+    "name": "Jumbo Lekker Vrij Roze Koek",
+    "brand": "Jumbo Lekker Vrij",
+    "category": "Koek",
+    "description": "Glutenvrije en lactosevrije roze koek",
+    "weight": "90g (2 stuks)",
+    "price_ah": null,
+    "price_jumbo": 1.38,
+    "price_bol": null,
+    "features": [
+      "Huismerk Jumbo",
+      "Ook lactosevrij",
+      "Nostalgie"
+    ],
+    "image_url": "https://image.jumbo.com/product_images/070221081661_394052-1_720x720_2.png",
+    "barcode": "8714100789125",
+    "shop_links": {
+      "albert_heijn": null,
+      "jumbo": "https://jumbo.com/producten/jumbo-lekker-vrij-roze-koek",
+      "bol": null
+    },
+    "allergens": "Kan sporen bevatten van soja en lupine"
+  },
+  {
+    "name": "Jumbo Lekker Vrij Beschuit",
+    "brand": "Jumbo Lekker Vrij",
+    "category": "Beschuit",
+    "description": "Glutenvrije beschuit",
+    "weight": "125g",
+    "price_ah": null,
+    "price_jumbo": 2.99,
+    "price_bol": null,
+    "features": [
+      "Huismerk Jumbo",
+      "Knapperig"
+    ],
+    "image_url": "https://image.jumbo.com/product_images/070221081662_394053-1_720x720_2.png",
+    "barcode": "8714100789126",
+    "shop_links": {
+      "albert_heijn": null,
+      "jumbo": "https://jumbo.com/producten/jumbo-lekker-vrij-beschuit",
+      "bol": null
+    },
+    "allergens": "Kan sporen bevatten van soja en lupine"
+  },
+  {
+    "name": "Consenza Cracker Thins",
+    "brand": "Consenza",
+    "category": "Crackers",
+    "description": "Glutenvrije en lactosevrije cracker thins",
+    "weight": "180g (6 pakjes van 90g)",
+    "price_ah": 3.29,
+    "price_jumbo": 3.39,
+    "price_bol": 3.59,
+    "features": [
+      "Ook tarwevrij",
+      "Ook lactosevrij",
+      "6 pakjes"
+    ],
+    "image_url": "https://consenza.com/images/cracker-thins-nl.jpg",
+    "barcode": "8717496871234",
+    "shop_links": {
+      "albert_heijn": "https://ah.nl/producten/product/wi789123",
+      "jumbo": "https://jumbo.com/producten/consenza-cracker-thins",
+      "bol": "https://bol.com/nl/p/consenza-cracker-thins"
+    },
+    "allergens": "Kan sporen bevatten van soja"
+  },
+  {
+    "name": "Consenza Corn Crackerbread",
+    "brand": "Consenza",
+    "category": "Crackers",
+    "description": "Glutenvrije mais crackers",
+    "weight": "125g",
+    "price_ah": 2.49,
+    "price_jumbo": 2.59,
+    "price_bol": 2.79,
+    "features": [
+      "Tarwevrij",
+      "Rob's essentials"
+    ],
+    "image_url": "https://consenza.com/images/corn-crackerbread-nl.jpg",
+    "barcode": "8717496871235",
+    "shop_links": {
+      "albert_heijn": "https://ah.nl/producten/product/wi789124",
+      "jumbo": "https://jumbo.com/producten/consenza-corn-crackerbread",
+      "bol": "https://bol.com/nl/p/consenza-corn-crackerbread"
+    },
+    "allergens": "Kan sporen bevatten van soja"
+  },
+  {
+    "name": "Consenza Knäckebröd Meergraan",
+    "brand": "Consenza",
+    "category": "Crackers",
+    "description": "Glutenvrije meergranen knäckebröd",
+    "weight": "160g",
+    "price_ah": 2.79,
+    "price_jumbo": 2.89,
+    "price_bol": 3.09,
+    "features": [
+      "Ook tarwevrij",
+      "Ook lactosevrij",
+      "Meergranen"
+    ],
+    "image_url": "https://consenza.com/images/knackebrod-meergraan-nl.jpg",
+    "barcode": "8717496871236",
+    "shop_links": {
+      "albert_heijn": "https://ah.nl/producten/product/wi789125",
+      "jumbo": "https://jumbo.com/producten/consenza-knackebrod",
+      "bol": "https://bol.com/nl/p/consenza-knackebrod"
+    },
+    "allergens": "Kan sporen bevatten van soja en sesam"
+  },
+  {
+    "name": "Dr. Oetker Ristorante Pizza Mozzarella Glutenvrij",
+    "brand": "Dr. Oetker",
+    "category": "Diepvries",
+    "description": "Glutenvrije en lactosevrije pizza mozzarella",
+    "weight": "355g",
+    "price_ah": 4.99,
+    "price_jumbo": 4.89,
+    "price_bol": 5.29,
+    "features": [
+      "Ook lactosevrij",
+      "Diepvries",
+      "Nutri-Score C"
+    ],
+    "image_url": "https://oetker.nl/images/ristorante-pizza-mozzarella-gf.jpg",
+    "barcode": "4001724819567",
+    "shop_links": {
+      "albert_heijn": "https://ah.nl/producten/product/wi987654",
+      "jumbo": "https://jumbo.com/producten/dr-oetker-ristorante-pizza-mozzarella-gf",
+      "bol": "https://bol.com/nl/p/dr-oetker-ristorante-pizza-mozzarella-gf"
+    },
+    "allergens": "Kan sporen bevatten van soja"
+  }
+]
