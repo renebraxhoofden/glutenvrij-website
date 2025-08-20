@@ -1,2 +1,0 @@
-2025-08-15 19:35:54.002 [error] #154: https://main.vscode-cdn.net/extensions/marketplace.json - error GET Request timeout after 10000ms
-2025-08-17 13:43:36.155 [error] #173: https://main.vscode-cdn.net/extensions/marketplace.json - error GET net::ERR_NETWORK_CHANGED
